@@ -1,0 +1,17 @@
+.button {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffff;
+    background: #2A71B5;
+    font-weight: bold;
+    max-width: 500px;
+    min-width: 70px;
+    padding: 15px 30px;
+    width: 40%;
+    font-size: 1.3rem;
+}
+
+.button:hover {
+    background: #358ad9;
+}

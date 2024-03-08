@@ -1,0 +1,69 @@
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    max-height: 100%;
+}
+
+*:focus {
+    outline: #2421b4 solid 2px;                                          
+}
+
+main {
+    width: 87%;
+    margin: 0 auto;
+    max-width: 1350px;
+    min-width: 250px;
+}
+
+/* adiciona display flex para os elementos */
+header img {
+    width: 100%;
+    max-width: 150px;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Roboto', sans-serif;
+}
+
+h2 {
+    color: #2A71B5;
+}
+
+a {
+    transition: 0.3s;
+}
+
+header>nav>ul a,
+footer nav ul a,
+nav .header-contact a:hover,
+header>nav div.header-contact a,
+nav div.header-contact {
+    font-weight: bold;
+    color: #032D93;
+    font-size: 1.1rem;
+}
+
+nav a:not(.header-contact a) {
+    text-decoration: none;
+}
+
+header nav ul,
+footer nav ul {
+    list-style: none;
+}
+
+header>nav>ul a:hover,
+header>div a:hover,
+footer nav a:hover,
+header>nav>div.login a:hover,
+header>nav .header-contact a:hover {
+    color: #4f81f6;
+}

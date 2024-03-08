@@ -1,0 +1,19 @@
+.containerContentLeft img {
+    min-width: 300px;
+    max-width: 650px;
+    flex: 2;
+}
+
+.containerContentLeft > div {
+    flex: 1;
+}
+
+.containerContentLeft .title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.containerContentLeft p {
+    font-size: 1.4rem;
+    font-weight: 500;
+}

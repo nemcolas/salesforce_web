@@ -1,0 +1,68 @@
+header {
+    padding: 10px 25px;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+
+header> a:first-child {
+    flex: 7%;
+    margin-right: 1%;
+}
+
+header>nav img {
+    max-width: 35px;
+    min-width: 20px;
+    cursor: pointer;
+}
+
+header,
+header>nav,
+header>nav ul,
+header>nav>div {
+    display: flex;
+    align-items: center;
+}
+
+header nav {
+    flex: 95%;
+    justify-content: space-around;
+
+}
+
+header nav ul {
+    flex: 60%;
+}
+
+header nav div,
+header nav>a,
+header nav img {
+   flex: 15%;
+}
+
+header nav ul li a {
+    padding: 2px 5px;
+    margin: 0 5px;
+}
+
+header nav div.login a {
+    color: #2A71B5;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+header>nav div.header-contact {
+    flex-direction: column;
+}
+
+header>nav img.language-selector-globe {
+    margin: 0 50px 0 25px;
+}
+
+header>nav a.btn {
+    padding: 15px 0;
+    font-size: 1.1rem;
+}
+
+header>nav div.login img {
+    margin-right: 5px;
+}
