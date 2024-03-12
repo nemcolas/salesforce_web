@@ -1,15 +1,13 @@
-'use client'
-import { containerContentLeftProps } from '../interface/interface';
+import { containerContentLeftProps, conterinarContentCenterProps } from '../interface/interface';
 import Button  from '../Button';
 import './style.css';
-import { usePathname } from 'next/navigation';
 
 
 function ContainerContentLeftProps(props: containerContentLeftProps) {
   return (
-    <section className='flex containerContentLeft justify-between flex-wrap'>
+    <section className='flex containerContentLeft justify-between flex-wrap mb-16'>
         <div className='flex flex-col justify-evenly'>
-            {usePathname() === '/' ? <h1 className='title'>{props.textHeader}</h1> : <h2 className='title'>{props.textHeader}</h2>}
+            {props.isHome ? <h1 className='title'>{props.textHeader}</h1> : <h2 className='title'>{props.textHeader}</h2>}
             <p>{props.textParagraph}</p>
             <div>
               <Button link={props.linkButton} text={props.textButton}/>
@@ -21,4 +19,15 @@ function ContainerContentLeftProps(props: containerContentLeftProps) {
   )
 }
 
-export { ContainerContentLeftProps }
+function ContainerContentCenter(props: conterinarContentCenterProps) {
+  return (
+    <section className='mb-20'>
+      <h2 className='text-center'>{props.title}</h2>
+      <div className='flex justify-center flex-wrap'>
+        {props.children}
+      </div>
+    </section>
+  )
+}
+
+export { ContainerContentLeftProps, ContainerContentCenter }

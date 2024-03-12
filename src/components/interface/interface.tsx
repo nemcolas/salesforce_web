@@ -13,14 +13,20 @@ interface containerContentLeftProps {
     imgContainer:string;
     altImgContainer:string;
     children?:ReactNode
+    isHome?:boolean;
 }
 
-interface CardsGallery{
+interface CardsInterface{
     imgCard:string;
     altImgCard:string;
-    title:string;
-    paragraph?:string;
+    paragraph:string;
     children?:ReactNode;
+    homePage?:boolean;
 }
-export type {ButtonProps, containerContentLeftProps, CardsGallery};
+
+interface conterinarContentCenterProps{
+    title:string;
+    children:ReactNode;
+}    
+export type {ButtonProps, containerContentLeftProps, CardsInterface, conterinarContentCenterProps};
     

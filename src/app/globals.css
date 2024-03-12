@@ -33,7 +33,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-h2 {
+h2, h1 {
     color: #2A71B5;
 }
 
