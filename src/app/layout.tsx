@@ -3,8 +3,9 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import "../style/header.css";
 import Button from "../components/Button";
-import "../style/footer.css";
 import Footer from "../components/Footer/Footer";
+import Link from "next/link"; // Importação do componente Link do Next.js para a criação de links entre páginas internas do site (mais rápido que o <a> do HTML)
+import Image from "next/image"; // tem mais vantagens que a tag <img> do HTML como carregamento de imagens de forma otimizada, porém é necessário colocar o tamanho da imagem no componente
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,10 +23,10 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         <header className="flex">
-          <a href="/"><img src="/salesforce-logo.svg" alt="Logo Salesforce" /></a>
+          <Link href="/"><img src="/salesforce-logo.svg" alt="Logo Salesforce" /></Link>
           <nav>
             <ul className="flex">
-              <li><a href="./products">Produtos</a></li>
+              <li><Link href="./products">Produtos</Link></li>
               <li><a href="#">Indústrias</a></li>
               <li><a href="#">Aprendizado</a></li>
               <li><a href="#">Suporte</a></li>
@@ -41,8 +42,8 @@ export default function RootLayout({
               alt="icone do globo terreste em linhas pretas" />
 
             <div className="login">
-              <a href="login.html"><img src="/login-02.webp" alt="Logo de login" /></a>
-              <a href="login.html">Login</a>
+              <Link href="/login"><img src="/login-02.webp" alt="Logo de login"/></Link>
+              <Link href="/login">Login</Link>
             </div>
             <Button link="./free-trial" text="Teste Grátis" />
           </nav>

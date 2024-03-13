@@ -64,7 +64,8 @@ footer div.footer-bottom a, footer div.footer-bottom div.bottom p{
 footer div.footer-bottom {
     padding: 30px;
     background-color: #032D60;
-    font-size: 1.1rem;  
+    font-size: 1.1rem;
+    /* flex: 1 70% 1; */
 }
 
 footer > div.footer-bottom div.bottom nav{
@@ -80,7 +81,7 @@ footer div.footer-bottom div.region-switcher {
     border-radius: 20px;
     margin-right: 4%;
     cursor: pointer;
-    flex: 1 1 23%;
+    /* flex: 1 14% 1; */
 }
 
 footer div.footer-bottom div.region-switcher p {

@@ -6,7 +6,7 @@ interface ButtonProps {
 }
 
 interface containerContentLeftProps {
-    textHeader:string;
+    title:string;
     textParagraph:string;
     linkButton:string;
     textButton:string;

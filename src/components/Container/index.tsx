@@ -3,11 +3,12 @@ import Button  from '../Button';
 import './style.css';
 
 
-function ContainerContentLeftProps(props: containerContentLeftProps) {
+
+function ContainerContentLeft(props: containerContentLeftProps) {
   return (
     <section className='flex containerContentLeft justify-between flex-wrap mb-16'>
         <div className='flex flex-col justify-evenly'>
-            {props.isHome ? <h1 className='title'>{props.textHeader}</h1> : <h2 className='title'>{props.textHeader}</h2>}
+            {props.isHome ? <h1 className='title'>{props.title}</h1> : <h2 className='title'>{props.title}</h2>}
             <p>{props.textParagraph}</p>
             <div>
               <Button link={props.linkButton} text={props.textButton}/>
@@ -21,7 +22,7 @@ function ContainerContentLeftProps(props: containerContentLeftProps) {
 
 function ContainerContentCenter(props: conterinarContentCenterProps) {
   return (
-    <section className='mb-20'>
+    <section className='mb-44'>
       <h2 className='text-center'>{props.title}</h2>
       <div className='flex justify-center flex-wrap'>
         {props.children}
@@ -30,4 +31,4 @@ function ContainerContentCenter(props: conterinarContentCenterProps) {
   )
 }
 
-export { ContainerContentLeftProps, ContainerContentCenter }
+export { ContainerContentLeft, ContainerContentCenter }

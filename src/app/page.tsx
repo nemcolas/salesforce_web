@@ -1,21 +1,18 @@
-import { ContainerContentLeftProps, ContainerContentCenter } from '../components/Container';
-import { Cards, CardOurProducts } from '../components/Cards';
+import { ContainerContentLeft, ContainerContentCenter } from '../components/Container';
+import { Cards, CardOurProducts, CardOurClients } from '../components/Cards';
 import '../style/homepage.css'
 
 export default function Home() {
   return (
     <main>
-      <ContainerContentLeftProps
-        textHeader='Entregue sucesso agora com o Salesforce Customer 360'
-        textParagraph='O Customer 360 é a nossa suíte de produtos e serviços que ajuda 98% dos clientes a alcançar ou superar suas metas de ROI.'
-        linkButton='/free-trial'
-        textButton='Teste grátis'
+      <ContainerContentLeft title='Entregue sucesso agora com o Salesforce Customer 360'
+        textParagraph='O Customer 360 é a nossa suíte de produtos e serviços que ajuda 98% dos clientes a alcançar ou superar suas metas de ROI.' linkButton='/free-trial' textButton='Teste grátis'
         imgContainer='/customer360.webp'
         altImgContainer='mulher sorrindo com o mascote Einstem em sua frente dentro da roda do customer 360'
         isHome={true}
       >
         <a className='ml-10 px-8 py-3.5 border-slate-600 border-solid border-y border-x text-xl no-underline rounded-md text-sky-600' href="https://www.salesforce.com/br/products/">Saiba mais</a>
-      </ContainerContentLeftProps>
+      </ContainerContentLeft>
 
       <ContainerContentCenter title='O que há de novo na Salesforce ?'>
         <Cards
@@ -58,16 +55,21 @@ export default function Home() {
         />
 
         <CardOurProducts
-          title='Vendas'
-          paragraph='Feche mais negócios e acelere o crescimento com o CRM nº1'
+          title='Vendas' paragraph='Feche mais negócios e acelere o crescimento com o CRM nº1'
           img='/image-index/php-products-sales-generic.webp'
           alt='mulher com cabelo grisalho, com camisa de botão com um tom de verde e uma pasta na mão sorrindo'
           buttonLink='https://www.salesforce.com/br/solutions/small-business-solutions/overview/'
         />
       </ContainerContentCenter>
 
-      <ContainerContentCenter title='Nossos clientes' >
-        
+      <ContainerContentCenter title='Nossos clientes'>
+        <CardOurClients title='Sumup' img='/image-index/sumup-customers-home.webp' alt='logo da empresa Sumup com flores e arbustos ao fundo' paragraph='Serviços Finaceiros' link='https://www.salesforce.com/br/customer-success-stories/sumup/'/>
+
+        <CardOurClients title='Gympass' img='/image-index/gympass-customers-home.webp' alt='logo da empresa Gympass com flores e arbustos ao fundo' paragraph='Saúde' link='https://www.salesforce.com/br/customer-success-stories/gympass/'/>
+
+        <CardOurClients title='Vipal Borrachas' img='/image-index/vipal-customers-home.webp' alt='logo da empresa Vipal com flores e arbustos ao fundo' paragraph='Manufatura' link='https://www.salesforce.com/br/customer-success-stories/vipal-borrachas/'/>
+
+        <CardOurClients title='Grupo Tigre' img='/image-index/tigre-customers-home.webp' alt='logo da empresa Grupo Tigre com flores e arbustos ao fundo' paragraph='Construção civil' link='https://www.salesforce.com/br/customer-success-stories/grupo-tigre/'/>
       </ContainerContentCenter>
     </main>
   );

@@ -1,5 +1,6 @@
 'use client'
 import { usePathname } from 'next/navigation';
+import './footer.css'
 
 export default function Footer() {
     return (
@@ -93,7 +94,7 @@ export default function Footer() {
                 <p className="mr-3">Saiba mais sobre o nosso compromisso com a proteção de privacidade</p>
                 <a href="">Destaque de Declaração de privacidade</a>
             </div>
-            <div className="footer-bottom flex">
+            <div className="footer-bottom flex flex-wrap">
                 <div tabIndex={0} className="region-switcher flex">
                     <img src="earth-icon.svg" alt="icone do globo terreste em linhas pretas" />
                     <p>Mudar região</p>

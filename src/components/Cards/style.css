@@ -9,11 +9,11 @@ div.card {
     font-size: 1.2rem;
 }
 
-div.card:nth-child(3n+2) {
-    margin: 0 30px;
+div.threeCards:nth-child(3n+2) {
+    margin: 0 20px;
 }
 
-div.card img {
+div.card img.imgPrincipalCard {
     height: 250px;
 }
 
@@ -33,7 +33,7 @@ a.linkCardHomePage {
         margin: 25px auto;
     }
     
-    div.card:nth-child(3n+2) {
+    div.threeCards:nth-child(3n+2) {
         margin: 0;
     }
 }
@@ -66,4 +66,35 @@ div.cardOurProducts img {
         width: 100%;
         margin: 35px auto;
     }
+}
+
+/* abaixo temos a formatação para o card ourClient */
+
+div.card-client {
+    margin: 0 25px;
+    height: 400px;
+    margin-bottom: 40px;
+    align-items: center;
+    padding-top: 10px;
+    flex:100%;
+    max-width: 260px;
+    min-width: 140px;
+}
+
+div.card-client h3 {
+    color: #004D5E;
+}
+
+div.card-client img {
+    width: 100%;
+    max-width: 160px;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    div.card-client {
+        margin: 0 auto 40px auto;
+        max-width: 650px;
+    }
+    
 }
