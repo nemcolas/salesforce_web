@@ -1,6 +1,7 @@
 import { ContainerContentLeft, ContainerContentCenter } from '../components/Container';
 import { Cards, CardOurProducts, CardOurClients } from '../components/Cards';
 import '../style/homepage.css'
+import '../i18n'
 
 export default function Home() {
   return (
@@ -70,6 +71,19 @@ export default function Home() {
         <CardOurClients title='Vipal Borrachas' img='/image-index/vipal-customers-home.webp' alt='logo da empresa Vipal com flores e arbustos ao fundo' paragraph='Manufatura' link='https://www.salesforce.com/br/customer-success-stories/vipal-borrachas/'/>
 
         <CardOurClients title='Grupo Tigre' img='/image-index/tigre-customers-home.webp' alt='logo da empresa Grupo Tigre com flores e arbustos ao fundo' paragraph='Construção civil' link='https://www.salesforce.com/br/customer-success-stories/grupo-tigre/'/>
+      </ContainerContentCenter>
+
+
+      <ContainerContentLeft title='O que é CRM ?'
+        textParagraph='Aprenda tudo sobre o CRM, como unificar todas as suas equipes e como impulsionar o crescimento e a produtividade em toda a sua empresa'
+        linkButton='https://www.salesforce.com/br/crm/'
+        imgContainer='/image-index/php-rc-what-is-crm.webp'
+        altImgContainer='Mascote Astro apresentando funcionalidades do Sales Cloud'
+        textButton='Saiba Mais'
+      />
+
+      <ContainerContentCenter title='Eventos online e aprendizado Salesforce'>
+
       </ContainerContentCenter>
     </main>
   );

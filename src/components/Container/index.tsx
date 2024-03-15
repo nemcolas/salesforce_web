@@ -22,7 +22,7 @@ function ContainerContentLeft(props: containerContentLeftProps) {
 
 function ContainerContentCenter(props: conterinarContentCenterProps) {
   return (
-    <section className='mb-44'>
+    <section className='mb-44 container-content-center'>
       <h2 className='text-center'>{props.title}</h2>
       <div className='flex justify-center flex-wrap'>
         {props.children}

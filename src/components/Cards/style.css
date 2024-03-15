@@ -71,14 +71,20 @@ div.cardOurProducts img {
 /* abaixo temos a formatação para o card ourClient */
 
 div.card-client {
-    margin: 0 25px;
-    height: 400px;
-    margin-bottom: 40px;
-    align-items: center;
+    margin-bottom:1.8rem;
     padding-top: 10px;
-    flex:100%;
-    max-width: 260px;
+    max-width: 225px;
     min-width: 140px;
+    height: 400px;
+    align-items: center;
+}
+
+div.card-client:nth-child(2) {
+    margin: 0 0.8rem 1.8rem 1.6rem;
+}
+
+div.card-client:nth-child(3) {
+    margin: 0 1.6rem 1.8rem 0.8rem;
 }
 
 div.card-client h3 {
@@ -93,7 +99,6 @@ div.card-client img {
 
 @media screen and (max-width: 768px) {
     div.card-client {
-        margin: 0 auto 40px auto;
         max-width: 650px;
     }
     
