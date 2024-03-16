@@ -1,0 +1,39 @@
+div.card {
+    flex: 1 1 30%;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 35px 35px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 45px;
+    font-size: 1.2rem;
+}
+
+div.threeCards:nth-child(3n+2) {
+    margin: 0 20px;
+}
+
+div.card img.imgPrincipalCard {
+    height: 250px;
+}
+
+div.card .contentCard {
+    padding: 15px 20px 5px 20px;
+}
+
+/* formatação especifica para o link do card da primeira pagina, segunda seção */
+
+a.linkCardHomePage {
+    font-weight: 550;
+}
+
+@media screen and (max-width: 768px) {
+    div.card {
+        flex: 1 1 100%;
+        margin: 25px auto;
+    }
+    
+    div.threeCards:nth-child(3n+2) {
+        margin: 0;
+    }
+}

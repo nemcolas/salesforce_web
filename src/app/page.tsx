@@ -1,5 +1,7 @@
 import { ContainerContentLeft, ContainerContentCenter } from '../components/Container';
-import { Cards, CardOurProducts, CardOurClients } from '../components/Cards';
+import Cards from '../components/Cards/CardWhatNew';
+import CardOurProducts from '../components/Cards/OurProducts';
+import CardOurClients  from '../components/Cards/OurClients';
 import '../style/homepage.css'
 import '../i18n'
 
@@ -20,23 +22,23 @@ export default function Home() {
           imgCard='/image-index/data-cloud.webp'
           altImgCard='mascote Genie segurando uma varinha de forma didatica apontada para a pagina da salesforce'
           paragraph='Fortaleça a empresa do seu cliente com dados unificados e em tempo real'
-        >
-          <a className='linkCardHomePage' href="https://www.salesforce.com/br/products/data/">Explore o data Cloud</a>
-        </Cards>
+          link='https://www.salesforce.com/br/products/data/'
+          textLink='Explore o data Cloud'
+        />
         <Cards
           imgCard='/image-index/find-ia-solution.webp'
           altImgCard='Homem trabalhando e mascote Einsten segurando roda 360 da Salesforce  representando as soluções'
           paragraph='Encontre uma solução de IA adaptada às suas necessidades de negócios'
-        >
-          <a className='linkCardHomePage' href="https://salesforcecustomer360.herokuapp.com/?_ga=2.168050787.374103663.1708208483-2068240218.1707590733">Crie seu próprio customer 360</a>
-        </Cards>
+          link='https://www.salesforce.com/br/products/'
+          textLink='Crie seu próprio customer 360'
+        />
         <Cards
           imgCard='/image-index/php-mk-whatsapp-card.webp'
           altImgCard='Mascote Astro saltitante proximo ao logo do Whatsapp'
           paragraph='Marketing no WhatsApp: O que é e como integrar à sua estratégia de marketing digital'
-        >
-          <a className='linkCardHomePage' href="https://www.salesforce.com/br/resources/articles/whatsapp-marketing/">Explore o data Cloud</a>
-        </Cards>
+          link='https://www.salesforce.com/br/resources/articles/whatsapp-marketing/'
+          textLink='Explore o marketing para WhatsApp'
+        />
       </ContainerContentCenter>
 
       <ContainerContentCenter title='Nossos produtos são feitos para você'>
