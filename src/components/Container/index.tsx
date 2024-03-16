@@ -4,11 +4,11 @@ import './style.css';
 
 
 
-function ContainerContentLeft(props: containerContentLeftProps) {
+function ContainerContentLeft({isHome = false, ...props}: containerContentLeftProps) {
   return (
-    <section className='flex containerContentLeft justify-between flex-wrap mb-16'>
+    <section className={'flex containerContentLeft justify-between flex-wrap ' + (isHome ? 'mb-24' : 'mb-40')}>
         <div className='flex flex-col justify-evenly'>
-            {props.isHome ? <h1 className='title'>{props.title}</h1> : <h2 className='title'>{props.title}</h2>}
+            {isHome ? <h1 className='title'>{props.title}</h1> : <h2 className='title'>{props.title}</h2>}
             <p>{props.textParagraph}</p>
             <div>
               <Button link={props.linkButton} text={props.textButton}/>

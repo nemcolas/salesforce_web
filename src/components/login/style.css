@@ -4,7 +4,7 @@ section.login {
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
 }
 
-section > .imgLogin {
+section.login > .imgLogin {
     width: 100%;
     max-width: 600px;
     min-width: 200px;
@@ -12,7 +12,7 @@ section > .imgLogin {
     border-radius: 0.3rem;
 }
 
-section > div {
+section.login > div {
     flex: 1;
     flex-direction: column;
     justify-content: space-between;
