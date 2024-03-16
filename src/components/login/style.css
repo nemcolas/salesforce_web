@@ -1,0 +1,34 @@
+section.login {
+    padding: 2rem ;
+    border-radius: 0.3rem;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+section.login > .imgLogin {
+    width: 100%;
+    max-width: 600px;
+    min-width: 200px;
+    margin-left: 2%;
+    border-radius: 0.3rem;
+}
+
+section.login > div {
+    flex: 1;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section > div h1.login-title {
+    font-size: 2rem;
+    font-weight: 300;
+    margin-bottom: 1.2rem;
+}
+
+section > div h1.login-title span {
+    color: #0070D2;
+    font-weight: 600;
+}
+
+section > div p{
+    font-size: 1.7rem;
+}

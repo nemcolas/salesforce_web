@@ -1,0 +1,45 @@
+div.cardOurEvents {
+    width: 100%;
+    max-width: 400px;   
+}
+
+div.cardOurEvents:nth-child(3n+2) {
+    margin: 0 20px;
+}
+
+section div.cardOurEvents a, section div.cardOurEvents p{
+    margin: 15px 10px;
+}
+
+section div.cardOurEvents a.learning-events-redirect, section div.cardOurEvents p{
+    font-size: 1.2rem;
+}
+
+section div.cardOurEvents p.paragraphTop{
+    font-size: 0.9rem;
+    text-decoration: none;
+    padding: 8px;
+    background:#D9D9D9;
+    width: 20%;
+    text-align: center;
+    border-radius: 10px;
+    color: #2A71B5;
+}
+
+
+section div.cardOurEvents img {
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    div.cardOurEvents {
+        flex: 1 1 100%;
+        margin: 25px auto;
+    }
+    
+    div.cardOurEvents:nth-child(3n+2) {
+        margin: 0;
+    }
+}

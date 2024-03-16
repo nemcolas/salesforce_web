@@ -1,0 +1,28 @@
+div.cardOurProducts {
+    width: 31%;
+    margin: 0 9px 20px 9px;
+}
+
+div.cardOurProducts .image-peaple {
+    order: -1;
+    max-width: 220px;
+    min-width: 180px;
+    width: 100%;
+}
+
+.cardOurProducts .info-product {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.cardOurProducts .info-product a.btn {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    div.cardOurProducts {
+        width: 100%;
+        margin: 35px auto;
+    }
+}

@@ -1,5 +1,8 @@
 import { ContainerContentLeft, ContainerContentCenter } from '../components/Container';
-import { Cards, CardOurProducts, CardOurClients } from '../components/Cards';
+import Cards from '../components/Cards/CardWhatNew';
+import CardOurProducts from '../components/Cards/OurProducts';
+import CardOurClients from '../components/Cards/OurClients';
+import CardsOurEvents from '../components/Cards/OurEvents';
 import '../style/homepage.css'
 import '../i18n'
 
@@ -20,23 +23,23 @@ export default function Home() {
           imgCard='/image-index/data-cloud.webp'
           altImgCard='mascote Genie segurando uma varinha de forma didatica apontada para a pagina da salesforce'
           paragraph='Fortaleça a empresa do seu cliente com dados unificados e em tempo real'
-        >
-          <a className='linkCardHomePage' href="https://www.salesforce.com/br/products/data/">Explore o data Cloud</a>
-        </Cards>
+          link='https://www.salesforce.com/br/products/data/'
+          textLink='Explore o data Cloud'
+        />
         <Cards
           imgCard='/image-index/find-ia-solution.webp'
           altImgCard='Homem trabalhando e mascote Einsten segurando roda 360 da Salesforce  representando as soluções'
           paragraph='Encontre uma solução de IA adaptada às suas necessidades de negócios'
-        >
-          <a className='linkCardHomePage' href="https://salesforcecustomer360.herokuapp.com/?_ga=2.168050787.374103663.1708208483-2068240218.1707590733">Crie seu próprio customer 360</a>
-        </Cards>
+          link='https://www.salesforce.com/br/products/'
+          textLink='Crie seu próprio customer 360'
+        />
         <Cards
           imgCard='/image-index/php-mk-whatsapp-card.webp'
           altImgCard='Mascote Astro saltitante proximo ao logo do Whatsapp'
           paragraph='Marketing no WhatsApp: O que é e como integrar à sua estratégia de marketing digital'
-        >
-          <a className='linkCardHomePage' href="https://www.salesforce.com/br/resources/articles/whatsapp-marketing/">Explore o data Cloud</a>
-        </Cards>
+          link='https://www.salesforce.com/br/resources/articles/whatsapp-marketing/'
+          textLink='Explore o marketing para WhatsApp'
+        />
       </ContainerContentCenter>
 
       <ContainerContentCenter title='Nossos produtos são feitos para você'>
@@ -64,13 +67,13 @@ export default function Home() {
       </ContainerContentCenter>
 
       <ContainerContentCenter title='Nossos clientes'>
-        <CardOurClients title='Sumup' img='/image-index/sumup-customers-home.webp' alt='logo da empresa Sumup com flores e arbustos ao fundo' paragraph='Serviços Finaceiros' link='https://www.salesforce.com/br/customer-success-stories/sumup/'/>
+        <CardOurClients title='Sumup' img='/image-index/sumup-customers-home.webp' alt='logo da empresa Sumup com flores e arbustos ao fundo' paragraph='Serviços Finaceiros' link='https://www.salesforce.com/br/customer-success-stories/sumup/' />
 
-        <CardOurClients title='Gympass' img='/image-index/gympass-customers-home.webp' alt='logo da empresa Gympass com flores e arbustos ao fundo' paragraph='Saúde' link='https://www.salesforce.com/br/customer-success-stories/gympass/'/>
+        <CardOurClients title='Gympass' img='/image-index/gympass-customers-home.webp' alt='logo da empresa Gympass com flores e arbustos ao fundo' paragraph='Saúde' link='https://www.salesforce.com/br/customer-success-stories/gympass/' />
 
-        <CardOurClients title='Vipal Borrachas' img='/image-index/vipal-customers-home.webp' alt='logo da empresa Vipal com flores e arbustos ao fundo' paragraph='Manufatura' link='https://www.salesforce.com/br/customer-success-stories/vipal-borrachas/'/>
+        <CardOurClients title='Vipal Borrachas' img='/image-index/vipal-customers-home.webp' alt='logo da empresa Vipal com flores e arbustos ao fundo' paragraph='Manufatura' link='https://www.salesforce.com/br/customer-success-stories/vipal-borrachas/' />
 
-        <CardOurClients title='Grupo Tigre' img='/image-index/tigre-customers-home.webp' alt='logo da empresa Grupo Tigre com flores e arbustos ao fundo' paragraph='Construção civil' link='https://www.salesforce.com/br/customer-success-stories/grupo-tigre/'/>
+        <CardOurClients title='Grupo Tigre' img='/image-index/tigre-customers-home.webp' alt='logo da empresa Grupo Tigre com flores e arbustos ao fundo' paragraph='Construção civil' link='https://www.salesforce.com/br/customer-success-stories/grupo-tigre/' />
       </ContainerContentCenter>
 
 
@@ -83,7 +86,14 @@ export default function Home() {
       />
 
       <ContainerContentCenter title='Eventos online e aprendizado Salesforce'>
+        <CardsOurEvents img='/image-index/home-news-bar-evergreen-events.webp' alt='pessoas sorridentes batendo palma em um fundo de nuvem' paragraphTop='Eventos'
+          paragraph='Mergulhe em paixão, aprendizado e conhecimento' bottomLinkText='Explore os eventos' bottomLink='https://www.salesforce.com/br/events/' />
 
+        <CardsOurEvents img='/image-index/php-sf-blog.webp' alt='Astro acenando com uma bengala na mao a frente de uma floresta' paragraphTop='Blog'
+          paragraph='Aprenda tudo sobre o Customer 360 em workshops práticos(Inglês)' bottomLinkText='Saiba mais' bottomLink='https://cs.salesforce.com/?_ga=2.246456652.970257102.1710510944-2068240218.1707590733' />
+
+        <CardsOurEvents img='/image-index/salesforce-inteligencia-artificial.webp' alt='Einstein atras de uma mesa com livros em cima dela, e mostrando calculos na lousa ao fundo' paragraphTop='Webinars'
+          paragraph='Descubra como impulsionar o crescimento com o Salesforce gratuitamente' bottomLinkText='Assista aos webinars' bottomLink='https://www.salesforce.com/br/resources/webinars/?d=cta-events-3-ungated-webinars#!page=1' />
       </ContainerContentCenter>
     </main>
   );
