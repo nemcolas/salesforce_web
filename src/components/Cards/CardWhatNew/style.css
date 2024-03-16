@@ -13,8 +13,9 @@ div.threeCards:nth-child(3n+2) {
     margin: 0 20px;
 }
 
-div.card img.imgPrincipalCard {
+div.card .imgPrincipalCard {
     height: 250px;
+    width: 100%;
 }
 
 div.card .contentCard {

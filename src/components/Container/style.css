@@ -1,8 +1,10 @@
-.containerContentLeft img {
+.containerContentLeft .containerContentLeftImg {
     min-width: 300px;
     max-width: 650px;
     flex: 2;
     margin-left: 3.5rem;
+    width: 100%;
+    height: 100%;
 }
 
 .containerContentLeft > div {
@@ -17,4 +19,20 @@
 .containerContentLeft p {
     font-size: 1.4rem;
     font-weight: 500;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .containerContentLeft div {
+        margin: 0 0 1rem 0;
+    }
+
+    .containerContentLeft div p {
+        margin: 2rem 0;
+    }
+
+    .containerContentLeftImg {
+        margin: 0 !important;
+    }
+    
 }
