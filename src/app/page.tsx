@@ -104,6 +104,16 @@ export default function Home() {
         linkButton='https://trailhead.salesforce.com/'
         altImgContainer='Mulher com a camisa do Trailhead com um circulo roxo ao fundo e o Einstein ao lado dela com as mãos para cima'
       />
+
+      <ContainerContentLeft title='Faça cada momento valer a pena para alcançar o sucesso imediato'
+        textParagraph='Atraia clientes. Gere mais engajamento.Construa relações duradouras.Tudo isso graças ao marketing digital baseado em dados'
+        textButton='Saiba mais sobre marketing cloud'
+        linkButton='https://www.salesforce.com/br/products/marketing-cloud/overview/'
+        imgContainer='/image-index/sfdc-marketing-cloud-overview-products.png'
+        altImgContainer='software de atendimento ao cliente sendo representado em uma tela de dispositivo móvel e desktop'
+        imgClasses='order-first'
+        classes='imgRight'
+      />
     </main>
   );
 }

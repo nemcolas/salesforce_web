@@ -15,6 +15,7 @@ interface containerContentLeftProps {
     children?:ReactNode
     isHome?:boolean;
     classes?:string;
+    imgClasses?:string;
 }
 
 interface conterinarContentCenterProps{

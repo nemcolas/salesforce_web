@@ -1,3 +1,6 @@
+.containerContentLeft {
+    align-items: center;
+}
 .containerContentLeft .containerContentLeftImg {
     min-width: 300px;
     max-width: 650px;
@@ -11,6 +14,10 @@
     flex: 1;
 }
 
+.containerContentLeft div p {
+    margin: 3rem auto;
+}
+
 .containerContentLeft .title {
     font-size: 2.5rem;
     font-weight: 600;
@@ -21,18 +28,41 @@
     font-weight: 500;
 }
 
+/* formatação especifica para quando a imagem está do lado direito */
+
+div.imgRight {
+    flex: 2;
+    margin-left: 10%;
+}
+
+.imgRight {
+    flex: 1.5;
+    height: auto;
+}
+
 @media screen and (max-width: 768px) {
     
     .containerContentLeft div {
         margin: 0 0 1rem 0;
     }
 
-    .containerContentLeft div p {
+    .containerContentLeft div p, .container-trailblazer p{
         margin: 2rem 0;
     }
 
     .containerContentLeftImg {
-        margin: 0 !important;
+        margin: 3rem auto !important;
+    }
+
+    .imgRight {
+        order: -10;
+    }
+   
+    div.imgRight {
+        align-items: center;
     }
     
+    div.imgRight > p, div.imgRight > h2, .container-trailblazer h2, .container-trailblazer div p{
+        text-align: center;
+    }
 }

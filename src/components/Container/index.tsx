@@ -14,14 +14,14 @@ function ContainerContentLeft({isHome = false, ...props}: containerContentLeftPr
               {props.children}
             </div>
         </div>
-        <Image className='containerContentLeftImg' src={props.imgContainer} alt={props.altImgContainer} width={700} height={300}/>
+        <Image className={`containerContentLeftImg ${props.imgClasses} ${props.classes}` } src={props.imgContainer} alt={props.altImgContainer} width={700} height={600}/>
     </section>
   )
 }
 
 function ContainerContentCenter(props: conterinarContentCenterProps) {
   return (
-    <section className='mb-44 container-content-center'>
+    <section className='mb-40 container-content-center'>
       <h2 className='text-center'>{props.title}</h2>
       <div className='flex justify-center flex-wrap'>
         {props.children}
