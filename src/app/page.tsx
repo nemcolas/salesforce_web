@@ -5,7 +5,9 @@ import CardOurClients from '../components/Cards/OurClients';
 import CardsOurEvents from '../components/Cards/OurEvents';
 import ContainerTrailblazers from '../components/pagina-principal/ContainerTrailblazers';
 import '../style/homepage.css'
-import '../i18n'
+import ButtonLarge from '@/components/ButtonLarge';
+import Image from 'next/image';
+import ContainerFreeTrial from '../components/pagina-principal/ContainerFreeTrial'
 
 export default function Home() {
   return (
@@ -114,6 +116,12 @@ export default function Home() {
         imgClasses='order-first'
         classes='imgRight'
       />
+      <ContainerFreeTrial title='Experimente a Salesforce gratuitamente' 
+        subTitle='Não é necessario cartão de crédito nem instalar nenhum software'
+        textButton='Iniciar Teste Gratuito'
+        altImgContainer='exemplo do Sales Cloud apresentado por três pop ups representando gerenciamento de contatos, automação de fluxo de trabalho e gerenciamento de oportunidades'
+      />
+
     </main>
   );
 }
