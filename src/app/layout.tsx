@@ -4,8 +4,7 @@ import "./globals.css";
 import "../style/header.css";
 import Button from "../components/Button";
 import Footer from "../components/Footer/Footer";
-import Link from "next/link"; // Importação do componente Link do Next.js para a criação de links entre páginas internas do site (mais rápido que o <a> do HTML)
-import Image from "next/image"; // tem mais vantagens que a tag <img> do HTML como carregamento de imagens de forma otimizada, porém é necessário colocar o tamanho da imagem no componente
+import Link from "next/link";
 
 const inter = Inter({ subsets: ["latin"] });
 

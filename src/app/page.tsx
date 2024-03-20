@@ -1,12 +1,11 @@
+import '../style/homepage.css'
 import { ContainerContentLeft, ContainerContentCenter } from '../components/Container';
 import Cards from '../components/Cards/CardWhatNew';
 import CardOurProducts from '../components/Cards/OurProducts';
 import CardOurClients from '../components/Cards/OurClients';
 import CardsOurEvents from '../components/Cards/OurEvents';
 import ContainerTrailblazers from '../components/pagina-principal/ContainerTrailblazers';
-import '../style/homepage.css'
-import ButtonLarge from '@/components/ButtonLarge';
-import Image from 'next/image';
+import ContainerSupport from '../components/pagina-principal/ContainerSupport'
 import ContainerFreeTrial from '../components/pagina-principal/ContainerFreeTrial'
 
 export default function Home() {
@@ -116,12 +115,17 @@ export default function Home() {
         imgClasses='order-first'
         classes='imgRight'
       />
+
       <ContainerFreeTrial title='Experimente a Salesforce gratuitamente' 
         subTitle='Não é necessario cartão de crédito nem instalar nenhum software'
         textButton='Iniciar Teste Gratuito'
         altImgContainer='exemplo do Sales Cloud apresentado por três pop ups representando gerenciamento de contatos, automação de fluxo de trabalho e gerenciamento de oportunidades'
       />
 
+    <ContainerSupport title={`Ainda tem duvidas ? Podemos ajudar e direcionar você para o caminho certo`} 
+    altImgContainer='Astro, o mascote principal da Salesforce acenando com a mão'
+    textButton='Entrar em contato'
+    />
     </main>
   );
 }

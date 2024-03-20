@@ -4,7 +4,7 @@ import './style.css';
 import ContainerFreeTrialProps from './interface';
 export default function ContainerFreeTrial(props: ContainerFreeTrialProps) {
     return (
-        <section className="container-free-trial flex">
+        <section className="container-free-trial flex mb-16">
             <h2>{props.title}</h2>
             <h3>{props.subTitle}</h3>
             <ButtonLarge link='/free-trial' text={props.textButton} />
