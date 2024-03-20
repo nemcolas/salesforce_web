@@ -1,0 +1,18 @@
+.card {
+    display: flex;
+    flex: 2;
+    justify-content:center;
+    flex-direction: column;
+    border: 1px solid #b11e1e;
+    border-color: black;
+}
+
+.CardImage{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    margin-left: 2%;
+}
