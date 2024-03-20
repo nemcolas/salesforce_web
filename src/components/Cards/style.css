@@ -1,0 +1,97 @@
+div.card {
+    flex: 1 1 30%;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 35px 35px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 45px;
+    font-size: 1.2rem;
+}
+
+div.threeCards:nth-child(3n+2) {
+    margin: 0 20px;
+}
+
+div.card img.imgPrincipalCard {
+    height: 250px;
+}
+
+div.card .contentCard {
+    padding: 15px 20px 5px 20px;
+}
+
+/* formatação especifica para o link do card da primeira pagina, segunda seção */
+
+a.linkCardHomePage {
+    font-weight: 550;
+}
+
+@media screen and (max-width: 768px) {
+    div.card {
+        flex: 1 1 100%;
+        margin: 25px auto;
+    }
+    
+    div.threeCards:nth-child(3n+2) {
+        margin: 0;
+    }
+}
+
+/* Abaixo temos a formatação para o CardOurProducts */
+div.cardOurProducts {
+    width: 31%;
+    margin: 0 9px 20px 9px;
+}
+
+div.cardOurProducts img {
+    order: -1;
+    max-width: 220px;
+    min-width: 180px;
+    width: 100%;
+}
+
+.cardOurProducts .info-product {
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 10px;
+}
+
+.cardOurProducts .info-product a.btn {
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    div.cardOurProducts {
+        width: 100%;
+        margin: 35px auto;
+    }
+}
+
+/* abaixo temos a formatação para o card ourClient */
+
+div.card-client {
+    margin: 0 1.1rem 1.8rem 1.1rem;
+    padding-top: 10px;
+    max-width: 260px;
+    min-width: 140px;
+    height: 400px;
+    align-items: center;
+}
+
+div.card-client h3 {
+    color: #004D5E;
+}
+
+div.card-client img {
+    width: 100%;
+    max-width: 160px;
+    min-width: 100px;
+}
+
+@media screen and (max-width: 768px) {
+    div.card-client {
+        max-width: 650px;
+    }
+    
+}

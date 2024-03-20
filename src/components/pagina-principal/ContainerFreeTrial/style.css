@@ -1,0 +1,26 @@
+main section.container-free-trial {
+    flex-direction: column;
+    align-items: center;
+}
+
+main section.container-free-trial h3 {
+    font-size: 1.4rem;
+    margin: 1rem auto 3rem auto;
+    font-weight: 500;
+}
+
+main section.container-free-trial .imgFreeTrial {
+    max-width: 1000px;
+    min-width: 300px;
+    height: 100%;
+    max-height: 800px;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+@media screen and (max-width: 768px) {
+    
+    main section.container-free-trial h3, main section.container-free-trial h2 {
+        text-align: center;
+    }
+}

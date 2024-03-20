@@ -1,9 +1,10 @@
 import { CardOurClientsInterface } from "./interface"
 import './style.css'
+import Image from 'next/image'
 function CardOurClients(props:CardOurClientsInterface) {
     return (
         <div className='card card-client'>
-            <img src={props.img} alt={props.alt} />
+            <Image className="imageCardClient" src={props.img} alt={props.alt} width={300} height={230} />
             <h3 className=''>{props.title}</h3>
             <div className='text-center'>
                 <h4>Indústria</h4>

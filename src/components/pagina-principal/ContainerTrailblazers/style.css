@@ -1,0 +1,14 @@
+.container-trailblazer .imgContainer {
+    width: 100%;
+    max-width: 500px;
+    min-width: 250px;
+}
+
+.container-trailblazer div p {
+    font-size: 1.3rem;
+}
+
+.container-trailblazer div {
+    justify-content: space-evenly;
+    flex: 1;
+}

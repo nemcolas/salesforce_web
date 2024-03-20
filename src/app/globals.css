@@ -72,3 +72,10 @@ header>nav>div.login a:hover,
 header>nav .header-contact a:hover {
     color: #4f81f6;
 }
+
+@media screen and (max-width: 768px) {
+    section {
+        width: 95%;
+        margin-bottom: 3rem !important;
+    }
+}

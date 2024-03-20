@@ -1,10 +1,12 @@
+import '../style/homepage.css'
 import { ContainerContentLeft, ContainerContentCenter } from '../components/Container';
 import Cards from '../components/Cards/CardWhatNew';
 import CardOurProducts from '../components/Cards/OurProducts';
 import CardOurClients from '../components/Cards/OurClients';
 import CardsOurEvents from '../components/Cards/OurEvents';
-import '../style/homepage.css'
-import '../i18n'
+import ContainerTrailblazers from '../components/pagina-principal/ContainerTrailblazers';
+import ContainerSupport from '../components/pagina-principal/ContainerSupport'
+import ContainerFreeTrial from '../components/pagina-principal/ContainerFreeTrial'
 
 export default function Home() {
   return (
@@ -76,13 +78,13 @@ export default function Home() {
         <CardOurClients title='Grupo Tigre' img='/image-index/tigre-customers-home.webp' alt='logo da empresa Grupo Tigre com flores e arbustos ao fundo' paragraph='Construção civil' link='https://www.salesforce.com/br/customer-success-stories/grupo-tigre/' />
       </ContainerContentCenter>
 
-
       <ContainerContentLeft title='O que é CRM ?'
         textParagraph='Aprenda tudo sobre o CRM, como unificar todas as suas equipes e como impulsionar o crescimento e a produtividade em toda a sua empresa'
         linkButton='https://www.salesforce.com/br/crm/'
         imgContainer='/image-index/php-rc-what-is-crm.webp'
         altImgContainer='Mascote Astro apresentando funcionalidades do Sales Cloud'
         textButton='Saiba Mais'
+        classes='ml-7'
       />
 
       <ContainerContentCenter title='Eventos online e aprendizado Salesforce'>
@@ -95,6 +97,35 @@ export default function Home() {
         <CardsOurEvents img='/image-index/salesforce-inteligencia-artificial.webp' alt='Einstein atras de uma mesa com livros em cima dela, e mostrando calculos na lousa ao fundo' paragraphTop='Webinars'
           paragraph='Descubra como impulsionar o crescimento com o Salesforce gratuitamente' bottomLinkText='Assista aos webinars' bottomLink='https://www.salesforce.com/br/resources/webinars/?d=cta-events-3-ungated-webinars#!page=1' />
       </ContainerContentCenter>
+
+
+      <ContainerTrailblazers title='Cresça com uma comunidade de companheiros Trailblazers'
+        textParagraph='Domine o CRM para integrar equipes, impulsionando o crescimento e a produtividade em sua empresa'
+        textButton='Conecte-se com os Traiblazers'
+        linkButton='https://trailhead.salesforce.com/'
+        altImgContainer='Mulher com a camisa do Trailhead com um circulo roxo ao fundo e o Einstein ao lado dela com as mãos para cima'
+      />
+
+      <ContainerContentLeft title='Faça cada momento valer a pena para alcançar o sucesso imediato'
+        textParagraph='Atraia clientes. Gere mais engajamento.Construa relações duradouras.Tudo isso graças ao marketing digital baseado em dados'
+        textButton='Saiba mais sobre marketing cloud'
+        linkButton='https://www.salesforce.com/br/products/marketing-cloud/overview/'
+        imgContainer='/image-index/sfdc-marketing-cloud-overview-products.png'
+        altImgContainer='software de atendimento ao cliente sendo representado em uma tela de dispositivo móvel e desktop'
+        imgClasses='order-first'
+        classes='imgRight'
+      />
+
+      <ContainerFreeTrial title='Experimente a Salesforce gratuitamente' 
+        subTitle='Não é necessario cartão de crédito nem instalar nenhum software'
+        textButton='Iniciar Teste Gratuito'
+        altImgContainer='exemplo do Sales Cloud apresentado por três pop ups representando gerenciamento de contatos, automação de fluxo de trabalho e gerenciamento de oportunidades'
+      />
+
+    <ContainerSupport title={`Ainda tem duvidas ? Podemos ajudar e direcionar você para o caminho certo`} 
+    altImgContainer='Astro, o mascote principal da Salesforce acenando com a mão'
+    textButton='Entrar em contato'
+    />
     </main>
   );
 }

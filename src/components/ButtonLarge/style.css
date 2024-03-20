@@ -1,0 +1,26 @@
+.btn {
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    color: #ffff;
+    background: #2A71B5;
+    font-weight: bold;
+    max-width: 500px;
+    min-width: 130px;
+    padding: 15px 35px;
+    width: 60%;
+    font-size: 1.4rem;
+}
+
+.btn:hover {
+    background: #358ad9;
+}
+
+@media screen and (max-width: 768px) {
+    .btn {
+        width: 95%;
+        padding: 15px 7px;
+        margin: 0 auto;
+    }
+    
+}
