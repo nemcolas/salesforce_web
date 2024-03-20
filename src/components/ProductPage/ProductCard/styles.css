@@ -1,10 +1,18 @@
-div.card {
-    flex: 1 1 30%;
-    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
-    border-radius: 35px 35px 20px 20px;
+.card {
     display: flex;
+    flex: 2;
+    justify-content:center;
     flex-direction: column;
-    justify-content: space-between;
-    padding-bottom: 45px;
-        font-size: 1.2rem;
-    };
+    border: 1px solid #b11e1e;
+    border-color: black;
+}
+
+.CardImage{
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    margin-left: 2%;
+}

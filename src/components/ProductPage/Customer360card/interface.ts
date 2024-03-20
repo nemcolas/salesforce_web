@@ -1,5 +1,4 @@
 interface Customer360cardProps {
-    img:string;
     altImg:string;
     title:string;
     paragraph:string;
