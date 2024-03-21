@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 interface ButtonProps {
     text: string;
     link:string;
+    class?:string;
 }
 
 interface containerContentLeftProps {

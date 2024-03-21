@@ -5,7 +5,7 @@ import './footer.css'
 export default function Footer() {
     return (
         <footer>
-            <div className={usePathname() == '/' || usePathname() == '/products'? 'footer-top flex' : 'hidden'}>
+            <div className={usePathname() == '/' || usePathname() == '/products'? 'footer-top flex' : 'hidden' + ' footer-top'}>
                 <div className="flex footer-contact-info">
                     <a className="logo-salesforce" href="/"><img src="/salesforce-logo.svg" alt="logo da salesforce" /></a>
                     <div className="flex container-social-links">
@@ -94,8 +94,8 @@ export default function Footer() {
                 <p className="mr-3">Saiba mais sobre o nosso compromisso com a proteção de privacidade</p>
                 <a href="">Destaque de Declaração de privacidade</a>
             </div>
-            <div className="footer-bottom flex flex-wrap">
-                <div tabIndex={0} className="region-switcher flex">
+            <div className="footer-bottom flex">
+                <div tabIndex={0} className="region-switcher flex flex-wrap">
                     <img src="earth-icon.svg" alt="icone do globo terreste em linhas pretas" />
                     <p>Mudar região</p>
                 </div>

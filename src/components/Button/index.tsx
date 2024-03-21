@@ -4,6 +4,6 @@ import Link from 'next/link';
 
 export default function button(props: ButtonProps){
     return (
-        <Link className='btn' href={props.link}>{props.text}</Link>
+        <Link className={'btn ' + props.class} href={props.link}>{props.text}</Link>
     )
 }

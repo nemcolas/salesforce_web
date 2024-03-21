@@ -1,9 +1,10 @@
-import Customer360Card from "../../components/ProductPage/Customer360card/";
+import Customer360Card from "../../components/ProductPage/Customer360";
 import ProductCard from "../../components/ProductPage/ProductCard/";
+import '../../style/products.css';
 
 export default function Produtos() {
   return (
-    <main>
+    <main className="product-page">
       <Customer360Card
         title="Customer 360"
         paragraph="Com nossa plataforma de tecnologia baseada em nuvem conecte todos os seus dados em tempo real e facilite a colaboração entre equipes, entregando experiências que vão encantar os clientes"

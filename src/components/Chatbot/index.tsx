@@ -1,10 +1,12 @@
 'use client'
 import { useEffect } from 'react';
+
 declare global {
     interface Window {
         watsonAssistantChatOptions: any;
     }
 }
+
 const WatsonChat = () => {
     useEffect(() => {
         if (typeof window !== 'undefined') {
@@ -21,7 +23,7 @@ const WatsonChat = () => {
         }
     }, []);
 
-    return null; // retorna null para não da erro
+    return null;
 };
 
 export default WatsonChat;

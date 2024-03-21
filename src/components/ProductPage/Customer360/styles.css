@@ -1,0 +1,40 @@
+section.container-customer360 > div{
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+section.container-customer360 > div h1{
+    font-size: 3rem;
+    color: #0F9EDA;
+}
+
+section.container-customer360 > .imgCustomer360 {
+    flex: 2;
+}
+
+section.container-customer360 > .imgCustomer360 img { 
+    width: 95%;
+    margin-left: 5%;
+}
+ 
+section.container-customer360 > div > p {
+font-size: 1.5rem;
+font-weight: 520;
+}
+
+.container-customer360 div > .buttonContainer {
+    width: 80%;
+}
+
+@media screen and (max-width: 768px) {
+    section.container-customer360{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section.container-customer360 > .imgCustomer360 img { 
+        width: 100%;
+        margin: 2rem 0 2rem 0;
+    }
+}
+
