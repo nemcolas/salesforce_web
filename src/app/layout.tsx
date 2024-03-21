@@ -5,7 +5,7 @@ import "../style/header.css";
 import Button from "../components/Button";
 import Footer from "../components/Footer/Footer";
 import Link from "next/link";
-
+import Chatbot from '../components/Chatbot'
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -49,6 +49,7 @@ export default function RootLayout({
         </header>
         {children}
         <Footer />
+        <Chatbot />
       </body>
     </html>
   );
