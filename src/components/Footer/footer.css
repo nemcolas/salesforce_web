@@ -53,19 +53,22 @@ footer div.footer-top > nav.footer-navigation div ul li{
 
 /* formatação do footer-bottom */
 
+footer div.footer-bottom {
+    padding: 30px;
+    background-color: #032D60;
+    font-size: 1.1rem;
+}
+
+footer div.footer-bottom div.bottom {
+    flex: 6;
+}
+
 footer > div.footer-bottom img{
     width: 45px;
 }
 
 footer div.footer-bottom a, footer div.footer-bottom div.bottom p{
     color: #fff;
-}
-
-footer div.footer-bottom {
-    padding: 30px;
-    background-color: #032D60;
-    font-size: 1.1rem;
-    /* flex: 1 70% 1; */
 }
 
 footer > div.footer-bottom div.bottom nav{
@@ -81,7 +84,10 @@ footer div.footer-bottom div.region-switcher {
     border-radius: 20px;
     margin-right: 4%;
     cursor: pointer;
-    /* flex: 1 14% 1; */
+    flex: 1;
+    width: 100%;
+    max-width: 200px;
+    min-width: 200px;
 }
 
 footer div.footer-bottom div.region-switcher p {
@@ -102,4 +108,19 @@ footer div.footer-bottom .footer-bottom-info a{
     text-decoration: underline;
     font-weight: 400;
     margin: 0 5px;
+}
+
+@media screen and (max-width: 768px){
+    div.footer-top {
+        display: none;
+    }
+
+    footer div.footer-bottom {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    footer div.footer-bottom div.region-switcher {
+        margin: 0 auto 2rem auto;
+    }
 }
