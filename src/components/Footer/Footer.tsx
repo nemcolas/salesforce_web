@@ -1,6 +1,7 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import './footer.css'
+import Image from 'next/image';
 
 export default function Footer() {
     return (
@@ -26,9 +27,6 @@ export default function Footer() {
                     <div className="intro-links">
                         <h3>Ainda não conhece a Salesforce ?</h3>
                         <ul>
-                            <li>
-                                <a href="https://www.salesforce.com/br/crm/">O que é CRM ?</a>
-                            </li>
                             <li>
                                 <a href="https://www.salesforce.com/br/products/what-is-salesforce/?d=70130000000i7zF">O que
                                     é a Salesforce ?</a>
@@ -96,7 +94,7 @@ export default function Footer() {
             </div>
             <div className="footer-bottom flex">
                 <div tabIndex={0} className="region-switcher flex flex-wrap">
-                    <img src="earth-icon.svg" alt="icone do globo terreste em linhas pretas" />
+                    <Image src="/earth-icon.svg" alt="icone do globo terreste em linhas pretas" width={50} height={50}/>
                     <p>Mudar região</p>
                 </div>
                 <div className="bottom">

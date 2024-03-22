@@ -25,6 +25,13 @@ a.large {
     min-width: 130px;
 }
 
+a.small {
+    width: 25%;
+    max-width: 200px;
+    min-width: 80px;
+    padding: 0.8rem;
+}
+
 @media screen and (max-width: 768px) {
     a.large {
         width: 100%;
