@@ -9,16 +9,15 @@ function ContainerContentLeft({isHome = false, ...props}: containerContentLeftPr
         <div className={'flex flex-col justify-evenly ' + props.classes}>
             {isHome ? <h1 className='title'>{props.title}</h1> : <h2 className='title'>{props.title}</h2>}
             <p>{props.textParagraph}</p>
-            <div>
-              <Button link={props.linkButton} text={props.textButton}/>
-              {props.children}
-            </div>
+            <div className='flex flex-wrap gap-5'>
+              <Button class={props.btnClasses} link={props.linkButton} text={props.textButton}/>
+              {isHome ? <a className='btnSaibaMaisHome'>Saiba Mais</a> : null}
+          </div>
         </div>
         <Image className={`containerContentLeftImg ${props.imgClasses} ${props.classes}` } src={props.imgContainer} alt={props.altImgContainer} width={700} height={600}/>
     </section>
   )
 }
-
 function ContainerContentCenter(props: conterinarContentCenterProps) {
   return (
     <section className='mb-40 container-content-center'>

@@ -9,6 +9,6 @@ main section a:not(a.btn):hover {
     color: #66abeb;
 }
 
-main section a:not(a.btn) {
+main section a:not(a.btn,a.btnLarge) {
     color: #2a71b5;
 }

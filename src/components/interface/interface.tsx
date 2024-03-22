@@ -17,6 +17,7 @@ interface containerContentLeftProps {
     isHome?:boolean;
     classes?:string;
     imgClasses?:string;
+    btnClasses:string;
 }
 
 interface conterinarContentCenterProps{

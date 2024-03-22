@@ -2,10 +2,8 @@
     align-items: center;
 }
 .containerContentLeft .containerContentLeftImg {
-    min-width: 300px;
     max-width: 650px;
     flex: 2;
-    margin-left: 3.5rem;
     width: 100%;
     height: 100%;
 }
@@ -38,6 +36,14 @@ div.imgRight {
 .imgRight {
     flex: 1.5;
     height: auto;
+}
+
+/* formatação para o btn saiba mais da pagina principal */
+
+a.btnSaibaMaisHome {
+background: #fff;
+font-weight: 200;
+border: 1px solid #2A71B5;
 }
 
 @media screen and (max-width: 768px) {

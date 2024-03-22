@@ -16,8 +16,8 @@ export default function Home() {
         imgContainer='/customer360.webp'
         altImgContainer='mulher sorrindo com o mascote Einstem em sua frente dentro da roda do customer 360'
         isHome={true}
+        btnClasses='medium'
       >
-        <a className='ml-10 px-8 py-3.5 border-slate-600 border-solid border-y border-x text-xl no-underline rounded-md text-sky-600' href="https://www.salesforce.com/br/products/">Saiba mais</a>
       </ContainerContentLeft>
 
       <ContainerContentCenter title='O que há de novo na Salesforce ?'>
@@ -85,6 +85,7 @@ export default function Home() {
         altImgContainer='Mascote Astro apresentando funcionalidades do Sales Cloud'
         textButton='Saiba Mais'
         classes='ml-7'
+        btnClasses='medium'
       />
 
       <ContainerContentCenter title='Eventos online e aprendizado Salesforce'>
@@ -108,12 +109,13 @@ export default function Home() {
 
       <ContainerContentLeft title='Faça cada momento valer a pena para alcançar o sucesso imediato'
         textParagraph='Atraia clientes. Gere mais engajamento.Construa relações duradouras.Tudo isso graças ao marketing digital baseado em dados'
-        textButton='Saiba mais sobre marketing cloud'
+        textButton='Entenda o marketing cloud'
         linkButton='https://www.salesforce.com/br/products/marketing-cloud/overview/'
         imgContainer='/image-index/sfdc-marketing-cloud-overview-products.png'
         altImgContainer='software de atendimento ao cliente sendo representado em uma tela de dispositivo móvel e desktop'
         imgClasses='order-first'
         classes='imgRight'
+        btnClasses='large'
       />
 
       <ContainerFreeTrial title='Experimente a Salesforce gratuitamente' 

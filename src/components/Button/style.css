@@ -1,17 +1,33 @@
-.btn {
+.btn, .btnSaibaMaisHome {
     text-align: center;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 0.5rem;
     color: #ffff;
     background: #2A71B5;
     font-weight: bold;
-    max-width: 500px;
-    min-width: 130px;
-    padding: 15px 30px;
-    width: 40%;
+    padding: 1rem;
     font-size: 1.3rem;
 }
 
 .btn:hover {
     background: #358ad9;
+}
+
+a.medium, .btnSaibaMaisHome {
+    width: 40%;
+    max-width: 300px;
+    min-width: 100px;
+}
+
+a.large {
+    width: 65%;
+    max-width: 500px;
+    min-width: 130px;
+}
+
+@media screen and (max-width: 768px) {
+    a.large {
+        width: 100%;
+    }
+    
 }

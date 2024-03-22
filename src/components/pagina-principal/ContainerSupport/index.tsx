@@ -7,7 +7,7 @@ export default function ContainerSupport(props: ContainerSupportProps) {
         <section className='flex container-suport mb-40'>
             <div className='flex flex-col'>
                 <h2 className='mb-12'>{props.title}</h2>
-                <Button link='/https://help.salesforce.com/s/?language=pt_BR' text={props.textButton} />
+                <Button class='large' link='/https://help.salesforce.com/s/?language=pt_BR' text={props.textButton} />
             </div>
             <Image className='imgContainer' src='/image-index/mascote-salesforce.webp' alt={props.altImgContainer} width={400} height={350} />
         </section>

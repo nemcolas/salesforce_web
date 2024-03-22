@@ -1,6 +1,6 @@
 import ContainerTrailblazersProps from './interface';
 import Image from 'next/image';
-import ButtonLarge from '../../ButtonLarge';
+import Button from '@/components/Button';
 import './style.css';
 export default function ContainerTrailblazers(props: ContainerTrailblazersProps) {
     return (
@@ -8,7 +8,7 @@ export default function ContainerTrailblazers(props: ContainerTrailblazersProps)
             <div className='flex flex-col'>
                 <h2>{props.title}</h2>
                 <p>{props.textParagraph}</p>
-                <ButtonLarge link={props.linkButton} text={props.textButton} />
+                <Button class='large' link={props.linkButton} text={props.textButton} />
             </div>
             <Image className='imgContainer containerContentLeftImg' src='/image-index/be-a-trailblazer.webp' alt={props.altImgContainer} width={400}height={350} />
         </section>
