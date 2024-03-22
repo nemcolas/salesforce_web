@@ -16,7 +16,6 @@ export default function Header() {
 
             <div className="header-contact">
               <a href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Entre em contato</a>
-              <p>0800 891 1887</p>
             </div>
 
             <img className="language-selector-globe" tabIndex={0} src="/earth-icon.svg"
