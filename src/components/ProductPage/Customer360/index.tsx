@@ -5,10 +5,10 @@ import './style.css';
 function Customer360(props: Customer360CardProps) {
     return (
         <section className='flex container-customer360'>
-            <div className='flex flex-col'>
+            <div className='flex flex-col gap-10'>
                 <h1>{props.title}</h1>
                 <p>{props.paragraph}</p>
-                <Button class='buttonContainer' text='Saiba mais' link={props.link} />
+                <Button class='buttonContainer small' text='Saiba mais' link={props.link} />
             </div>
             <picture className='imgCustomer360'>
                 <source className='imgMobile' media="(max-width: 950px)" srcSet="/image-products/customer-768.webp" />

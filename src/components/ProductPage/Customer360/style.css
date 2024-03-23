@@ -1,5 +1,6 @@
 section.container-customer360 {
     margin-bottom: 2rem;
+    border: none;
 }
 
 section.container-customer360 > div{
@@ -28,6 +29,10 @@ font-weight: 520;
 }
 
 @media screen and (max-width: 950px) {
+    section.container-customer360 > div{
+        width: 90%;
+        margin: auto;
+    }
     section.container-customer360{
         flex-direction: column;
         width: 100%;

@@ -27,7 +27,7 @@ export default function Header() {
               <Link className='image' href="/login"><img src="/login-02.webp" alt="Logo de login"/></Link>
               <Link className='text-login' href="/login">Login</Link>
             </div>
-            <Button class='medium' link="./free-trial" text="Teste Grátis" />
+            <Button class='small' link="./free-trial" text="Teste Grátis" />
           </nav>
         </header>
     )
