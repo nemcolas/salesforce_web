@@ -4,7 +4,7 @@ import './style.css';
 
 function Customer360(props: Customer360CardProps) {
     return (
-        <section className='flex container-customer360'>
+        <section className='flex container-customer360 product-section'>
             <div className='flex flex-col gap-10'>
                 <h1>{props.title}</h1>
                 <p>{props.paragraph}</p>

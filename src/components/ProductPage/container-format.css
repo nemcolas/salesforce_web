@@ -1,0 +1,59 @@
+section.common-container .image{
+    flex: 2;
+    width: 95%;
+    max-width: 600px;
+    min-width: 290px;
+}
+
+section.container-EspecialistaEApps .image {
+    margin-right: 5%;
+}
+
+section.container-LearnMorePrinces .image {
+    margin-left: 5%;
+    order: 2;
+}
+
+section.common-container div {
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+section.common-container div h2 {
+    color: #2A71B5;
+}
+
+section.common-container div p {
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+@media screen and (max-width: 950px) {
+    section.common-container {
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    section.common-container .image {
+        width: 100%;
+        margin: 2rem 0;
+        order: 2;
+    }
+
+    section.common-container div {
+        width: 90%;
+        margin: auto;
+        text-align: left;
+        align-items: baseline;
+    }
+
+    section.common-container div p {
+        margin: 1rem auto 2rem auto;
+    }
+
+    section.container-LearnMorePrinces .image {
+        margin: 3rem 0 2rem 5%;
+        width: 95%;
+    }
+}

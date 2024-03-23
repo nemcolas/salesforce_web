@@ -1,7 +1,9 @@
+section.product-section {
+    margin-bottom: 4rem;
+}
+
 @media screen and (max-width: 768px){
     main.product-page {
         width: 100%;
     }
-
-    
 }

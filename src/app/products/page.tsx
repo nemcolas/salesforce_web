@@ -13,7 +13,7 @@ export default function Produtos() {
         altImg="Imagem do produto Customer 360 com uma mulher e um fundo com uma floresta e algumas arvores"
         link="https://www.salesforce.com/br/products/"
       />
-      <section>
+      <section className="product-section">
         <h2 className="text-4xl mb-10 titleGallery">Galeria de produtos</h2>
         <div className="flex gap-2 flex-wrap justify-between">
         <ProductCard
@@ -100,12 +100,12 @@ export default function Produtos() {
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"
         />
-        <EspecialistaEApps/>
-        <LearnMorePrices/>
-
-
         </div>
       </section>
+
+      <EspecialistaEApps/> 
+      
+      <LearnMorePrices/>
     </main>
   );
 }
