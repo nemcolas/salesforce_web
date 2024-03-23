@@ -1,9 +1,11 @@
 import React from 'react';
 import Image from 'next/image';
+import './free-trial.css';
+
 export default function FreeTrial() {
     return (
-        <main>
-            <section>
+        <main className='free-trial flex gap-10'>
+            <section className='info-free-trial'>
                 <h1>
                     Experimente nossa solução completa de CRM e vendas, grátis por 30 dias
                 </h1>
@@ -18,25 +20,31 @@ export default function FreeTrial() {
                     <li>Ferramentas para automação de tarefas recorrentes;</li>
                     <li>Uma visão completa da performance de seus representantes e equipes de vendas.</li>
                 </ul>
-                <Image src="/image-free-trial/what-is-astro-product-family.png" alt="tabelas de graficos da salesforce cloud software" width={600} height={600} />
+                <Image className='img' src="/image-free-trial/what-is-astro-product-family.png" alt="tabelas de graficos da salesforce cloud software" width={600} height={700} />
             </section>
-            <div>
+            <section className='formContainer'>
                 <h2>Inscreva-se para comecar sua avaliação gratuita</h2>
                 <h3>Preencha o formulário abaixo e em breve entraremos em contato sobre seu teste gratuito</h3>
-                <form action="">
-                    <label htmlFor="name">Nome:</label>
-                    <input type="text" name="name" id="name" placeholder="Nome" />
-                    <label htmlFor="sobrenome">Sobrenome:</label>
-                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" />
+                <form className='flex flex-col'>
+                    <div className='flex justify-between gap-5'>
+                        <div className='flex flex-col'>
+                            <label htmlFor="name">Nome:</label>
+                            <input type="text" name="name" id="name" placeholder="Nome" required />
+                        </div>
+                        <div className='flex flex-col'>
+                            <label htmlFor="sobrenome">Sobrenome:</label>
+                            <input className='flex-1' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required />
+                        </div>
+                    </div>
                     <label htmlFor="cargo">Cargo:</label>
-                    <input type="text" name="cargo" id="cargo" placeholder="Cargo" />
+                    <input type="text" name="cargo" id="cargo" placeholder="Cargo" required />
                     <label htmlFor="email corporativo">Email corporativo:</label>
-                    <input type="text" name="email corporativo" id="email corporativo" placeholder="Email corporativo" />
+                    <input type="email" name="email corporativo" id="email corporativo" placeholder="Email corporativo" required />
                     <label htmlFor="telefone">Telefone:</label>
-                    <input type="tel" name="telefone" id="telefone" placeholder="telefone" />
+                    <input type="tel" name="telefone" id="telefone" placeholder="Telefone" required />
                     <label htmlFor="tamanho da empresa">Tamanho da empresa:</label>
-                    <select name="tamanho da empresa" id="tamanho da empresa">
-                        <option value="" disabled selected>Tamanho da empresa:</option>
+                    <select name="tamanho da empresa" id="tamanho da empresa" required>
+                        <option className='text-slate-300' value="" disabled selected>Tamanho da empresa</option>
                         <option value="1-50">1-50 funcionários</option>
                         <option value="51-300">51-300 funcionários</option>
                         <option value="301-1000">301-1000 funcionários</option>
@@ -44,7 +52,8 @@ export default function FreeTrial() {
                         <option value="2000+">2000+ funcionários</option>
                     </select>
                     <label htmlFor="pais/regiao">País/Região:</label>
-                    <select name="pais/regiao" id="pais/regiao">
+                    <select name="pais/regiao" id="pais/regiao" required>
+                        <option className='text-slate-300' value="" disabled selected>Selecione o País/Região</option>
                         <option value="Estados Unidos">Estados Unidos</option>
                         <option value="Canada">Canadá</option>
                         <option value="Brasil">Brasil</option>
@@ -56,7 +65,8 @@ export default function FreeTrial() {
                         <option value="India">Índia</option>
                     </select>
                     <label htmlFor="idioma">Idioma:</label>
-                    <select name="idioma" id="idioma">
+                    <select name="idioma" id="idioma" required>
+                        <option className='text-slate-300' value="" disabled selected>Selecione o Idioma</option>
                         <option value="Ingles">Inglês</option>
                         <option value="Holandes">Holândes</option>
                         <option value="Frances">Francês</option>
@@ -73,17 +83,20 @@ export default function FreeTrial() {
                         <option value="Filandes">Filandês</option>
                         <option value="Russo">Russo</option>
                     </select>
-                    <input type="checkbox" name="aceita termos" id="aceita termos" /><span>Estou de acordo com o <a
-                        href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_MSA.pdf"
-                        target="_blank">Main Services Agreement</a></span>
-                    <p>Sua avaliação gratuita pode ser provisionada ou migrada para o Hyperforce, a infraestrutura de nuvem pública
+                    <div className='termos flex'>
+                        <input type="checkbox" name="aceita termos" id="aceita termos" required /><label htmlFor='aceita termos'>Estou de acordo com o <a
+                            href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_MSA.pdf"
+                            target="_blank">Main Services Agreement</a></label>
+                    </div>
+                    <p className='paragraphBottom' >Sua avaliação gratuita pode ser provisionada ou migrada para o Hyperforce, a infraestrutura de nuvem pública
                         do Salesforce.</p>
-                    <p>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
+                    <p className='paragraphBottom'>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
                         conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de
                             privacidade</a></p>
-                    <input type="submit" value="Iniciar Teste gratuito" />
+                    <input className='enviarFormulario' type="submit" value="Iniciar Teste gratuito" />
                 </form>
-            </div>
+            </section>
         </main>
     );
 }
+

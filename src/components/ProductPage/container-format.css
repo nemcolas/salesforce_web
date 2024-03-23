@@ -6,6 +6,7 @@ section.common-container .image{
 }
 
 section.container-EspecialistaEApps .image {
+    max-width: 550px;
     margin-right: 5%;
 }
 

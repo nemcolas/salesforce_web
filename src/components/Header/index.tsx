@@ -17,7 +17,7 @@ export default function Header() {
             </ul>
 
             <div className="header-contact">
-              <a href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Entre em contato</a>
+              <a href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Suporte</a>
             </div>
 
             <img className="language-selector-globe" tabIndex={0} src="/earth-icon.svg"

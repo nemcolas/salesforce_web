@@ -2,6 +2,11 @@ header {
     padding: 1rem 2rem;
     justify-content: space-between;
     margin-bottom: 3rem;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background: #ffff;
+    border-bottom: 1px solid #e0e0e0;
 }
 
 header> a:first-child {
