@@ -10,7 +10,7 @@ function EspecialistaEApps() {
                 <h2 className='text-4xl'>Especialistas e Apps</h2>
                 <p>Seu investimento na Salesforce retorna em muito mais do que tecnologia. O Sucesso do Cliente Salesforce proporciona a
                 cada cliente o acesso a recursos e à expertise do ecossistema de sucesso mais completo do mundo</p>
-                <Button class='medium' text='Saiba mais' link="https://appexchange.salesforce.com" />
+                <Button class='large' text='Saiba mais' link="https://appexchange.salesforce.com" />
             </div>
         </section>
     );
