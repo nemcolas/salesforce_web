@@ -1,6 +1,6 @@
 import Button from '../../Button';
 import Customer360CardProps from './interface';
-import './styles.css';
+import './style.css';
 
 function Customer360(props: Customer360CardProps) {
     return (

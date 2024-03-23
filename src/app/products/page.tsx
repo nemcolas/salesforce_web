@@ -1,3 +1,4 @@
+import EspecialistaEApps from "@/components/ProductPage/ProductContainers";
 import Customer360Card from "../../components/ProductPage/Customer360";
 import ProductCard from "../../components/ProductPage/ProductCard/";
 import '../../style/products.css';
@@ -98,6 +99,11 @@ export default function Produtos() {
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"
         />
+        <EspecialistaEApps title="Especialistas e Apps"
+        paragraph="Seu investimento na salesforce retorna muito"
+        link=""/>
+
+
         </div>
       </section>
     </main>
