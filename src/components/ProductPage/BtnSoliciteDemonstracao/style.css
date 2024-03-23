@@ -1,0 +1,16 @@
+.btnSolicitarDemonstracao {
+    background: rgba(11, 92, 171, 0.5);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 550;
+    max-width: 200px;
+    min-width: 180px;
+    padding: 0.7rem;
+    font-size: 1.25rem;
+    border-radius: 0.5rem;
+    white-space: pre-wrap;
+    text-align: center;
+    width: 25%;
+    justify-content: center;
+    align-items: center;
+}

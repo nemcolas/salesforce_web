@@ -1,5 +1,6 @@
 .containerContentLeft {
     align-items: center;
+    margin-bottom: 10rem;
 }
 .containerContentLeft .containerContentLeftImg {
     max-width: 650px;

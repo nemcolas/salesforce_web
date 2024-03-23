@@ -1,24 +1,25 @@
+section.container-customer360 {
+    margin-bottom: 2rem;
+}
+
 section.container-customer360 > div{
     flex: 1;
     justify-content: space-evenly;
 }
 
 section.container-customer360 > div h1{
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #0F9EDA;
-}
-
-section.container-customer360 > .imgCustomer360 {
-    flex: 2;
 }
 
 section.container-customer360 > .imgCustomer360 img { 
     width: 95%;
+    flex: 2;
     margin-left: 5%;
 }
  
 section.container-customer360 > div > p {
-font-size: 1.5rem;
+font-size: 1.3rem;
 font-weight: 520;
 }
 
@@ -26,7 +27,7 @@ font-weight: 520;
     width: 80%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 950px) {
     section.container-customer360{
         flex-direction: column;
         width: 100%;
@@ -34,7 +35,7 @@ font-weight: 520;
 
     section.container-customer360 > .imgCustomer360 img { 
         width: 100%;
-        margin: 2rem 0 2rem 0;
+        margin: 2rem 0;
     }
 }
 

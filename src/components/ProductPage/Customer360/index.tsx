@@ -11,7 +11,7 @@ function Customer360(props: Customer360CardProps) {
                 <Button class='buttonContainer' text='Saiba mais' link={props.link} />
             </div>
             <picture className='imgCustomer360'>
-                <source className='imgMobile' media="(max-width: 768px)" srcSet="/image-products/customer-768.webp" />
+                <source className='imgMobile' media="(max-width: 950px)" srcSet="/image-products/customer-768.webp" />
                 <img src="/image-products/customer360-products.webp" alt="Imagem do produto Customer 360 com uma mulher e um fundo com uma floresta e algumas arvores" />
             </picture>
         </section>
