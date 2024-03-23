@@ -1,28 +1,35 @@
 div.cardOurProducts {
-    width: 31%;
-    margin: 0 9px 20px 9px;
+    width: 100%;
+    min-width: 150px;
+    flex: 1;
+    margin: 2rem auto;
+}
+
+div.cardOurProducts:nth-child(2){
+    margin: 2rem;
 }
 
 div.cardOurProducts .image-peaple {
     order: -1;
     max-width: 220px;
     min-width: 180px;
-    width: 100%;
+}
+
+.cardOurProducts .info-product p {
+    margin: 0.1rem auto 0.8rem auto;
 }
 
 .cardOurProducts .info-product {
-    flex-direction: column;
-    justify-content: space-around;
-    margin-left: 10px;
+    margin-top: 1rem;
 }
 
 .cardOurProducts .info-product a.btn {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
     div.cardOurProducts {
         width: 100%;
-        margin: 35px auto;
+        margin: 2.5rem auto;
     }
 }

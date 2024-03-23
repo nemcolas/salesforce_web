@@ -99,7 +99,7 @@ export default function Footer() {
                 </div>
                 <div className="bottom">
                     <nav className="footer-bottom-info">
-                        <ul className="flex">
+                        <ul className="flex gap-2 flex-wrap">
                             <li><a href="https://www.salesforce.com/company/legal/">Legal</a></li>
                             <li><a href="https://www.salesforce.com/company/legal/sfdc-website-terms-of-service/">Termos de
                                 serviços</a></li>

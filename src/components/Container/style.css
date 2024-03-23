@@ -71,4 +71,8 @@ border: 1px solid #2A71B5;
     div.imgRight > p, div.imgRight > h2, .container-trailblazer h2, .container-trailblazer div p{
         text-align: center;
     }
+
+    .container-content-center div{
+        flex-direction: column;
+    }
 }

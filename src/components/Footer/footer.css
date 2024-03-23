@@ -110,7 +110,7 @@ footer div.footer-bottom .footer-bottom-info a{
     margin: 0 5px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 900px){
     div.footer-top {
         display: none;
     }
