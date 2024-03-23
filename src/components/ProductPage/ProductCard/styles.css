@@ -1,6 +1,49 @@
 .cardProducts {
     display: flex;
-    flex: 2;
+    flex: 1;
     justify-content:center;
     flex-direction: column;
+    align-items: center;
+    padding: 0.2rem;
+    max-width: 500px;
+    width: 40%;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 1rem;
+}
+
+.cardProducts .cardImageProduct {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.cardProducts h3 {
+    margin: 2rem auto 1rem auto;
+    color: #2A71B5;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.cardProducts p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.cardProducts .buttons {
+    width: 100%;
+}
+
+.cardProducts .buttons a {
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    .cardProducts {
+        width: 100%;
+    }
+    
 }

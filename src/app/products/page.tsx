@@ -11,7 +11,10 @@ export default function Produtos() {
         altImg="Imagem do produto Customer 360 com uma mulher e um fundo com uma floresta e algumas arvores"
         link="https://www.salesforce.com/br/products/"
       />
-      <ProductCard
+      <section>
+        <h2 className="text-4xl mb-10">Galeria de produtos</h2>
+        <div className="flex flex-wrap gap-5 justify-center">
+        <ProductCard
         img="/image-products/vendas 2.svg"
         altImg="Pagina web da plataforma Sales Cloud"
         title="Vendas"
@@ -95,6 +98,8 @@ export default function Produtos() {
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"
         />
+        </div>
+      </section>
     </main>
   );
 }
