@@ -19,7 +19,7 @@ section.login > div {
 }
 
 section > div h1.login-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 300;
     margin-bottom: 1.2rem;
 }
@@ -30,5 +30,5 @@ section > div h1.login-title span {
 }
 
 section > div p{
-    font-size: 1.7rem;
+    font-size: 1.4rem;
 }

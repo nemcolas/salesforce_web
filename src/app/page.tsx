@@ -10,7 +10,7 @@ import ContainerFreeTrial from '../components/pagina-principal/ContainerFreeTria
 
 export default function Home() {
   return (
-    <main>
+    <main className='homepage'>
       <ContainerContentLeft title='Entregue sucesso agora com o Salesforce Customer 360'
         textParagraph='O Customer 360 é a nossa suíte de produtos e serviços que ajuda 98% dos clientes a alcançar ou superar suas metas de ROI.' linkButton='/free-trial' textButton='Teste grátis'
         imgContainer='/customer360.webp'

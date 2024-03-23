@@ -13,7 +13,7 @@ export default function Login(props: loginProps) {
                         {props.paragraph}
                     </p>
                 </div>
-                <Button text='Login' link={props.linkButton}/>
+                <Button class='medium' text='Login' link={props.linkButton}/>
             </div>
             <Image className='imgLogin' src={props.imgLogin} alt={props.altImgLogin} width={500} height={350}/>
         </section>
