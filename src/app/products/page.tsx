@@ -1,4 +1,6 @@
+import EspecialistaEApps from "@/components/ProductPage/EspecialistaEApps";
 import Customer360Card from "../../components/ProductPage/Customer360";
+import LearnMorePrices from "../../components/ProductPage/LearnMorePrices";
 import ProductCard from "../../components/ProductPage/ProductCard/";
 import '../../style/products.css';
 
@@ -98,6 +100,10 @@ export default function Produtos() {
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"
         />
+        <EspecialistaEApps/>
+        <LearnMorePrices/>
+
+
         </div>
       </section>
     </main>
