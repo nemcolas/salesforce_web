@@ -1,23 +1,23 @@
 .cardProducts {
     display: flex;
-    flex: 1;
     justify-content:center;
     flex-direction: column;
     align-items: center;
-    padding: 0.2rem;
-    max-width: 500px;
-    width: 40%;
-    margin-bottom: 2rem;
-    padding: 1.5rem;
+    max-width: 560px;
+    margin-bottom: 3rem;
+    padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    border-radius: 1rem;
+    border-radius: 0.8rem;
+    background: #FAFAFA;
+    min-width: 320px;
+    width: 30%;
 }
 
 .cardProducts .cardImageProduct {
     width: 100%;
     height: 200px;
-    object-fit: cover;
-    border-radius: 1rem;
+    max-width: 300px;
+    border-radius: 0.5rem;
 }
 
 .cardProducts h3 {
@@ -25,6 +25,7 @@
     color: #2A71B5;
     font-size: 1.4rem;
     font-weight: 700;
+    text-align: center;
 }
 
 .cardProducts p {
@@ -34,16 +35,27 @@
 
 .cardProducts .buttons {
     width: 100%;
+    justify-content: space-between;
 }
 
-.cardProducts .buttons a {
-    font-size: 1.1rem;
-    width: 100%;
+.cardProducts .buttons .button {
+    font-size: 0.9rem;
+    width: 50%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 760px) {
     .cardProducts {
+        width: 90%;
+        margin: auto;
+    }
+
+    .cardProducts .buttons .button {
+        padding: 1rem;
+        font-size: 1.1rem;
         width: 100%;
     }
-    
+
+    .cardProducts .buttons {
+        flex-direction: column;
+    }
 }

@@ -12,8 +12,8 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/"
       />
       <section>
-        <h2 className="text-4xl mb-10">Galeria de produtos</h2>
-        <div className="flex flex-wrap gap-5 justify-center">
+        <h2 className="text-4xl mb-10 titleGallery">Galeria de produtos</h2>
+        <div className="flex gap-2 flex-wrap justify-between">
         <ProductCard
         img="/image-products/vendas 2.svg"
         altImg="Pagina web da plataforma Sales Cloud"
@@ -81,14 +81,14 @@ export default function Produtos() {
         img="/image-products/sustentabilidade.svg"
         altImg="pagina web exibindo o painel do Net Zero Cloud, com três gráficos diferentes, cada um deles representando uma métrica de sustentabilidade."
         title="Sustentabilidade"
-        paragraph="Alcance a emissão zero de carbono de maneira rápida com o Net Zero"
+        paragraph="Combine análises robustas, IA avançada e o ecossistema Salesforce para agilizar o gerenciamento ESG"
         link="https://www.salesforce.com/products/net-zero-cloud/overview/"
         />
         <ProductCard
         img="/image-products/pequenas_empresas.svg"
         altImg="Painel de uma plataforma de atendimento de recursos humanos, com diversos graficos"
         title="Pequenas empresas"
-        paragraph="O Sales Cloud para Pequenas Empresas possibilita gestão inteligente, inovação, aquisição de leads, aumento de vendas e melhoria da experiência do cliente."
+        paragraph="Desenvolva sua pequena empresa e conquiste relacionamentos duradouros com os clientes com a ajuda de uma plataforma unificada."
         link="https://www.salesforce.com/br/products/small-business/"
         />
         <ProductCard
