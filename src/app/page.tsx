@@ -1,4 +1,6 @@
+'use client'
 import '../style/homepage.css'
+import capturarDados from "../functions/function";
 import { ContainerContentLeft, ContainerContentCenter } from '../components/Container';
 import Cards from '../components/Cards/CardWhatNew';
 import CardOurProducts from '../components/Cards/OurProducts';
@@ -128,6 +130,7 @@ export default function Home() {
     altImgContainer='Astro, o mascote principal da Salesforce acenando com a mão'
     textButton='Entrar em contato'
     />
+    {capturarDados()}
     </main>
   );
 }

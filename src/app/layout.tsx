@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "../components/Footer/Footer";
 import Chatbot from '../components/Chatbot'
 import Header from "../components/Header";
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,6 +19,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
+      <Head>
+      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+      </Head>
       <body>
         <Header/>
         {children}
