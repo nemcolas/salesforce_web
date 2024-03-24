@@ -1,0 +1,38 @@
+section.containerOqueECrm {
+    margin: 7rem auto;
+}
+
+section.containerOqueECrm div {
+    flex: 1;
+    width: 45%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section.containerOqueECrm p {
+    font-size: 1.3rem;
+    margin: 2rem 0;
+}
+
+section.containerOqueECrm .imageOqueECrm {
+    width: 50%;
+    margin-left: 5%;
+    flex: 1;
+}
+
+@media screen and (max-width: 770px) {
+    section.containerOqueECrm {
+        flex-direction: column;
+        margin: 3rem auto;
+    }
+
+    section.containerOqueECrm div, section.containerOqueECrm .imageOqueECrm {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    section.containerOqueECrm div {
+        margin-bottom: 2rem;
+    }
+    
+}

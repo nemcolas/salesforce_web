@@ -9,12 +9,16 @@ header {
     border-bottom: 1px solid #e0e0e0;
 }
 
+header a {
+    font-size: 1rem !important;
+} 
+
 header> a:first-child {
     flex: 7%;
     margin-right: 1%;
 }
 
-header>nav img {
+header> nav img {
     max-width: 35px;
     min-width: 20px;
     cursor: pointer;
@@ -79,7 +83,7 @@ header>nav div.login > .image{
     margin-right: 0.3rem;
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1100px) {
     header {
         justify-content: space-between;
     }

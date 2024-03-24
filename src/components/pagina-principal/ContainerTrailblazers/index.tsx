@@ -5,7 +5,7 @@ import './style.css';
 export default function ContainerTrailblazers(props: ContainerTrailblazersProps) {
     return (
         <section className='container-trailblazer flex flex-wrap mb-40'>
-            <div className='flex flex-col'>
+            <div className='flex flex-col content'>
                 <h2>{props.title}</h2>
                 <p>{props.textParagraph}</p>
                 <Button class='large' link={props.linkButton} text={props.textButton} />

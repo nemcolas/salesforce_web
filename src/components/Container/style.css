@@ -1,12 +1,12 @@
 .containerContentLeft {
     align-items: center;
-    margin-bottom: 10rem;
 }
+
 .containerContentLeft .containerContentLeftImg {
-    max-width: 650px;
+    max-width: 480px;
     flex: 2;
     width: 100%;
-    height: 100%;
+    height: 100%; 
 }
 
 .containerContentLeft > div {
@@ -15,6 +15,8 @@
 
 .containerContentLeft div p {
     margin: 3rem auto;
+    font-size: 1.4rem;
+    font-weight: 500;
 }
 
 .containerContentLeft .title {
@@ -22,43 +24,33 @@
     font-weight: 600;
 }
 
-.containerContentLeft p {
-    font-size: 1.4rem;
-    font-weight: 500;
-}
-
-/* formatação especifica para quando a imagem está do lado direito */
-
-div.imgRight {
+div.imgLeft {
     flex: 2;
     margin-left: 10%;
 }
 
-.imgRight {
+.imgLeft {
     flex: 1.5;
     height: auto;
 }
 
-/* formatação para o btn saiba mais da pagina principal */
-
-a.btnSaibaMaisHome {
-background: #fff;
-font-weight: 200;
-border: 1px solid #2A71B5;
+h2.imgLeft {
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
-@media screen and (max-width: 768px) {
-    
-    .containerContentLeft div {
-        margin: 0 0 1rem 0;
+@media screen and (max-width: 900px) {
+    section.containerContentLeft, .container-content-center div {
+        flex-direction: column;
     }
-
-    .containerContentLeft div p, .container-trailblazer p{
+    
+    .containerContentLeft div, .containerContentLeft div p, .container-trailblazer p {
         margin: 1rem 0 3rem 0;
     }
 
     .containerContentLeftImg {
-        margin: 3rem auto !important;
+        margin: 3rem auto;
+        max-width: 890px !important;
     }
 
     .imgRight {
@@ -69,11 +61,16 @@ border: 1px solid #2A71B5;
         align-items: center;
     }
     
-    div.imgRight > p, div.imgRight > h2, .container-trailblazer h2, .container-trailblazer div p{
+    div.imgRight > p, div.imgRight > h2, .container-trailblazer h2, .container-trailblazer div p {
         text-align: center;
     }
+}
 
-    .container-content-center div{
-        flex-direction: column;
-    }
+@media screen and(min-width: 901px) {
+    .containerContentLeft .containerContentLeftImg {
+    max-width: 480px;
+    flex: 2;
+    width: 100%;
+    height: 100%;
+}
 }

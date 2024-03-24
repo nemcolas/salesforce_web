@@ -1,0 +1,17 @@
+section.containerEventosOnline {
+    margin: 7rem auto;
+}
+
+section.containerEventosOnline h2{
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:700px) {
+    section.containerEventosOnline div {
+        flex-direction: column;
+    } 
+    
+    section.containerEventosOnline h2{
+        margin-bottom: 2rem;
+    }
+}

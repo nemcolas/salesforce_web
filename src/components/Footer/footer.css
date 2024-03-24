@@ -15,12 +15,12 @@ footer a.logo-salesforce img {
 
 footer div.footer-top div.footer-contact-info p {
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 500;
     color: #59575C;
 }
 
 footer div.footer-top {
-    padding: 0 3.5%;
+    padding: 0 2%;
     margin-bottom: 2rem;
 }
 
@@ -39,8 +39,8 @@ footer div.footer-top > nav.footer-navigation {
 }
 
 footer div.footer-top > nav.footer-navigation h3 {
-    font-size: 1.1rem;
-    margin-bottom: 35px;
+    font-size: 1rem;
+    margin-bottom: 2rem;
 }
 
 footer div.footer-top > nav.footer-navigation div {
@@ -48,7 +48,7 @@ footer div.footer-top > nav.footer-navigation div {
 }
 
 footer div.footer-top > nav.footer-navigation div ul li{
-    margin: 15px 0;
+    margin: 0.5rem 0;
 }
 
 /* formatação do footer-bottom */
@@ -110,7 +110,7 @@ footer div.footer-bottom .footer-bottom-info a{
     margin: 0 5px;
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 960px){
     div.footer-top {
         display: none;
     }

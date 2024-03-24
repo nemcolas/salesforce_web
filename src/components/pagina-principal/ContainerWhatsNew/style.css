@@ -1,0 +1,13 @@
+section.containerWhatsNew h2 {
+    margin-bottom: 5rem;
+}
+
+@media screen and (max-width:660px) {
+    section.containerWhatsNew div {
+        flex-direction: column;
+    }
+
+    section.containerWhatsNew h2 {
+        margin-bottom: 2rem;
+    }
+}

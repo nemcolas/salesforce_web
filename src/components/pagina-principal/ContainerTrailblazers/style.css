@@ -1,14 +1,24 @@
 .container-trailblazer .imgContainer {
     width: 100%;
-    max-width: 500px;
+    max-width: 470px;
     min-width: 250px;
+    flex: 1;
 }
 
-.container-trailblazer div p {
+.container-trailblazer div.content {
+    gap: 1.5rem;
+    justify-content: space-evenly;
+    flex: 1;
+}
+
+.container-trailblazer div.content p {
     font-size: 1.3rem;
 }
 
-.container-trailblazer div {
-    justify-content: space-evenly;
-    flex: 1;
+.container-trailblazer div.content h2 {
+    font-size: 2rem;
+}
+
+.container-trailblazer div.content a.large {
+    font-size: 1.1rem;
 }

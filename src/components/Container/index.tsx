@@ -1,4 +1,4 @@
-import { containerContentLeftProps, conterinarContentCenterProps } from '../interface/interface';
+import { containerContentLeftProps } from '../interface/interface';
 import Button  from '../Button';
 import './style.css';
 import Image from 'next/image';
@@ -7,7 +7,7 @@ function ContainerContentLeft({isHome = false, ...props}: containerContentLeftPr
   return (
     <section className={'flex containerContentLeft justify-between flex-wrap ' + (isHome ? 'mb-24' : 'mb-40')}>
         <div className={'flex flex-col justify-evenly ' + props.classes}>
-            {isHome ? <h1 className='title'>{props.title}</h1> : <h2 className='title'>{props.title}</h2>}
+            {isHome ? <h1 className='title'>{props.title}</h1> : <h2 className={'title ' + props.classes}>{props.title}</h2>}
             <p>{props.textParagraph}</p>
             <div className='flex flex-wrap gap-5'>
               <Button class={props.btnClasses} link={props.linkButton} text={props.textButton}/>
@@ -18,15 +18,6 @@ function ContainerContentLeft({isHome = false, ...props}: containerContentLeftPr
     </section>
   )
 }
-function ContainerContentCenter(props: conterinarContentCenterProps) {
-  return (
-    <section className='mb-40 container-content-center'>
-      <h2 className='text-center'>{props.title}</h2>
-      <div className='flex justify-center flex-wrap'>
-        {props.children}
-      </div>
-    </section>
-  )
-}
 
-export { ContainerContentLeft, ContainerContentCenter }
+
+export { ContainerContentLeft }

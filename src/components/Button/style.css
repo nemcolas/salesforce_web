@@ -6,7 +6,7 @@
     background: #2A71B5;
     font-weight: bold;
     padding: 1rem;
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,7 +16,7 @@
     background: #358ad9;
 }
 
-a.medium, .btnSaibaMaisHome {
+a.medium {
     width: 40%;
     max-width: 300px;
     min-width: 100px;
@@ -25,13 +25,13 @@ a.medium, .btnSaibaMaisHome {
 a.large {
     width: 65%;
     max-width: 500px;
-    min-width: 130px;
+    min-width: 200px;
 }
 
-a.small {
-    width: 25%;
+a.small, .btnSaibaMaisHome {
+    width: 30%;
     max-width: 200px;
-    min-width: 80px;
+    min-width: 130px;
     padding: 0.8rem;
 }
 

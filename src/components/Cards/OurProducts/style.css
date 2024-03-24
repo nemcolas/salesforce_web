@@ -3,6 +3,7 @@ div.cardOurProducts {
     min-width: 150px;
     flex: 1;
     margin: 2rem auto;
+    flex-direction: column;
 }
 
 div.cardOurProducts:nth-child(2){
@@ -16,7 +17,7 @@ div.cardOurProducts .image-peaple {
 }
 
 .cardOurProducts .info-product p {
-    margin: 0.1rem auto 0.8rem auto;
+    margin: 0.1rem 0 0.8rem 0;
 }
 
 .cardOurProducts .info-product {
@@ -27,9 +28,28 @@ div.cardOurProducts .image-peaple {
     width: 100%;
 }
 
-@media screen and (max-width: 900px) {
-    div.cardOurProducts {
-        width: 100%;
-        margin: 2.5rem auto;
+@media screen and (max-width: 760px) {
+    div.cardOurProducts{
+        flex-direction: row !important;
+        gap: 1rem;
+    }
+
+    div.cardOurProducts div{
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    div.cardOurProducts:nth-child(2){
+        margin: 2rem 0;
+    }
+}
+
+@media screen and (max-width: 400px){
+    div.cardOurProducts{
+        flex-direction: column !important;
+    }
+
+    div.cardOurProducts p {
+        text-align: center;
     }
 }

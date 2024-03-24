@@ -1,11 +1,14 @@
 div.card-client {
-    margin: 0;
-    margin-bottom:1.8rem;
-    padding-top: 1rem;
-    min-width: 140px;
-    height: 400px;
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    display: flex;
+    padding: 1rem 1rem 2.5rem 1rem;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    max-width: 300px;
+    width: 22%;
+    height: 100%;
+    max-height: 500px;
 }
 
 div.card-client:nth-child(2) {
@@ -17,7 +20,23 @@ div.card-client:nth-child(3) {
 }
 
 div.card-client h3 {
+    font-size: 1.2rem;
     color: #004D5E;
+    text-align: center;
+}
+
+div.card-client div {
+    margin: 2rem 0;
+}
+
+div.card-client div h4 {
+    font-size: 1.1rem;
+    color: #004D5E;
+    text-align: center;
+}
+
+div.card-client div p {
+    font-size: 0.9rem;
 }
 
 div.card-client .imageCardClient {
@@ -28,13 +47,30 @@ div.card-client .imageCardClient {
     max-height: 190px;
 }
 
-@media screen and (max-width: 768px) {
+div.card-client a.linkclient {
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:940px){
     div.card-client {
-        max-width: 650px;
+        width: 45%;
     }
 
-    div.card-client:nth-child(2),div.card-client:nth-child(3) {
-        margin: 0 0 1.8rem 0;
+    div.card-client:nth-child(2) {
+        margin: 0 0 1.8rem 5%;
     }
     
+    div.card-client:nth-child(3) {
+        margin: 0 5% 1.8rem 0;
+    }
+}
+
+@media screen and (max-width: 500px){
+    div.card-client {
+        width: 95%;
+    }
+    
+    div.card-client:nth-child(2), div.card-client:nth-child(3) {
+        margin: 1.8rem 0;
+    }
 }

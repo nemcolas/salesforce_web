@@ -5,8 +5,8 @@ import './style.css'
 
 function CardOurProducts(props: CardOurProductsInterface) {
     return (
-        <div className='flex cardOurProducts threeCards flex-wrap'>
-            <div className="info-product flex">
+        <div className='flex cardOurProducts threeCards'>
+            <div className="info-product flex flex-wrap">
                 <h3 className='text-lg'>{props.title}</h3>
                 <p className='text-base'>{props.paragraph}</p>
                 <Button class='small' link={props.buttonLink}text="Saiba Mais"/>

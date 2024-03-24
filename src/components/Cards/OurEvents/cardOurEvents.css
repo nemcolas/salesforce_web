@@ -1,9 +1,16 @@
 div.cardOurEvents {
-    width: 100%; 
+    box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.3);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    padding-bottom: 2rem ;
+    justify-content: space-between;
+    flex: 1;
 }
 
 div.cardOurEvents:nth-child(3n+2) {
-    margin: 0 20px;
+    margin: 0 1.5rem;
 }
 
 section div.cardOurEvents a, section div.cardOurEvents p{
@@ -15,9 +22,9 @@ section div.cardOurEvents a.learning-events-redirect, section div.cardOurEvents 
 }
 
 section div.cardOurEvents p.paragraphTop{
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-decoration: none;
-    padding: 0.8rem;
+    padding: 0.6rem;
     background:#D9D9D9;
     width: 35%;
     text-align: center;
@@ -29,13 +36,17 @@ section div.cardOurEvents img {
     width: 100%;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:700px) {
     div.cardOurEvents {
-        width: 100%;
-        margin: 2rem auto;
+        width: 95%;
+        margin: 0 auto;
     }
-    
+
     div.cardOurEvents:nth-child(3n+2) {
-        margin: 0;
+        margin: 1.5rem auto;
     }
+
+    section div.cardOurEvents p.paragraphTop{
+        font-size: 1.2rem;
+    }    
 }

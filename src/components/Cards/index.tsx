@@ -2,7 +2,6 @@ import { CardOurProductsInterface} from '../interface/homePageInterfaces'
 import './style.css'
 import Button from '../Button'
 
-
 function CardOurProducts(props: CardOurProductsInterface) {
     return (
         <div className='flex cardOurProducts threeCards'>

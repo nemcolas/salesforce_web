@@ -1,8 +1,14 @@
+section.common-container {
+    margin-bottom: 6rem;
+}
+
 section.common-container .image{
     flex: 2;
-    width: 95%;
-    max-width: 600px;
+    max-width: 550px;
     min-width: 290px;
+    width: 55%;
+    height: 100%;
+    max-height: 600px;
 }
 
 section.container-EspecialistaEApps .image {
@@ -16,16 +22,18 @@ section.container-LearnMorePrinces .image {
 }
 
 section.common-container div {
-    flex: 1;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2.5rem;
+    width: 40%;
 }
 
 section.common-container div h2 {
     color: #2A71B5;
+    font-size: 1.7rem;
 }
 
 section.common-container div p {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: 500;
 }
 
@@ -34,12 +42,6 @@ section.common-container div p {
         flex-direction: column;
         width: 100%;
         align-items: center;
-    }
-
-    section.common-container .image {
-        width: 100%;
-        margin: 2rem 0;
-        order: 2;
     }
 
     section.common-container div {

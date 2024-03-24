@@ -1,0 +1,46 @@
+section.customer360 div.content{
+    flex: 1;
+    justify-content: center;
+}
+
+section.customer360 div.content p {
+    margin: 1rem 0 3rem 0;
+    font-size: 1.3rem;
+}
+
+section.customer360 div.content a {
+    width: 25%;
+    font-size: 1.2rem;
+}
+
+section.customer360 div.content a.btnSaibaMaisHome {
+    border: 1px solid #878686;
+    background: #fff;
+    font-weight: 200;
+}
+
+section.customer360 .imageCustomer360 {
+    margin: 2rem 0;
+    flex: 1;
+}
+
+@media screen and (max-width: 950px) {
+    section.customer360 div.content{
+        width: 90%;
+        margin: auto;
+    }
+
+    section.customer360 div.content a {
+        width: 45%;
+    }
+    section.customer360{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    section.customer360 .imageCustomer360 { 
+        width: 100%;
+        margin: 2rem 0;
+    }
+    
+}

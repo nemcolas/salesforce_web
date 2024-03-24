@@ -22,7 +22,6 @@ const WatsonChat = () => {
             document.head.appendChild(t);
         }
     }, []);
-
     return null;
 };
 

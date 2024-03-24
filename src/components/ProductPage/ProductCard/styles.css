@@ -39,7 +39,7 @@
 }
 
 .cardProducts .buttons .button {
-    font-size: 0.9rem;
+    font-size: 1rem;
     width: 50%;
 }
 
@@ -47,6 +47,11 @@
     .cardProducts {
         width: 90%;
         margin: auto;
+    }
+
+    /* formatação especifica para o titulo da galeria de produtos */
+    h2.titleGallery {
+    text-align: center;
     }
 
     .cardProducts .buttons .button {

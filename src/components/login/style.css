@@ -2,14 +2,17 @@ section.login {
     padding: 2rem ;
     border-radius: 0.3rem;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+    align-items: center;
 }
 
 section.login > .imgLogin {
-    width: 100%;
-    max-width: 600px;
+    width: 97%;
+    max-width: 450px;
     min-width: 200px;
     margin-left: 2%;
     border-radius: 0.3rem;
+    height: 100vh;
+    max-height: 250px;
 }
 
 section.login > div {
@@ -19,7 +22,7 @@ section.login > div {
 }
 
 section > div h1.login-title {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 300;
     margin-bottom: 1.2rem;
 }
@@ -30,5 +33,37 @@ section > div h1.login-title span {
 }
 
 section > div p{
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 950px) {
+    
+    section.login {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.login > div {
+        align-items: center;
+    }
+
+    section.login > .imgLogin {
+        width: 100%;
+        max-width: 100%;
+        order: -1;
+        margin-bottom: 2rem;
+    }
+
+    section.login > div h1, section.login > div p {
+        text-align: center;
+    }
+
+    section.login > div p {
+        margin: 1rem auto;
+    }
+
+    section.login .imgLogoSalesforce {
+        display: none;
+    }
 }

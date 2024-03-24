@@ -1,0 +1,15 @@
+section.containerNossosProdutos h2 {
+    margin-bottom: 4rem;
+}
+
+@media screen and (max-width: 760px){
+    section.containerNossosProdutos div {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    section.containerNossosProdutos div {
+        align-items: center;
+    }
+}
