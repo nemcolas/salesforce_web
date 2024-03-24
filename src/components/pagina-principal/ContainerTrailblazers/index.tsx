@@ -10,7 +10,7 @@ export default function ContainerTrailblazers(props: ContainerTrailblazersProps)
                 <p>{props.textParagraph}</p>
                 <Button class='large' link={props.linkButton} text={props.textButton} />
             </div>
-            <Image className='imgContainer containerContentLeftImg' src='/image-index/be-a-trailblazer.webp' alt={props.altImgContainer} width={400}height={350} />
+            <Image className='imgContainer' src='/image-index/be-a-trailblazer.webp' alt={props.altImgContainer} width={400}height={350} />
         </section>
     )
 }

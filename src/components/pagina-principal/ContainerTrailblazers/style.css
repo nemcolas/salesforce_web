@@ -1,3 +1,8 @@
+section.container-trailblazer {
+    margin: 7rem auto;
+    margin-bottom: 7rem !important;
+}
+
 .container-trailblazer .imgContainer {
     width: 100%;
     max-width: 470px;
@@ -11,8 +16,12 @@
     flex: 1;
 }
 
+.container-trailblazer div.content p, .container-trailblazer div.content h2 {
+    text-align: left;
+}
+
 .container-trailblazer div.content p {
-    font-size: 1.3rem;
+    font-size: 1.3rem;  
 }
 
 .container-trailblazer div.content h2 {
@@ -21,4 +30,26 @@
 
 .container-trailblazer div.content a.large {
     font-size: 1.1rem;
+}
+
+@media screen and (max-width: 778px) {
+    section.container-trailblazer {
+        flex-direction: column;
+    }
+
+    .container-trailblazer div.content h2 {
+        font-size: 1.7rem;
+        text-align: center;
+    }
+
+    .container-trailblazer div.content p {
+        margin: 1rem 0;
+        text-align: center;
+    }
+    
+
+    section.container-trailblazer div.content {
+        align-items: center;
+        margin-bottom: 2rem;
+    } 
 }

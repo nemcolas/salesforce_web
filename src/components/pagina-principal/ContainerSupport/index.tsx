@@ -4,7 +4,7 @@ import ContainerSupportProps from './interface';
 import './style.css';
 export default function ContainerSupport(props: ContainerSupportProps) {
     return (
-        <section className='flex container-suport mb-40'>
+        <section className='flex container-suport'>
             <div className='flex flex-col'>
                 <h2 className='mb-12'>{props.title}</h2>
                 <Button class='large' link='/https://help.salesforce.com/s/?language=pt_BR' text={props.textButton} />
