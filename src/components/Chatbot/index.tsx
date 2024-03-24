@@ -17,9 +17,13 @@ const WatsonChat = () => {
                 onLoad: async (instance: any) => { await instance.render(); }
             };
 
-            const t = document.createElement('script');
-            t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
-            document.head.appendChild(t);
+            const scriptSrc = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+            if (!document.querySelector(`script[src="${scriptSrc}"]`)) {
+                const t = document.createElement('script');
+                t.src = scriptSrc;
+                document.head.appendChild(t);
+                console.log('Chatbot carregado')
+            }
         }
     }, []);
     return null;

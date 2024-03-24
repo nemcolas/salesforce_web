@@ -1,5 +1,6 @@
 section.common-container {
     margin-bottom: 6rem;
+    justify-content: center;
 }
 
 section.common-container .image{
