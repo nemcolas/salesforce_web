@@ -10,6 +10,10 @@ header {
     border-bottom: 1px solid #e0e0e0;
 }
 
+div.menu-mobile {
+    display: none;
+}
+
 header a {
     font-size: 1rem;
     font-weight: bold;
@@ -130,6 +134,10 @@ header>nav div.login > .image{
         display: flex;
         flex-direction: column-reverse;
         justify-content: flex-end;
+    }
+
+    div.menu-mobile:focus {
+        outline: none;
     }
 
     .adicionar-menu {
