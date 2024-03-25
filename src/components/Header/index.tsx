@@ -12,10 +12,10 @@ export default function Header() {
           <nav className='flex'>
             <ul className="flex nav-header">
               <li><Link href="./products">Produtos</Link></li>
-              <li><a href="#">Indústrias</a></li>
-              <li><a href="#">Aprendizado</a></li>
-              <li><a href="#">Suporte</a></li>
-              <li><a href="#">Empresa</a></li>
+              <li><a href="https://www.salesforce.com/br/solutions/industries/">Indústrias</a></li>
+              <li><a href="https://trailhead.salesforce.com/pt-BR">Aprendizado</a></li>
+              <li><a href="https://help.salesforce.com/s/">Suporte</a></li>
+              <li><a href="https://www.salesforce.com/br/company/our-story/">Empresa</a></li>
             </ul>
 
             <div className="header-contact">

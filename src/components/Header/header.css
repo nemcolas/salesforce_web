@@ -11,7 +11,9 @@ header {
 }
 
 header a {
-    font-size: 1rem !important;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #032D93;
 } 
 
 header> a:first-child {
@@ -85,6 +87,7 @@ header>nav div.login > .image{
 }
 
 @media screen and (max-width: 1100px) {
+
     header {
         justify-content: space-between;
     }
@@ -124,6 +127,9 @@ header>nav div.login > .image{
         z-index: 2000;
         left: 0;
         top: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-end;
     }
 
     .adicionar-menu {
@@ -140,12 +146,15 @@ header>nav div.login > .image{
     }
 
     div.menu-mobile li {
-        margin: 1rem 0;
+        margin: 2rem 0;
+        font-weight: 600;
     }
     
     div.menu-mobile li a {
         text-decoration: none;
         color: #2A71B5;
+        padding: 0.5rem 1rem 0.5rem 0;
+        font-size: 1.1rem;
     }
 
     @keyframes slideIn {
