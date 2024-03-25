@@ -2,7 +2,8 @@ import Button from '@/components/Button'; // nosso componente Button
 import Image from 'next/image';
 import './style.css';
 import ContainerFreeTrialProps from './interface';
-// componente responsável por criar um bloco (container) de teste gratuito
+
+// Componente responsável por criar um bloco (container) de teste gratuito
 export default function ContainerFreeTrial(props: ContainerFreeTrialProps) {
     return (
         <section className="container-free-trial flex mb-16">

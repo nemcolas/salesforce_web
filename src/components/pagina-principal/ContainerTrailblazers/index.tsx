@@ -2,6 +2,8 @@ import ContainerTrailblazersProps from './interface';
 import Image from 'next/image';
 import Button from '@/components/Button';
 import './style.css';
+
+// Componente responsável por criar um bloco (container) do Trailblazers
 export default function ContainerTrailblazers(props: ContainerTrailblazersProps) {
     return (
         <section className='container-trailblazer flex flex-wrap mb-40'>

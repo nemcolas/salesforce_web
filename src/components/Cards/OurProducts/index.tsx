@@ -3,6 +3,7 @@ import { CardOurProductsInterface } from './interface'
 import Image from 'next/image';
 import './style.css'
 
+// Componente responsável por criar o card Nossos Produtos (OurProducts) localizado na página principal.
 function CardOurProducts(props: CardOurProductsInterface) {
     return (
         <div className='flex cardOurProducts threeCards'>

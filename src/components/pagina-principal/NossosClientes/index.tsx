@@ -1,5 +1,7 @@
 import CardOurClients from '../../Cards/OurClients'
 import './style.css'
+
+// Componente responsável por criar um bloco (container) do Nossos Clientes (OurClients)
 export default function NossosClientes() {
     return (
         <section className='mb-40 containerNossosClientes'>

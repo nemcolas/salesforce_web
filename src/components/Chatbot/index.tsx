@@ -7,7 +7,7 @@ declare global {
     }
 }
 
-// componente responsável por criar o chatbot da IBM
+// Componente responsável por criar o chatbot da IBM
 const WatsonChat = () => {
     useEffect(() => {
         if (typeof window !== 'undefined') {
