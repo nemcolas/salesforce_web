@@ -2,6 +2,8 @@ import Image from 'next/image';
 import loginProps from './interface';
 import './style.css';
 import Button from '../Button';
+
+// componente responsável por criar um bloco de login
 export default function Login(props: loginProps) {
     return (
         <section className='flex login mb-10'>

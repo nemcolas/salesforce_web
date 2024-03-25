@@ -1,5 +1,6 @@
 import CardsOurEvents from '../../Cards/OurEvents'
 import './style.css'
+// componente responsável por criar um container que terá os cards de eventos online
 export default function ContainerEventosOnline() {
     return (
         <section className='mb-40 containerEventosOnline'>
