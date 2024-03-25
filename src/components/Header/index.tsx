@@ -1,11 +1,13 @@
 import Link from 'next/link';
 import Button from '../Button';
 import './header.css';
+import {mostrarMenu} from '../../functions/menu';
 import Image from 'next/image';
 export default function Header() {
     return (
         <header className="flex">
-          <Image className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32}/>
+          <Image onClick={mostrarMenu} className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32}/>
+          
           <Link href="/"><Image className='image' src="/salesforce-logo.svg" alt="Logo Salesforce" width={80} height={100}/></Link>
           <nav className='flex'>
             <ul className="flex nav-header">

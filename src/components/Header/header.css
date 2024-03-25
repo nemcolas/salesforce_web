@@ -106,4 +106,64 @@ header>nav div.login > .image{
     header>nav div.login {
         margin-right: 0.5rem;
     }
+
+    /* formatação para icone de menu aberto */
+
+    .icon-fechar-menu {
+        cursor: pointer;
+        width: 70px;
+        height: 70px;
+    }
+    
+    div.menu-mobile {
+        padding: 1rem;
+        background: #ffffff;
+        height: 100vh;
+        width: 60%;  
+        position: fixed;
+        z-index: 2000;
+        left: 0;
+        top: 0;
+    }
+
+    .adicionar-menu {
+        animation: slideIn 0.5s forwards;
+    }
+
+    .retirar-menu {
+        animation: slideOut 0.5s forwards;
+    }
+    
+    div.menu-mobile ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    div.menu-mobile li {
+        margin: 1rem 0;
+    }
+    
+    div.menu-mobile li a {
+        text-decoration: none;
+        color: #2A71B5;
+    }
+
+    @keyframes slideIn {
+        from {
+            transform: translateX(-100%);
+        }
+        to {
+            transform: translateX(0);
+        }     
+    }
+
+    @keyframes slideOut {
+        from {
+            transform: translateX(0);
+        }
+        to {
+            transform: translateX(-100%);
+        }
+        
+    }
 }

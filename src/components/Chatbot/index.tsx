@@ -22,7 +22,6 @@ const WatsonChat = () => {
                 const t = document.createElement('script');
                 t.src = scriptSrc;
                 document.head.appendChild(t);
-                console.log('Chatbot carregado')
             }
         }
     }, []);

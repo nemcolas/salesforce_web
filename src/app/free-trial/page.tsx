@@ -63,6 +63,7 @@ export default function FreeTrial() {
                         <option value="Japao">Japão</option>
                         <option value="Australia">Austrália</option>
                         <option value="India">Índia</option>
+                        <option value="Brasil">Brasil</option>
                     </select>
                     <label htmlFor="idioma">Idioma:</label>
                     <select name="idioma" id="idioma" required>
