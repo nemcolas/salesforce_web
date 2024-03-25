@@ -1,6 +1,7 @@
 import React from 'react';
 import './style.css';
 
+//Componente responsável por criar os dados da equipe 
 const Alunos: React.FC = () => {
   return (
     <main>

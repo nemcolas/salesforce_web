@@ -1,6 +1,8 @@
 import Button from '@/components/Button';
 import Image from 'next/image';
 import './style.css';
+
+// Componente responsável por criar um bloco (container) do Marketing Cloud
 export default function ContainerMarketingCloud() {
     return (
         <section className='containerMarketingCloud flex flex-wrap mb-40'>

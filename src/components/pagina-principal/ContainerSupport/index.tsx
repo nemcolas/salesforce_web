@@ -2,6 +2,8 @@ import Button from '../../Button';
 import Image from 'next/image';
 import ContainerSupportProps from './interface';
 import './style.css';
+
+// Componente responsável por criar um bloco (container) de Suporte
 export default function ContainerSupport(props: ContainerSupportProps) {
     return (
         <section className='flex container-suport'>

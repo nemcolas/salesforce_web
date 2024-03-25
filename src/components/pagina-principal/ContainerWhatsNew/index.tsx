@@ -1,5 +1,7 @@
 import Cards from '@/components/Cards/CardWhatNew'
 import './style.css'
+
+// Componente responsável por criar um bloco (container) da WhatsNew
 export default function ContainerWhatsNew() {
     return (
         <section className='mb-40 containerWhatsNew'>

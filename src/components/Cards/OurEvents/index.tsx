@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import OurEventsProps from './interface';
 import './cardOurEvents.css'
+
+// Componente responsável por criar o card de Nossos Eventos (OurEvents) localizado na página principal.
 export default function CardsOurEvents(props: OurEventsProps) {
     return (
         <div className="cardOurEvents card">

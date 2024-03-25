@@ -3,6 +3,8 @@ import Button from '../Button';
 import './header.css';
 import {mostrarMenu} from '../../functions/menu';
 import Image from 'next/image';
+
+// Componente responsável por criar o header de todas as páginas 
 export default function Header() {
     return (
         <header className="flex">

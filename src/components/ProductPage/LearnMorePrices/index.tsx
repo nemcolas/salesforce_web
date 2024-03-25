@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Button from '../../Button';
 import '../container-format.css'
 
+// Componente responsável por criar o bloco do produto LearnMorePrices 
 function LearnMorePrices() {
     return (
         <section className='flex container-LearnMorePrinces common-container'>

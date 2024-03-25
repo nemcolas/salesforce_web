@@ -3,6 +3,7 @@ import { usePathname } from 'next/navigation';
 import './footer.css'
 import Image from 'next/image';
 
+// Componente responsável por criar o footer de todas as páginas
 export default function Footer() {
     return (
         <footer>
