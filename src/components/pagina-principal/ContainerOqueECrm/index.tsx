@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import Button from '../../Button'
 import './style.css'
+
+// Componente responsável por criar um bloco (container) sobre OqueECrm
 export default function ContainerOqueECrm() {
     return (
         <section className='containerOqueECrm flex flex-wrap'>

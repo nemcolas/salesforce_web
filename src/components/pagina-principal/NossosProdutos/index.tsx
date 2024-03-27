@@ -1,5 +1,7 @@
 import CardOurProducts from "@/components/Cards/OurProducts"
 import './style.css'
+
+// Componente responsável por criar um bloco (container) do Nossos Produtos (OurProducts)
 function ContainerNossosProdutos() {
     return (
       <section className='mb-40 containerNossosProdutos'>

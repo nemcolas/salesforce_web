@@ -4,7 +4,7 @@ import ProductCardProps from './interface';
 import './styles.css';
 import BtnSoliciteDemonstracao from '../BtnSoliciteDemonstracao';
 
-
+// Componente responsável por criar os card da página de produtos
 function ProductCard(props: ProductCardProps) {
   return (
   <div className="cardProducts">

@@ -1,3 +1,5 @@
+// Componente responsável por criar o botão Solicite Demonstração
+
 import Link from "next/link";
 import './style.css';
 function BtnLearnMore() {

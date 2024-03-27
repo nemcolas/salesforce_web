@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import Button from '@/components/Button';
 import './style.css';
+
+// Componente responsável por criar um bloco (container) do Costumer360
 export default function Customer360() {
   return (
     <section className='customer360 flex justify-between flex-wrap'>

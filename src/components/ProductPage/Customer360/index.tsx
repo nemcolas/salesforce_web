@@ -2,6 +2,7 @@ import Button from '../../Button';
 import Customer360CardProps from './interface';
 import './style.css';
 
+// Componente responsável por criar o bloco do produto Costumer360 
 function Customer360(props: Customer360CardProps) {
     return (
         <section className='flex container-customer360 product-section'>

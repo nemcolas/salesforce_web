@@ -2,6 +2,8 @@ import { CardOurClientsInterface } from "./interface"
 import './style.css'
 import Image from 'next/image'
 import '../style.css'
+
+// Componente responsável por criar o card dos Nossos Clientes (OurClients) localizado na página principal. 
 function CardOurClients(props:CardOurClientsInterface) {
     return (
         <div className='card card-client'>
