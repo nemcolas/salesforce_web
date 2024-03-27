@@ -113,6 +113,15 @@ main section.formContainer form input.enviarFormulario {
     margin-top: 1rem;
 }
 
+/* formatação para quando o email não está correto */
+
+input.input-incorreto {
+    border: 2px solid #FF0000;
+}
+input.input-incorreto:focus {
+    border: 2px solid #FF0000 !important;
+}
+
 @media screen and (max-width: 1000px) {
     main.free-trial {
         flex-direction: column;

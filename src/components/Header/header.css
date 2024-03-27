@@ -184,3 +184,9 @@ header>nav div.login > .image{
         
     }
 }
+
+@media screen and (min-width:1600px) {
+    header a {
+        font-size: 1.5rem;
+    }
+}

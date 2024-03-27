@@ -44,7 +44,6 @@ export default function Home() {
     altImgContainer='Astro, o mascote principal da Salesforce acenando com a mão'
     textButton='Entrar em contato'
     />
-    {/* {capturarDados()} */}
     </main>
   );
 }
