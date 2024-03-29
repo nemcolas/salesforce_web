@@ -1,37 +1,17 @@
 'use client'
-import { useState, useEffect, DOMElement } from 'react';
+
+import {construirObjetoTesteGratis} from './funcoes'
 export default function Formulario() {
 
-    async function TestePost() {
+    async function enviarTesteGratis() {
+        const testeGratis = await construirObjetoTesteGratis()
         try {
             const resultado = await fetch('http://localhost:8080/testegratis/', {
                 method: 'POST',
-                mode: 'no-cors',
                 headers: {
-                    'Content-Type': 'application/json'
+                    'Content-Type': 'application/json',
                 },
-                body: JSON.stringify(
-                    {
-                        id: 300,
-                        cargo: 'Dev',
-                        email: 'yagolucas@gmail.com',
-                        idioma: {
-                            id: 2,
-                            idioma: 'Holandês'
-                        },
-                        nome: 'Yago',
-                        pais: {
-                            id: 3,
-                            descricao: 'Canada'
-                        },
-                        porteEmpresa: {
-                            id: 2,
-                            descricao: '51-300 funcionários'
-                        },
-                        sobrenome: 'Lucas',
-                        telefone: '11999999999'
-                    }
-                )
+                body: JSON.stringify(testeGratis)
             })
 
             const json = await resultado.json()
@@ -42,18 +22,20 @@ export default function Formulario() {
     }
 
     function validarForm(e: any) {
-        const inputs = document.querySelectorAll('input');
-        inputs.forEach((input: HTMLInputElement) => {
-            input.addEventListener('keyup', (e) => {
+        const inputs = document.querySelectorAll('input:not([type="button"])');
+        const inputSubmit = document.querySelector('input[type="button"]')
+        inputs.forEach((input: any) => {
+            input.addEventListener('keyup', () => {
                 if (input.name != 'email corporativo' && input.name != 'telefone') {
-                    if (input.value == '') {
+                    let texto: String = e.target.value
+                    if (texto.length < 3 || texto == '') {
                         input.classList.add('input-incorreto')
                     } else {
                         input.classList.remove('input-incorreto')
                     }
                 }
-            })
-        })   
+            }) 
+        })
     }
 
     function validarEmail(e: any) {
@@ -146,7 +128,7 @@ export default function Formulario() {
             <p className='paragraphBottom'>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
                 conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de
                     privacidade</a></p>
-            <input onClick={TestePost} className='enviarFormulario' type="submit" value="Iniciar Teste gratuito" />
+            <input onClick={enviarTesteGratis} className='enviarFormulario' type="button" value="Iniciar Teste gratuito" />
         </form>
     )
 }

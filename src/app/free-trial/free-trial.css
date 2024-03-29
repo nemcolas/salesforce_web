@@ -122,6 +122,11 @@ input.input-incorreto:focus {
     border: 2px solid #FF0000 !important;
 }
 
+input:disabled {
+    background: #7A7979 !important;
+    cursor: not-allowed !important;
+}
+
 @media screen and (max-width: 1000px) {
     main.free-trial {
         flex-direction: column;
