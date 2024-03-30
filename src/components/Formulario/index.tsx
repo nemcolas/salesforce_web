@@ -1,5 +1,7 @@
 'use client'
 import {validarForm, enviarTesteGratis} from './funcoes'
+
+//Componente responsável pelo formulário da página de teste grátis.
 export default function Formulario() {
     return ( <form onChange={validarForm} className='flex flex-col'>
     <div className='flex justify-between gap-5'>

@@ -1,6 +1,6 @@
 # Pagina Salesforce
 
-Esse projeto foi desenvolvido visando reformular a pagina principal da Salesforce tornando ela mais atrativa e mais acessível
+O grupo está reestruturando páginas do site da Salesforce para melhorar a navegação, tornando-a mais intuitiva e responsiva. Isso inclui realocação de elementos, criação de novas páginas e desenvolvimento de um chatbot para atendimento automatizado. O projeto visa oferecer uma experiência de navegação fluida e responsiva, reduzindo o tempo necessário para obter informações sobre a empresa e seus produtos.
 
 ## Pré-requisitos
 
@@ -10,4 +10,15 @@ Esse projeto foi desenvolvido visando reformular a pagina principal da Salesforc
 
 3. **Editor de código**: Você precisará de um editor de código para escrever seu código. Recomendamos o uso do [Visual Studio Code](https://code.visualstudio.com/).
 
-4. **Conhecimento de React**: Next.js é um framework para React, então você precisará ter um entendimento básico de React. Se você é novo no React, recomendamos que você aprenda os conceitos básicos de React antes de começar com o Next.js.
+4. **Mais Informações sobre o Projeto**: Durante o projeto, a reestruturação foi conduzida através da criação de diversos componentes, cards e containers, cada um com sua função específica, devidamente descrita em sua respectiva pasta.
+tem menu de contexto.
+
+5. **Informações sobre chatbot**: O chatbot foi desenvolvido com a tecnologia IBM Watson, com a função de fornecer respostas aos usuários sobre informações relacionadas à empresa Salesforce, seus produtos e navegação no site. O chatbot está em processo de desenvolvimento, portanto, as respostas podem não ser totalmente precisas no estágio atual.
+
+6. **Procedimento para rodar a aplicação**: Para acessar a aplicação no Visual Studio Code (VSCODE) e iniciar o servidor localmente, siga estas etapas:
+Abra o terminal no Visual Studio Code e verifique se você está na pasta raiz do projeto. Em seguida, execute o comando npm i para instalar as dependências necessárias. Após a conclusão da instalação, execute o comando npm run dev para iniciar o servidor local e ter acesso às páginas web rodando localmente.
+
+#Feito por: 
+Ander Kamada RM553449
+Nicolas Martins RM553478
+Yago Lucas Gonçalves RM553013
