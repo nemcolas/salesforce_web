@@ -22,13 +22,13 @@ Para rodar este projeto, é necessário atender aos seguintes requisitos:
 
 ## Instalação
 Para instalar o projeto, siga estas etapas:
-1. Clone o repositório:
+1. Clone o repositório usando o comando abaixo:
 ```bash
 git clone https://github.com/yagoluucas/salesforce_web
 ```
-2. Navegue até o diretório do projeto:
+2. Navegue até o diretório do projeto
 
-3. Instale as dependências do projeto:
+3. Instale as dependências do projeto, para isso execute o seguinte comando:
 ```bash
 npm install
 ```

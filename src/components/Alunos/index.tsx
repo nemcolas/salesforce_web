@@ -4,8 +4,8 @@ import './style.css';
 //Componente responsável por criar os dados da equipe 
 const Alunos: React.FC = () => {
   return (
-    <main>
-      <h1>Integrantes do grupo</h1>
+    <main className='alunos'>
+      <h1 className='text-center'>Integrantes do grupo</h1>
       <section className="cardAluno">
         <h2>Yago Lucas G. da Silva</h2>
         <p>RM: 553013</p>

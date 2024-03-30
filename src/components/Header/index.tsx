@@ -18,6 +18,7 @@ export default function Header() {
               <li><a href="https://trailhead.salesforce.com/pt-BR">Aprendizado</a></li>
               <li><a href="https://help.salesforce.com/s/">Suporte</a></li>
               <li><a href="https://www.salesforce.com/br/company/our-story/">Empresa</a></li>
+              <li><a href="/alunos">Alunos</a></li>
             </ul>
 
             <div className="header-contact">

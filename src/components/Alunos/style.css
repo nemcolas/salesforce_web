@@ -1,11 +1,24 @@
 
-h1{
-    margin-bottom: 10px;
+main.alunos h1{
+    margin-bottom: 2rem;
+    font-size: 1.6rem;
 }
 
-.cardAluno{
-    margin-bottom: 10px;
+main.alunos .cardAluno{
+    margin-bottom: 1rem;
+}
 
+main.alunos .cardAluno h2, main.alunos .cardAluno p {
+    text-align: center;
+}
+
+main.alunos .cardAluno h2 {
+    font-size: 1.3rem;
+}
+
+main.alunos .cardAluno p {
+    font-size: 1rem;
+    margin-top: 0.3rem;
 }
 
 
