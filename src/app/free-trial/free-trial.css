@@ -127,6 +127,56 @@ input:disabled {
     cursor: not-allowed !important;
 }
 
+/* formtação para a div teste grátis */
+
+
+div.div-retorno-teste {
+    padding: 3rem 1rem;
+    width: 25%;
+    text-align: center;
+    position: fixed;
+    top: 50vh;
+    animation: retorno-teste 1s forwards;
+    background: rgba(0, 123, 255,0.8);
+    color: #fff;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    border-radius: 0.5rem;
+    left: calc(50% - 12.5%);
+    font-weight: 500;
+    max-width: 450px;
+}
+
+div.div-retorno-teste img.icone-fechar {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 45px;
+    cursor: pointer;
+}
+
+div.sucesso {
+    border: 3px solid rgb(4, 135, 4);
+    width: 30%;
+    left: calc(50% - 15%);
+}
+
+div.falha {
+    border: 3px solid rgb(235, 2, 2);
+}
+
+@keyframes retorno-teste {
+    0% {
+        top: 60vh;
+        opacity: 0;
+    }
+
+    100% {
+        top: 40vh;
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width: 1000px) {
     main.free-trial {
         flex-direction: column;
@@ -139,5 +189,13 @@ input:disabled {
     main.free-trial section.formContainer form {
         padding: 0 1rem;
     }
-    
+}
+
+
+@media screen and (max-width:768px) {
+    div.div-retorno-teste {
+        width: 90%;
+        left: calc(50% - 45%) ;
+        max-width: 768px;
+    }
 }
