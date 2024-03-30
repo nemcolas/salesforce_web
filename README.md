@@ -17,24 +17,20 @@ O objetivo deste projeto é reestruturar as páginas do site da Salesforce para 
 ## Requisitos
 Para rodar este projeto, é necessário atender aos seguintes requisitos:
 1. **Node.js**: O Next.js é construído em Node.js. Certifique-se de ter o Node.js instalado em sua máquina. A versão mínima do Node.js necessária é a 10.13. Você pode baixar o Node.js [aqui](https://nodejs.org/).
-2. **npm ou Yarn**: Você pode usar o npm ou o Yarn como gerenciadores de pacotes para instalar o Next.js e suas dependências. Certifique-se de ter um deles instalado. Se você instalou o Node.js, o npm já deve estar instalado, mas você pode querer atualizá-lo. Você pode baixar o Yarn [aqui](https://yarnpkg.com/).
+2. **npm**: Você pode usar o npm como gerenciadores de pacotes para instalar o Next.js e suas dependências. Certifique-se de ter ele instalado. Se você instalou o Node.js, o npm já deve estar instalado, mas você pode querer atualizá-lo.
 3. **Editor de código**: Você precisará de um editor de código para escrever seu código. Recomendamos o uso do [Visual Studio Code](https://code.visualstudio.com/).
 
 ## Instalação
 Para instalar o projeto, siga estas etapas:
 1. Clone o repositório:
 ```bash
-git clone https://github.com/seu-usuario/nome-do-repositorio.git
+git clone https://github.com/yagoluucas/salesforce_web
 ```
 2. Navegue até o diretório do projeto:
-```bash
-cd nome-do-repositorio
-```
+
 3. Instale as dependências do projeto:
 ```bash
 npm install
-# ou
-yarn install
 ```
 
 ## Descrição sobre o projeto
@@ -61,6 +57,6 @@ Espera-se que esta reestruturação das páginas do site da Salesforce proporcio
 
 ## Equipe
 Este projeto foi desenvolvido por:
-- Ander Kamada RM553449
-- Nicolas Martins RM553478
-- Yago Lucas Gonçalves RM553013
+- Ander Kamada RM:553449
+- Nicolas Martins RM:553478
+- Yago Lucas Gonçalves RM:553013
