@@ -10,4 +10,5 @@ O grupo está reestruturando páginas do site da Salesforce para melhorar a nave
 
 3. **Editor de código**: Você precisará de um editor de código para escrever seu código. Recomendamos o uso do [Visual Studio Code](https://code.visualstudio.com/).
 
-4. **Conhecimento de React**: Next.js é um framework para React, então você precisará ter um entendimento básico de React. Se você é novo no React, recomendamos que você aprenda os conceitos básicos de React antes de começar com o Next.js.
+4. **Mais Informações sobre o Projeto**: Durante o projeto, a reestruturação foi conduzida através da criação de diversos componentes, cards e containers, cada um com sua função específica, devidamente descrita em sua respectiva pasta.
+tem menu de contexto.
