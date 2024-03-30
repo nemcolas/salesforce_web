@@ -1,6 +1,6 @@
 # Pagina Salesforce
 
-Esse projeto foi desenvolvido visando reformular a pagina principal da Salesforce tornando ela mais atrativa e mais acessível
+O grupo está reestruturando páginas do site da Salesforce para melhorar a navegação, tornando-a mais intuitiva e responsiva. Isso inclui realocação de elementos, criação de novas páginas e desenvolvimento de um chatbot para atendimento automatizado. O projeto visa oferecer uma experiência de navegação fluida e responsiva, reduzindo o tempo necessário para obter informações sobre a empresa e seus produtos.
 
 ## Pré-requisitos
 
