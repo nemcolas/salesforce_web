@@ -55,6 +55,9 @@ Para acessar a aplicação no Visual Studio Code (VSCode) e iniciar o servidor l
 ## Conclusão
 Espera-se que esta reestruturação das páginas do site da Salesforce proporcione uma experiência de navegação mais intuitiva e responsiva para os usuários, reduzindo o tempo necessário para obter informações sobre a empresa e seus produtos.
 
+## Link do video pitch
+O nosso vídeo pitch pode ser conferido no seguinte link : https://youtu.be/RLkgwu_ZK7M
+
 ## Equipe
 Este projeto foi desenvolvido por:
 - Ander Kamada RM:553449
