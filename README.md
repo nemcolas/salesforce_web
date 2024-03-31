@@ -56,7 +56,7 @@ Para acessar a aplicação no Visual Studio Code (VSCode) e iniciar o servidor l
 Espera-se que esta reestruturação das páginas do site da Salesforce proporcione uma experiência de navegação mais intuitiva e responsiva para os usuários, reduzindo o tempo necessário para obter informações sobre a empresa e seus produtos.
 
 ## Link do video pitch e Github
-O nosso vídeo pitch pode ser conferido no seguinte link : https://youtu.be/RLkgwu_ZK7M
+O nosso vídeo pitch pode ser conferido no seguinte link : https://youtu.be/RLkgwu_ZK7M  
 O link do nosso repositório no github é : https://github.com/yagoluucas/salesforce_web
 
 ## Equipe
