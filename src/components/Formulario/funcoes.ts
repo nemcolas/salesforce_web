@@ -1,5 +1,6 @@
 'use client'
 import modalTesteGratisProps from './interface';
+// import enviarEmail from '../../functions/apiEmail'
 async function pegarIdioma(id: String) {
     try {
         const resultado = await fetch(`http://localhost:8080/idioma/${id}`)
@@ -62,6 +63,9 @@ async function enviarTesteGratis() {
         })
         const resultadoJson: modalTesteGratisProps = await resultado.json()
         message.message = resultadoJson.message
+        // if(resultadoJson.message === 'Teste grátis cadastrado com sucesso! Iremos entrar em contato em breve') {
+        //     enviarEmail(testeGratis.email)
+        // }
     } catch (error) {
         message.message = 'Erro ao enviar teste grátis'
     }
@@ -130,5 +134,22 @@ function validarForm() {
         });
     });
 }
+
+// async function enviarEmail(email: string) {
+//     fetch('http://localhost:3000/send', {
+//         method: 'POST',
+//         headers: {
+//             'Content-Type': 'application/json',
+//         },
+//         body: JSON.stringify({
+//             send: email,
+//         }),
+//     })
+//     .then(response => response.json())
+//     .then(data => console.log(data))
+//     .catch((error) => {
+//         console.error('Error:', error);
+//     });
+// }    
 
 export { validarForm, enviarTesteGratis }
