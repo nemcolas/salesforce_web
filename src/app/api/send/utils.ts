@@ -165,7 +165,6 @@ export const getConfig = (email: string, nome: string) => {
   <body bgcolor="#ffffff" style="margin: 0 auto; padding:0; -webkit-text-size-adjust:none; -ms-text-size-adjust: none;" class="body">
     <style>@media yahoo {.yahooHide {display: none !important}}</style>
     <!--Pre-header-->
-    <div class="yahooHide" style="display:none;font-size:1px;color:#ffffff;line-height:1px;font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif;max-height:0;max-width:0;opacity:0;overflow:hidden;mso-hide:all;">Assuma o controle de vendas, atendimento e prospecção com um único aplicativo.</div>
     <div lang="PT" role="article" aria-label="Teste gratuito: O CRM para PMEs">
     
             <!--DOUGLAS FIR - narrow-->
@@ -176,7 +175,7 @@ export const getConfig = (email: string, nome: string) => {
             <table role="presentation" align="center" bgcolor="#fffffe" cellpadding="0" cellspacing="0" border="0" style="width:800px" class="w100pc">
               <!--Logo-->
               <tr>
-                <td align="center" valign="bottom" style="padding-top:8px; padding-bottom:8px"><a href="http://click.mail.salesforce.com/?qs=28995a056fbebc9cec29c118b3e6d11d26b842b0b68b69a7e699e8fc8363fa6afddfde74b548c1832f479ecb0d5dd031cb35611d187e911435a8215e155bd91b"  target="_blank" style="text-decoration:none"><img src="https://image.mail.salesforce.com/lib/fea31c727564047c74/m/3/SFDC_Logo_216x156_0d9dda.png" alt="Salesforce" height="52" style="font-family:Salesforce Sans, Arial, Helvetica, sans-serif; color:#0d9dda;font-size:16px;height:52px;display:block;border:none"></a></td>
+                <td align="center" valign="bottom" style="padding-top:8px; padding-bottom:8px"><a href="https://www.salesforce.com/br/"  target="_blank" style="text-decoration:none"><img src="https://image.mail.salesforce.com/lib/fea31c727564047c74/m/3/SFDC_Logo_216x156_0d9dda.png" alt="logo Salesforce" height="52" style="font-family:Salesforce Sans, Arial, Helvetica, sans-serif; color:#0d9dda;font-size:16px;height:52px;display:block;border:none"></a></td>
               </tr>
               <!--end Logo-->
               <tr>
@@ -191,11 +190,11 @@ export const getConfig = (email: string, nome: string) => {
                       <table role="presentation" align="center" width="496" border="0" cellspacing="0" cellpadding="0" style="width:496px" class="w90pc">
                         <tr>
                           <td align="center" valign="middle" height="112" style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif;color:#181818;font-size:16px;line-height:24px;font-weight: normal;height:112px; vertical-align:middle;" class="hauto pt10 pb24">
-                            <h1 style="font-family:'ITC Avant Garde Demi', Helvetica, Arial, sans-serif; color:#032d60;font-size:24px; mso-line-height-rule:exactly; line-height:32px; font-weight:600; margin:0;"><a href="http://click.mail.salesforce.com/?qs=dc7af1de40855efef5af2eb1e8ff5b3169a093ab0cf220b0fe9877670f6d7baaca391ca95487151acce5ffa0e77e348de08287eb44a56a6a2f15c2944e228046"  target="_blank" style="color:#032d60; text-decoration:none">Olá ${nome}, tudo bem ?</a></h1>
+                            <h1 style="font-family:'ITC Avant Garde Demi', Helvetica, Arial, sans-serif; color:#032d60;font-size:24px; mso-line-height-rule:exactly; line-height:32px; font-weight:600; margin:0;">Olá ${nome}, tudo bem ?</h1>
                           </td>
                         </tr>
                         <tr>
-                          <td align="center" valign="bottom" height="240" style="height:240px" class="hauto"><a href="http://click.mail.salesforce.com/?qs=c2473222124e303003620d4cfc2e45139d970ed39f44382eba27070e1abce04b23182b7a023bee4618efedfd2bd04c524b423e137d5d8f938cf680bf812338fe"  target="_blank"><img src="https://image.mail.salesforce.com/lib/fea31c727564047c74/m/1/a0U7y000003qoJxEAI_sales-with-astro.png" alt="" height="240" style="display:block;border:none;height:240px" class="w80pc hauto"></a></td>
+                          <td align="center" valign="bottom" height="240" style="height:240px" class="hauto"><a href="https://www.salesforce.com/br/"  target="_blank"><img src="https://image.mail.salesforce.com/lib/fea31c727564047c74/m/1/a0U7y000003qoJxEAI_sales-with-astro.png" alt="" height="240" style="display:block;border:none;height:240px" class="w80pc hauto"></a></td>
                         </tr>
                       </table>
                       <!--[if gte mso 9]>   
@@ -218,20 +217,8 @@ export const getConfig = (email: string, nome: string) => {
                     <tr>
                       <td align="center" style="font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif;color:#181818;font-size:16px;line-height:24px;font-weight:normal;">
                       
-                        <p style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; color:#181818; font-size:16px;mso-line-height-rule: exactly;line-height:24px;margin: 0 0 16px 0;text-align: left">
-Fazer mais com menos ficou mais fácil.</p>
-<ul style="padding: 0; Margin: 0 0 0 40px;text-align: left">
-<li style="Margin: 0 0 10px 0;">
-Acompanhe leads, gerencie oportunidades e feche negócios mais rapidamente.</li>
-<li style="Margin: 0 0 10px 0;">
-Visibilidade total de casos abertos, tickets e produtividade do agente.</li>
-<li style="Margin: 0 0 10px 0;">
-Crie e inicie campanhas e promoções por e-mail.</li>
-<li style="Margin: 0 0 10px 0;">
-Monitore a saúde do negócio com painéis pré-criados simples e limpos.</li>
-<li style="Margin: 0 0 10px 0;">
-Gerencie negócios em movimento com um aplicativo móvel leve.</li>
-</ul>
+                        <p style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; color:#181818; font-size:1.2rem;mso-line-height-rule: exactly;line-height:1.6rem;margin: 0 0 16px 0;text-align: center; font-weight: bold">
+Este é um email de confirmação de teste grátis, recebemos a sua solicitação e um responsável vai entrar em contato em breve.</p>
 
                       </td>
                     </tr>
@@ -242,11 +229,6 @@ Gerencie negócios em movimento com um aplicativo móvel leve.</li>
                 <td align="center" style="padding-top:16px">
                  <!-- Update width 496/600 narrow/wide -->
                  <table role="presentation" align="center" width="496" border="0" cellspacing="0" cellpadding="0" style="width:496px" class="w90pc">
-                  <tr>
-                   <td align="center" style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; color:#181818; font-size:16px;line-height:24px;font-weight: normal">
-                    <p style="font-family:'SalesforceSansBold', Helvetica, Arial, sans-serif; color:#032D60;font-size:16px;mso-line-height-rule:exactly;line-height:24px;text-align:left;font-weight:bold;margin:0 0 16px 0;" class="font_normal"><a href="http://click.mail.salesforce.com/?qs=f2b1c3cf68c57f1c13427c6c9ccba0c16179feae8b521b36321b4d9b5989f9a10e011c262d36238ba2a9d888497818e57be23fffb790799f75ad6d21d9d2648b"  target="_blank" style="color:#032D60;text-decoration:none;border-bottom:1px solid #032D60;"><span class="underline">Inicie o teste</span></a></p>
-                   </td>
-                  </tr>
                  </table>
                 </td>
               </tr>
@@ -268,14 +250,19 @@ Gerencie negócios em movimento com um aplicativo móvel leve.</li>
                   <!--Vertical compact module-->
                   <table role="presentation" align="center" width="496" border="0" cellspacing="0" cellpadding="0" style="width:496px" class="w90pc">
                     <tr>
-                      <td align="center" style="padding-bottom: 24px"><a href="http://click.mail.salesforce.com/?qs=1dfc287663259bc0708162fdbcf16d07012692b507b40d7ca56cd062f14d9765c365dc985e35872f24107323ad944cb243b586e9b9946198ce2c0b35dd888c29"  target="_blank"><img src="https://image.mail.salesforce.com/lib/fea31c727564047c74/m/1/a0U7y000003rCanEAE_hood_trailblazer.png" width="248" border="0" alt="" style="display:block;border:none" class="w70pc"></a></td>
+                      <td align="center" style="padding-bottom: 24px"><a href="https://www.salesforce.com/br/"  target="_blank"><img src="https://image.mail.salesforce.com/lib/fea31c727564047c74/m/1/a0U7y000003rCanEAE_hood_trailblazer.png" width="248" border="0" alt="" style="display:block;border:none" class="w70pc"></a></td>
                     </tr>
                     <tr>
                       <td align="center" valign="top" style="font-family:'SalesforceSansRegular', Helvetica, Arial, sans-serif;color:#181818;font-size:16px;line-height:24px;font-weight: normal;vertical-align:top" class="block">
-                        <h2 style="font-family:'ITC Avant Garde Demi', Helvetica, Arial, sans-serif;color:#032d60;font-size:20px;mso-line-height-rule:exactly;line-height:24px;font-weight:600;letter-spacing:-0.0225em;text-align:left;margin: 0 0 8px 0;"><a href="http://click.mail.salesforce.com/?qs=2b692c3721935ae9cca242f2cb0cd469d591b81490be7999104534c8382d524868b427b5027e0a92ffcb5d8fcd2214abb61dd3d03579e886bccf98f019b9434d"  style="text-decoration: none;color:#032d60;" target="_blank">Principais tendências e desafios das PMEs</a></h2>
+                        <h2 style="font-family:'ITC Avant Garde Demi', Helvetica, Arial, sans-serif;color:#032d60;font-size:20px;mso-line-height-rule:exactly;line-height:24px;font-weight:600;letter-spacing:-0.0225em;text-align:center;margin: 0 0 1.2rem 0;"><a href="http://click.mail.salesforce.com/?qs=2b692c3721935ae9cca242f2cb0cd469d591b81490be7999104534c8382d524868b427b5027e0a92ffcb5d8fcd2214abb61dd3d03579e886bccf98f019b9434d"  style="text-decoration: none;color:#032d60;" target="_blank">Conheça nossas ferramentas e aprendizado</a></h2>
                         
-                       <p style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; color:#181818; font-size:16px;mso-line-height-rule: exactly;line-height:24px;margin: 0 0 16px 0;text-align: left">
-Conheça as tendências para as PME, o que impulsiona a resiliência e o crescimento dos negócios e insights de +2.500 proprietários e líderes de pequenas e médias empresas em todo o mundo.</p>
+                       <p style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; color:#181818; font-size:16px;mso-line-height-rule: exactly;line-height:24px;margin: 0 0 16px 0;text-align: center">
+A Salesforce oferece uma ampla gama de ferramentas poderosas que podem transformar a maneira como você se relaciona com seus clientes e impulsiona o sucesso do seu negócio.</p>
+
+<p style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; color:#181818; font-size:16px;mso-line-height-rule: exactly;line-height:24px;margin: 0 0 25px 0;text-align: center">
+Fique à vontade para acessar nossos materiais de aprendizado e documentação para começar a se familiarizar com nossa plataforma.</p>
+
+<a style="text-decoration: none; color: #fff; background: #032d60; padding: 0.7rem; border-radius: 0.3rem;" href='https://trailhead.salesforce.com/pt-BR'>Explorar o Trailhead</a>
 
                        
                         <!--CTA-->
@@ -284,7 +271,6 @@ Conheça as tendências para as PME, o que impulsiona a resiliência e o crescim
                             <td align="center" style="padding-top:14px">
                               <table role="presentation" border="0" cellspacing="0" cellpadding="0" align="center">
                                 <tr>
-                                  <td align="center" style="border-radius:4px;padding:0;white-space:nowrap;font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif" bgcolor="#0176d3"><a href="http://click.mail.salesforce.com/?qs=0dc21e7824841f7a88b671d9fd069085351d83b0db91398f293dcd4d36fbf573b98a9ea57cd38a8e1549e943a858d12a4aa49523c5d9f11ff4e6154dc1ca0d21"  target="_blank" style="font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; font-size:16px;line-height:18px; color:#fffffe;text-decoration:none;font-weight:normal;border-radius:4px;padding:12px 24px;display:inline-block; border:1px solid #0176d3;"><!--[if mso]>&nbsp;&nbsp;&nbsp;<![endif]-->Baixar relatório<!--[if mso]>&nbsp;&nbsp;&nbsp;<![endif]--></a></td>
                                 </tr>
                               </table>
                             </td>
@@ -349,17 +335,9 @@ Conheça as tendências para as PME, o que impulsiona a resiliência e o crescim
                          
                          <!--end Social links-->
                          <!--Email sent to:-->
-                          <p style="font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; font-size:11px;line-height:16px;color:#fffffe;font-weight:normal; margin:0; font-style:italic">Este e-mail foi enviado para <span class="mobileLinks">yago543@gmail.com</span></p>
+                          <p style="font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; font-size:11px;line-height:16px;color:#fffffe;font-weight:normal; margin:0; font-style:italic">Este e-mail foi enviado para <span class="mobileLinks">${email}</span></p>
                          <!--Unsub and privacy-->
-                          <p style="font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; font-size:11px;line-height:16px;color:#fffffe;font-weight: normal; margin:0 0 16px 0;">
-                            
-                                <a href="http://click.mail.salesforce.com/?qs=bb73892f076cb4ed078c6d0173b2736d68d5479298068c3792c5500e96e746cb0e74abdb272ba804da60dfc926304395a9bcb0df77b66a2793f890ab75b2b3c4"  target="_blank" style="color:#fffffe;text-decoration:none;border-bottom: 1px solid #fffffe"><span class="underline">Gerenciar Preferências ou Cancelar Assinatura </span></a> | <a href="http://click.mail.salesforce.com/?qs=daaba7bee5d2516e1a6accbfb1bce59a020001ab4f5db630cf9911aa07ce76a7b601b02ffe1640952ddb674da0c7746bf2caad8c9c209953f962ea2d527ac941"  target="_blank"  style="color:#fffffe;text-decoration:none;border-bottom: 1px solid #fffffe;"><span class="underline">Declarações de Privacidade</span></a>
-                            
-                           </p>
 
-                           <!--Marketing Cloud-->
-                          <p style="font-family:'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; font-size:11px;line-height:16px;color:#fffffe;font-weight: normal; margin:0;">
-                          Powered by <a href="http://click.mail.salesforce.com/?qs=cc9a77644c8ef9fbdc0c87f933fa570fec8bc16b43ac3f2b134c9c65f45edfe4b112195acde829abbaa3daf358322db6788ba76097d8c7cf64abecf11633b93f"  target="_blank" style="color:#fffffe;text-decoration:none;border-bottom: 1px solid #fffffe;"><span class="underline">Salesforce Marketing Cloud</span></a> </p>
                          
                         </td>
                       </tr>
@@ -388,9 +366,6 @@ Conheça as tendências para as PME, o que impulsiona a resiliência e o crescim
       
   </body>
 </html>
-
-
-
 `
   return {
     from: '"Confirmação de solicitação: Seu teste grátis está sendo preparado" <challengesalesforcefiap@gmail.com>', // sender address
