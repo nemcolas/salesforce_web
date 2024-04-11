@@ -95,45 +95,6 @@ function mostrarResultadoTesteGratis(message: modalTesteGratisProps) {
 
 }
 
-function validarForm() {
-    const inputs = document.querySelectorAll('input:not([type="button"])');
-    const inputSubmit = document.querySelector('input.enviarFormulario');
-    const emailRegex: RegExp = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
-    const telefoneRegex: RegExp = /^\d{11}$/; 
-
-    inputs.forEach((input: any) => {
-        input.addEventListener('keyup', () => {
-            let isValid = true;
-            inputs.forEach((input: any) => {
-                const texto: string = input.value;
-                if (input.name != 'aceita termos' && texto.length < 3 || texto == ''
-                    || (input.name === 'email corporativo' && !emailRegex.test(texto)) ||
-                    (input.name === 'telefone' && !telefoneRegex.test(texto.replace(/\D/g, '')) ||
-                    (input.name === 'aceita termos' && !input.checked))) {
-                    isValid = false;
-                }
-
-                if (input.name === 'email corporativo' && !emailRegex.test(texto)) {
-                    isValid = false;
-                }
-
-                if (input.name === 'telefone' && !telefoneRegex.test(texto.replace(/\D/g, ''))) {
-                    isValid = false;
-                }
-
-                if(input.name === 'aceita termos' && !input.checked) {
-                    isValid = false;
-                }
-            });
-            if (isValid) {
-                inputSubmit?.removeAttribute('disabled');
-            } else {
-                inputSubmit?.setAttribute('disabled', 'true');
-            }
-        });
-    });
-}
-
 async function enviarEmail(testeGratis: any){
     const result = await fetch("/api/send", {
         method: "POST",
@@ -145,4 +106,4 @@ async function enviarEmail(testeGratis: any){
       console.log(response);
 }  
 
-export { validarForm, enviarTesteGratis }
+export { enviarTesteGratis }

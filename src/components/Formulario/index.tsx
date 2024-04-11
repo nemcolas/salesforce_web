@@ -1,27 +1,77 @@
 'use client'
-import {validarForm, enviarTesteGratis} from './funcoes'
+import { useEffect, useState } from 'react'
+import {enviarTesteGratis} from './funcoes'
 
 //Componente responsável pelo formulário da página de teste grátis.
 export default function Formulario() {
-    return ( <form onChange={validarForm} className='flex flex-col'>
+    const [disabled, setDisabled] = useState(true)
+    const [form, setForm] = useState({
+        name: '',
+        lastName: '',
+        position: '',
+        emailCorporate: '',
+        phone: ''
+    })
+
+    const [selects, setSelect] = useState({
+        country: null,
+        sizeCompany: null,
+        languague: null
+    })
+    const emailRegex: RegExp = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
+    const telefoneRegex: RegExp = /^\d{11}$/; 
+
+    function changeSelect(type: string, valueTarget: any) {
+            setSelect({
+                ...selects,
+                [type]: valueTarget
+            })       
+    }
+
+    function changeState(type: string, valueTarget: string) {
+        setForm({
+            ...form,
+            [type] : valueTarget
+        })
+    }
+
+    useEffect(() =>{
+        if (form.name.length < 3 
+            || form.lastName.length < 3 
+            || form.position.length < 3
+            || !emailRegex.test(form.emailCorporate)
+            || !telefoneRegex.test(form.phone)
+            || selects.country == null
+            || selects.languague == null
+            || selects.sizeCompany == null) { 
+                console.log(selects.country, selects.languague, selects.sizeCompany)
+                setDisabled(true) 
+            }else {
+                setDisabled(false)
+            }    
+    }, [form, selects])
+
+
+
+    return ( <form className='flex flex-col'>
     <div className='flex justify-between gap-5'>
         <div className='flex flex-col'>
             <label htmlFor="name">Nome:</label>
-            <input className='text' type="text" name="name" id="name" placeholder="Nome" required />
+            <input onChange={(e) => {changeState('name', e.target.value)}} className='text' type="text" name="name" id="name" placeholder="Nome" value={form.name} />
         </div>
         <div className='flex flex-col'>
             <label htmlFor="sobrenome">Sobrenome:</label>
-            <input className='flex-1 text' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required />
+            <input onChange={(e) => {changeState('lastName', e.target.value)}} className='flex-1 text' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value={form.lastName} />
         </div>
     </div>
     <label htmlFor="cargo">Cargo:</label>
-    <input className='text' type="text" name="cargo" id="cargo" placeholder="Cargo" required />
+    <input onChange={(e) => {changeState('position', e.target.value)}} className='text' type="text" name="cargo" id="cargo" placeholder="Cargo" value={form.position} />
     <label htmlFor="email corporativo">Email corporativo:</label>
-    <input className='text' type="email" name="email corporativo" id="email corporativo" placeholder="Email corporativo" required />
+    <input onChange={(e) => {changeState('emailCorporate', e.target.value)}} className='text' type="email" name="email corporativo" id="email corporativo" placeholder="Email corporativo" value={form.emailCorporate} />
     <label htmlFor="telefone">Telefone:</label>
-    <input className='text' type="tel" name="telefone" id="telefone" placeholder="Telefone" required />
+    <input onChange={(e) => {changeState('phone', e.target.value)}} className='text' type="tel" name="telefone" id="telefone" placeholder="Telefone" value={form.phone} />
     <label htmlFor="tamanho da empresa">Tamanho da empresa:</label>
-    <select name="tamanho da empresa" id="tamanho da empresa" required>
+    <select value={selects.sizeCompany} onChange={(e) => changeSelect('sizeCompany', e.target.value)} name="tamanho da empresa" id="tamanho da empresa" required>
         <option className='text-slate-300' value="" disabled selected>Tamanho da empresa</option>
         <option value="1">1-50 funcionários</option>
         <option value="2">51-300 funcionários</option>
@@ -30,10 +80,9 @@ export default function Formulario() {
         <option value="5">2000+ funcionários</option>
     </select>
     <label htmlFor="pais/regiao">País/Região:</label>
-    <select name="pais/regiao" id="pais/regiao" required>
+    <select value={selects.country} onChange={(e) => changeSelect('country', e.target.value)} name="pais/regiao" id="pais/regiao">
         <option className='text-slate-300' value="" disabled selected>Selecione o País/Região</option>
         <option value="2">Estados Unidos</option>
-
         <option value="3">Canadá</option>
         <option value="4">Brasil</option>
         <option value="5">Reino Unido</option>
@@ -45,7 +94,7 @@ export default function Formulario() {
         <option value="11">Brasil</option>
     </select>
     <label htmlFor="idioma">Idioma:</label>
-    <select name="idioma" id="idioma" required>
+    <select value={selects.languague} onChange={(e) => changeSelect('languague', e.target.value)}  name="idioma" id="idioma" required>
         <option className='text-slate-300' value="" disabled selected>Selecione o Idioma</option>
         <option value="1">Inglês</option>
         <option value="2">Holândes</option>
@@ -73,7 +122,7 @@ export default function Formulario() {
     <p className='paragraphBottom'>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
         conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de
             privacidade</a></p>
-    <input onClick={enviarTesteGratis} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
+    <input disabled={disabled} onClick={enviarTesteGratis} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
 </form>
     )
 }
