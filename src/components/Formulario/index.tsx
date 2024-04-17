@@ -1,10 +1,12 @@
 'use client'
 import { useEffect, useState } from 'react'
 import {enviarTesteGratis} from './funcoes'
+import {emailRegex, telefoneRegex} from '@/utils'
 
 //Componente responsável pelo formulário da página de teste grátis.
 export default function Formulario() {
     const [disabled, setDisabled] = useState(true)
+
     const [form, setForm] = useState({
         name: '',
         lastName: '',
@@ -12,14 +14,17 @@ export default function Formulario() {
         emailCorporate: '',
         phone: ''
     })
+    const [aceitaTermos, setAceitaTermos] = useState()
 
     const [selects, setSelect] = useState({
-        country: null,
-        sizeCompany: null,
-        languague: null
+        country: '',
+        sizeCompany: '',
+        languague: '',
     })
-    const emailRegex: RegExp = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+(\.[a-z]+)?$/i;
-    const telefoneRegex: RegExp = /^\d{11}$/; 
+
+    function changeTermos(e: any) {
+        setAceitaTermos(e.target.checked)
+    }
 
     function changeSelect(type: string, valueTarget: any) {
             setSelect({
@@ -41,17 +46,15 @@ export default function Formulario() {
             || form.position.length < 3
             || !emailRegex.test(form.emailCorporate)
             || !telefoneRegex.test(form.phone)
-            || selects.country == null
-            || selects.languague == null
-            || selects.sizeCompany == null) { 
-                console.log(selects.country, selects.languague, selects.sizeCompany)
+            || selects.country == ''
+            || selects.languague == ''
+            || selects.sizeCompany == ''
+            || !aceitaTermos) { 
                 setDisabled(true) 
             }else {
                 setDisabled(false)
             }    
-    }, [form, selects])
-
-
+    }, [form, selects, aceitaTermos])
 
     return ( <form className='flex flex-col'>
     <div className='flex justify-between gap-5'>
@@ -113,7 +116,7 @@ export default function Formulario() {
         <option value="15">Russo</option>
     </select>
     <div className='termos flex'>
-        <input type="checkbox" name="aceita termos" id="aceita termos" required /><label htmlFor='aceita termos'>Estou de acordo com o <a
+        <input checked={aceitaTermos} onClick={changeTermos} type="checkbox" name="aceita termos" id="aceita termos" /><label htmlFor='aceita termos'>Estou de acordo com o <a
             href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_MSA.pdf"
             target="_blank">Main Services Agreement</a></label>
     </div>
@@ -122,7 +125,7 @@ export default function Formulario() {
     <p className='paragraphBottom'>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
         conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de
             privacidade</a></p>
-    <input disabled={disabled} onClick={enviarTesteGratis} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
+    <input disabled={disabled} onClick={() => {enviarTesteGratis(form, selects)}} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
 </form>
     )
 }

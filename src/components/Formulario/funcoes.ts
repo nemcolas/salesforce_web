@@ -1,5 +1,5 @@
 'use client'
-import modalTesteGratisProps from './interface';
+import {modalTesteGratisProps, inputProps, selectsProps} from './interface';
 async function pegarIdioma(id: String) {
     try {
         const resultado = await fetch(`http://localhost:8080/idioma/${id}`)
@@ -30,27 +30,22 @@ async function pegarPais(id: String) {
     }
 }
 
-async function construirObjetoTesteGratis() {
-    const inputs = document.querySelectorAll('input:not([type="button"]), select');
-    const arrayInputs = Array.from(inputs)
-    const valoresInputs = arrayInputs.map((input: any) => {
-        return input.value
-    })
-    const objetoTesteGratis ={
-        nome: valoresInputs[0],
-        sobrenome: valoresInputs[1],
-        cargo: valoresInputs[2],
-        email: valoresInputs[3],
-        telefone: valoresInputs[4],
-        porteEmpresa: await pegarPorteEmpresa(valoresInputs[5]),
-        pais: await pegarPais(valoresInputs[6]),
-        idioma: await pegarIdioma(valoresInputs[7])
+async function construirObjetoTesteGratis(inputText: inputProps, selects: selectsProps) {
+    return {
+        nome: inputText.name,
+        sobrenome: inputText.lastName,
+        cargo: inputText.position,
+        email: inputText.emailCorporate,
+        telefone: inputText.phone,
+        porteEmpresa: await pegarPorteEmpresa(selects.sizeCompany),
+        pais: await pegarPais(selects.country),
+        idioma: await pegarIdioma(selects.languague)
     }
-    return objetoTesteGratis
 }
 
-async function enviarTesteGratis() {
-    const testeGratis = await construirObjetoTesteGratis()
+async function enviarTesteGratis(inputText: inputProps, selects: selectsProps) {
+    const testeGratis = await construirObjetoTesteGratis(inputText, selects)
+    console.log(testeGratis)
     let message = {message: ''}
     try {
         const resultado = await fetch('http://localhost:8080/testegratis/', {
