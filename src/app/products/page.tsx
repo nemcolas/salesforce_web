@@ -22,6 +22,7 @@ export default function Produtos() {
         title="Vendas"
         paragraph="Eficiência máxima com automação, dados e inteligência melhores. Como? Com automação da força de vendas impulsionada por IA."
         link='https://www.salesforce.com/br/products/sales/'
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/smb/overview-demo/"
       />
       <ProductCard
         img="/image-products/atendimento-ao-cliente-salesforce 1.svg"
@@ -29,20 +30,23 @@ export default function Produtos() {
         title="Atendimento ao cliente"
         paragraph="Maximize o ROI e impulsione a eficiência, desde a central de contatos ao atendimento externo, tudo em uma unica plataforma."
         link="https://www.salesforce.com/br/products/service/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/signup/freetrial-service/?d=pb"
         />
         <ProductCard
         img="/image-products/marketing.svg"
-        altImg="Pagina web mostrando funcionalidades e metricas do Sales Cloud"
+        altImg="Pagina web mostrando funcionalidades e metricas"
         title="Marketing"
         paragraph="Atraia clientes. Gere mais engajamento.Construa relações duradouras.Tudo isso graças ao marketing digital baseado em dados"
         link="https://www.salesforce.com/br/products/marketing-cloud/overview/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/overview-demo/"
         />
         <ProductCard
         img="/image-products/commerce.svg"
         altImg="Astro, mascote da Salesforce caminhando sobre a pagina de vendas da Salesforce"
-        title="Commerce"
+        title="Commerce cloud"
         paragraph="Obtenha valor rapidamente, da descoberta à entrega na plataforma que já conquistou a confianças das maiores marcas do mercado."
         link="https://www.salesforce.com/br/products/commerce/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/conf/demo/commerce-cloud/overview/"
         />
         <ProductCard
         img="/image-products/data_cloud.svg"
@@ -50,13 +54,15 @@ export default function Produtos() {
         title="Data cloud"
         paragraph="Capacite as equipes a envolver os clientes, em cada ponto de contato, com insights relevantes e dados contextuais no fluxo do trabalho"
         link="https://www.salesforce.com/br/products/data/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/customer-data-platform/?d=cta-header-10"
         />
         <ProductCard
         img="/image-products/Tableau.svg"
-        altImg="Mulher utiizando o celular para ver graficos com mascote Astro a frente"
-        title="Data cloud"
-        paragraph="Capacite as equipes a envolver os clientes, em cada ponto de contato, com insights relevantes e dados contextuais no fluxo do trabalho"
+        altImg="Tela com alguns circulos pequenos e coloridos com um texto descritivo sobre vendas"
+        title="Tableau"
+        paragraph="Use o Tableau para combinar dados do Salesforce de toda a plataforma Customer 360"
         link="https://www.salesforce.com/br/products/analytics/"
+        linkSolicitarDemonstracao="https://www.tableau.com/pt-br/solutions/salesforce"
         />
         <ProductCard
         img="/image-products/mulesoft 1.svg"

@@ -43,9 +43,9 @@ async function construirObjetoTesteGratis(inputText: inputProps, selects: select
     }
 }
 
-async function enviarTesteGratis(inputText: inputProps, selects: selectsProps) {
+async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, input) {
+    input.value = "Verificando requisição..."
     const testeGratis = await construirObjetoTesteGratis(inputText, selects)
-    console.log(testeGratis)
     let message = {message: ''}
     try {
         const resultado = await fetch('http://localhost:8080/testegratis/', {
@@ -63,10 +63,11 @@ async function enviarTesteGratis(inputText: inputProps, selects: selectsProps) {
     } catch (error) {
         message.message = 'Erro ao enviar teste grátis'
     }
-    mostrarResultadoTesteGratis(message)
+    mostrarResultadoTesteGratis(message, input)
 }
 
-function mostrarResultadoTesteGratis(message: modalTesteGratisProps) {
+function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input) {
+    input.value = "Enviar Teste Grátis"
     const image = document.createElement('img')
     const paragrafo = document.createElement('p')
     const main = document.querySelector('main')

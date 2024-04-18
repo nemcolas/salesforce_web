@@ -2,9 +2,10 @@
 
 import Link from "next/link";
 import './style.css';
-function BtnLearnMore() {
+import { BtnSoliciteDemonstracaoProps } from "./interface";
+function BtnLearnMore(props: BtnSoliciteDemonstracaoProps) {
   return (
-    <Link className="btnSolicitarDemonstracao flex button" href='https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9'>Solicitar Demonstração</Link>
+    <Link className="btnSolicitarDemonstracao flex button" href={props.linkSolicitarDemonstracao}>Solicitar Demonstração</Link>
   );
 };
 
