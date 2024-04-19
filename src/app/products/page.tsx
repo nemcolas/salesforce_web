@@ -20,19 +20,19 @@ export default function Produtos() {
         img="/image-products/vendas 2.svg"
         altImg="Pagina web da plataforma Sales Cloud"
         title="Vendas"
-        paragraph="Eficiência máxima com automação, dados e inteligência melhores. Como? Com automação da força de vendas impulsionada por IA."
+        paragraph="Eficiência máxima com automaçãoe dados. Como? Com automação da força de vendas impulsionada por IA."
         link='https://www.salesforce.com/br/products/sales/'
       />
       <ProductCard
         img="/image-products/atendimento-ao-cliente-salesforce 1.svg"
         altImg="Pagina web mostrando as funcionalidades do atendimento ao cliente"
         title="Atendimento ao cliente"
-        paragraph="Maximize o ROI e impulsione a eficiência, desde a central de contatos ao atendimento externo, tudo em uma unica plataforma."
+        paragraph="Maximize o ROI e impulsione a eficiência, desde a central de contatos até o atendimento externo, tudo em uma única plataforma."
         link="https://www.salesforce.com/br/products/service/"
         />
         <ProductCard
         img="/image-products/marketing.svg"
-        altImg="Pagina web mostrando funcionalidades e metricas do Sales Cloud"
+        altImg="Pagina web mostrando funcionalidades e metricas"
         title="Marketing"
         paragraph="Atraia clientes. Gere mais engajamento.Construa relações duradouras.Tudo isso graças ao marketing digital baseado em dados"
         link="https://www.salesforce.com/br/products/marketing-cloud/overview/"
