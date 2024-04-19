@@ -125,7 +125,7 @@ export default function Formulario() {
     <p className='paragraphBottom'>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
         conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de
             privacidade</a></p>
-    <input disabled={disabled} onClick={() => {enviarTesteGratis(form, selects)}} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
+    <input disabled={disabled} onClick={(e) => {enviarTesteGratis(form, selects, e.target)}} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
 </form>
     )
 }

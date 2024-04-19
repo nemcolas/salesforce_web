@@ -22,6 +22,7 @@ export default function Produtos() {
         title="Vendas"
         paragraph="Eficiência máxima com automaçãoe dados. Como? Com automação da força de vendas impulsionada por IA."
         link='https://www.salesforce.com/br/products/sales/'
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/smb/overview-demo/"
       />
       <ProductCard
         img="/image-products/atendimento-ao-cliente-salesforce 1.svg"
@@ -29,6 +30,7 @@ export default function Produtos() {
         title="Atendimento ao cliente"
         paragraph="Maximize o ROI e impulsione a eficiência, desde a central de contatos até o atendimento externo, tudo em uma única plataforma."
         link="https://www.salesforce.com/br/products/service/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/signup/freetrial-service/?d=pb"
         />
         <ProductCard
         img="/image-products/marketing.svg"
@@ -36,13 +38,15 @@ export default function Produtos() {
         title="Marketing"
         paragraph="Atraia clientes. Gere mais engajamento.Construa relações duradouras.Tudo isso graças ao marketing digital baseado em dados"
         link="https://www.salesforce.com/br/products/marketing-cloud/overview/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/overview-demo/"
         />
         <ProductCard
         img="/image-products/commerce.svg"
         altImg="Astro, mascote da Salesforce caminhando sobre a pagina de vendas da Salesforce"
-        title="Commerce"
+        title="Commerce cloud"
         paragraph="Obtenha valor rapidamente, da descoberta à entrega na plataforma que já conquistou a confianças das maiores marcas do mercado."
         link="https://www.salesforce.com/br/products/commerce/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/conf/demo/commerce-cloud/overview/"
         />
         <ProductCard
         img="/image-products/data_cloud.svg"
@@ -50,13 +54,15 @@ export default function Produtos() {
         title="Data cloud"
         paragraph="Capacite as equipes a envolver os clientes, em cada ponto de contato, com insights relevantes e dados contextuais no fluxo do trabalho"
         link="https://www.salesforce.com/br/products/data/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/customer-data-platform/?d=cta-header-10"
         />
         <ProductCard
         img="/image-products/Tableau.svg"
-        altImg="Mulher utiizando o celular para ver graficos com mascote Astro a frente"
-        title="Data cloud"
-        paragraph="Capacite as equipes a envolver os clientes, em cada ponto de contato, com insights relevantes e dados contextuais no fluxo do trabalho"
+        altImg="Tela com alguns circulos pequenos e coloridos com um texto descritivo sobre vendas"
+        title="Tableau"
+        paragraph="Use o Tableau para combinar dados do Salesforce de toda a plataforma Customer 360"
         link="https://www.salesforce.com/br/products/analytics/"
+        linkSolicitarDemonstracao="https://www.tableau.com/pt-br/solutions/salesforce"
         />
         <ProductCard
         img="/image-products/mulesoft 1.svg"
@@ -64,6 +70,7 @@ export default function Produtos() {
         title="MuleSoft"
         paragraph="Automatize tudo, capacite todos. Integre dados de qualquer sistema e automatize tarefas complexas para fornecer experiências do cliente conectadas mais rapidamente."
         link="https://www.salesforce.com/br/products/integration/overview/"
+        linkSolicitarDemonstracao="https://www.example.com/demo"
         />
         <ProductCard
         img="/image-products/slack.svg"
@@ -71,6 +78,7 @@ export default function Produtos() {
         title="Slack"
         paragraph="Descubra um jeito flexível de conectar pessoas, parceiros e aplicativos. Integrado ao Customer 360, o Slack impulsiona a produtividade e faz funcionar o trabalho colaborativo"
         link="https://www.salesforce.com/br/products/slack/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/slack/overview-demo/?d=pb"
         />
         <ProductCard
         img="/image-products/plataforma.svg"
@@ -78,6 +86,7 @@ export default function Produtos() {
         title="Plataforma"
         paragraph="Crie apps, acelere a automação,e alcance o sucesso imediato. Com a Salesforce Platform você automatiza processos cria apps melhores e protege os seus dados"
         link="https://www.salesforce.com/br/products/platform/overview/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/contact/platform-contact/?d=cta-body-promo-11"
         />
         <ProductCard
         img="/image-products/sustentabilidade.svg"
@@ -85,6 +94,7 @@ export default function Produtos() {
         title="Sustentabilidade"
         paragraph="Combine análises robustas, IA avançada e o ecossistema Salesforce para agilizar o gerenciamento ESG"
         link="https://www.salesforce.com/products/net-zero-cloud/overview/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/form/sustainability/net-zero-cloud-demo/?d=cta-header-217"
         />
         <ProductCard
         img="/image-products/pequenas_empresas.svg"
@@ -92,6 +102,7 @@ export default function Produtos() {
         title="Pequenas empresas"
         paragraph="Desenvolva sua pequena empresa e conquiste relacionamentos duradouros com os clientes com a ajuda de uma plataforma unificada."
         link="https://www.salesforce.com/br/products/small-business/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/demo/smb-demos/?d=pb"
         />
         <ProductCard
         img="/image-products/servicoeseplanos.svg"
@@ -99,6 +110,8 @@ export default function Produtos() {
         title="Serviços e planos"
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/services/success-plans/overview/"
+
         />
         </div>
       </section>
