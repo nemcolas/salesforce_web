@@ -20,7 +20,7 @@ export default function Produtos() {
         img="/image-products/vendas 2.svg"
         altImg="Pagina web da plataforma Sales Cloud"
         title="Vendas"
-        paragraph="Eficiência máxima com automaçãoe dados. Como? Com automação da força de vendas impulsionada por IA."
+        paragraph="Eficiência máxima com automação e dados. Como? Com automação da força de vendas impulsionada por IA."
         link='https://www.salesforce.com/br/products/sales/'
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/smb/overview-demo/"
       />
@@ -52,7 +52,7 @@ export default function Produtos() {
         img="/image-products/data_cloud.svg"
         altImg="Mulher utiizando o celular para ver graficos com mascote Astro a frente"
         title="Data cloud"
-        paragraph="Capacite as equipes a envolver os clientes, em cada ponto de contato, com insights relevantes e dados contextuais no fluxo do trabalho"
+        paragraph="Capacite as equipes para envolver os clientes em cada ponto de contato, fornecendo insights relevantes e dados contextuais integrados ao fluxo de trabalho"
         link="https://www.salesforce.com/br/products/data/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/customer-data-platform/?d=cta-header-10"
         />
@@ -70,7 +70,7 @@ export default function Produtos() {
         title="MuleSoft"
         paragraph="Automatize tudo, capacite todos. Integre dados de qualquer sistema e automatize tarefas complexas para fornecer experiências do cliente conectadas mais rapidamente."
         link="https://www.salesforce.com/br/products/integration/overview/"
-        linkSolicitarDemonstracao="https://www.example.com/demo"
+        linkSolicitarDemonstracao="https://www.salesforce.com/br/form/integration/overview-demo/?d=cta-header-1"
         />
         <ProductCard
         img="/image-products/slack.svg"
@@ -84,7 +84,7 @@ export default function Produtos() {
         img="/image-products/plataforma.svg"
         altImg="Representação visual da pagina web Salesforce Plataform, com uma borboleta ao lado direito"
         title="Plataforma"
-        paragraph="Crie apps, acelere a automação,e alcance o sucesso imediato. Com a Salesforce Platform você automatiza processos cria apps melhores e protege os seus dados"
+        paragraph="Crie apps, acelere a automação, e alcance o sucesso imediato. Com a Salesforce Platform você automatiza processos, cria apps melhores e protege os seus dados"
         link="https://www.salesforce.com/br/products/platform/overview/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/contact/platform-contact/?d=cta-body-promo-11"
         />
@@ -111,7 +111,6 @@ export default function Produtos() {
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/services/success-plans/overview/"
-
         />
         </div>
       </section>

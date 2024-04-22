@@ -1,5 +1,5 @@
 'use client'
-import {modalTesteGratisProps, inputProps, selectsProps} from './interface';
+import {modalTesteGratisProps, inputProps, selectsProps, testeGratisProps} from './interface';
 async function pegarIdioma(id: String) {
     try {
         const resultado = await fetch(`http://localhost:8080/idioma/${id}`)
@@ -43,7 +43,7 @@ async function construirObjetoTesteGratis(inputText: inputProps, selects: select
     }
 }
 
-async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, input) {
+async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, input: HTMLInputElement) {
     input.value = "Verificando requisição..."
     const testeGratis = await construirObjetoTesteGratis(inputText, selects)
     let message = {message: ''}
@@ -61,12 +61,12 @@ async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, i
             enviarEmail(testeGratis)
         }
     } catch (error) {
-        message.message = 'Erro ao enviar teste grátis'
+        message.message = 'Erro ao enviar teste grátis, por favor entre em contato com o nosso suporte'
     }
     mostrarResultadoTesteGratis(message, input)
 }
 
-function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input) {
+function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input: HTMLInputElement) {
     input.value = "Enviar Teste Grátis"
     const image = document.createElement('img')
     const paragrafo = document.createElement('p')
@@ -79,8 +79,9 @@ function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input) {
     image.classList.add('icone-fechar')
     divResultado.append(image, paragrafo)
     divResultado.classList.add(`${message.message == 'Teste grátis cadastrado com sucesso! Iremos entrar em contato em breve' ? 'sucesso' : 'falha'}`, 'div-retorno-teste')
-    if(main)
+    if(main){
         main.insertBefore(divResultado, main.firstChild)
+    }
     image.addEventListener('click', () => {
         divResultado.remove()
     })
@@ -91,14 +92,14 @@ function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input) {
 
 }
 
-async function enviarEmail(testeGratis: any){
+async function enviarEmail(testeGratis: testeGratisProps){
     const result = await fetch("/api/send", {
         method: "POST",
         body: JSON.stringify({ send: testeGratis.email, nome: testeGratis.nome}),
       });
   
       const response = await result.json();
-  
+
       console.log(response);
 }  
 
