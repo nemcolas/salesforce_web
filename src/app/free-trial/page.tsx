@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import './free-trial.css';
+import '@/style/free-trial.css';
 import Formulario from '@/components/Formulario';
 
 export default function FreeTrial() {

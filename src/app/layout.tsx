@@ -23,9 +23,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-br">
-      <Head>
-      <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-      </Head>
       <body>
         <Header/>
         {children}

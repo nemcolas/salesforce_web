@@ -110,6 +110,10 @@ footer div.footer-bottom .footer-bottom-info a{
     margin: 0 5px;
 }
 
+a.declaracao-privacidade {
+    color: #032d93;
+}
+
 @media screen and (max-width: 960px){
     div.footer-top {
         display: none;

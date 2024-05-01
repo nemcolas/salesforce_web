@@ -1,11 +1,14 @@
+'use client'
 import Link from 'next/link';
 import Button from '../Button';
 import './header.css';
 import {mostrarMenu} from '../../functions/menu';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 // Componente responsável por criar o header de todas as páginas 
 export default function Header() {
+    if (usePathname() != '/login') {
     return (
         <header className="flex">
           <Image onClick={mostrarMenu} className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32}/>
@@ -35,5 +38,8 @@ export default function Header() {
             <Button class='small' link="./free-trial" text="Teste Grátis" />
           </nav>
         </header>
-    )
+    ) }
+    else{
+      return null
+    }
 }

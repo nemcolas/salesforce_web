@@ -3,8 +3,6 @@ import { transporter, getConfig } from "./utils"; // nosso pacote com as configu
 
 export async function POST(request: NextRequest) {
   const { send, nome } = await request.json();
-  console.log(nome);
   const info = await transporter.sendMail(getConfig(send, nome));
-
   return Response.json({ status: "enviado" });
 }

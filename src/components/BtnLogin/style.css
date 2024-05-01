@@ -1,0 +1,27 @@
+a.btn-login {
+    text-decoration: none;
+    background: #1B7ED9;
+    padding: 0.5rem;
+    border-radius: 0.2rem;
+    display: flex;
+    align-items: center;
+    width: 50%;
+    max-width: 340px;
+    min-width: 200px;
+    margin: 1rem auto;
+}
+
+a.btn-login:focus {
+    outline: 0.2rem solid #111;
+}
+
+a.btn-login p{
+    font-size: 1.1rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffe;
+    margin: auto;
+}
+
+a.btn-login img {
+    width: 30px;
+}

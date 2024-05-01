@@ -12,10 +12,10 @@ html {
 }
 
 *:focus {
-    outline: #2421b4 solid 2px;                                          
+    outline: #0f0f10 solid 0.2rem;                                          
 }
 
-main {
+main:not(.pagina-login) {
     margin: 0 auto;
     max-width: 1400px;
     min-width: 250px;

@@ -44,6 +44,7 @@ async function construirObjetoTesteGratis(inputText: inputProps, selects: select
 }
 
 async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, input: HTMLInputElement) {
+    input.disabled = true
     input.value = "Verificando requisição..."
     const testeGratis = await construirObjetoTesteGratis(inputText, selects)
     let message = {message: ''}
@@ -67,6 +68,7 @@ async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, i
 }
 
 function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input: HTMLInputElement) {
+    input.disabled = false
     input.value = "Enviar Teste Grátis"
     const image = document.createElement('img')
     const paragrafo = document.createElement('p')

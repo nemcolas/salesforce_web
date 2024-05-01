@@ -43,6 +43,12 @@
     width: 50%;
 }
 
+.cardProducts .btnSaibaMais {
+    background: none;
+    border: 0.19rem solid #286cad;
+    color: #286cad;
+}
+
 @media screen and (max-width: 760px) {
     .cardProducts {
         width: 90%;

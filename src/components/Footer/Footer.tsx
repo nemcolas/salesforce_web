@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 // Componente responsável por criar o footer de todas as páginas
 export default function Footer() {
+    if (usePathname() != '/login') {
     return (
         <footer>
             <div className={usePathname() == '/' || usePathname() == '/products'? 'footer-top flex' : 'hidden' + ' footer-top'}>
@@ -91,7 +92,7 @@ export default function Footer() {
             </div>
             <div className={usePathname() == '/free-trial' ? 'py-7 px-3 text-center justify-center text-sm flex flex-wrap' : 'hidden'}>
                 <p className="mr-3">Saiba mais sobre o nosso compromisso com a proteção de privacidade</p>
-                <a className='no-underline text-blue-500' href="https://www.salesforce.com/br/company/privacy/">Destaque de Declaração de privacidade</a>
+                <a className='declaracao-privacidade' href="https://www.salesforce.com/br/company/privacy/">Destaque de Declaração de privacidade</a>
             </div>
             <div className="footer-bottom flex">
                 <div tabIndex={0} className="region-switcher flex flex-wrap">
@@ -120,5 +121,8 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )
+    )}
+    else {
+        return null
+    }
 }

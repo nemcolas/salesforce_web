@@ -22,14 +22,15 @@ section div.cardOurEvents a.learning-events-redirect, section div.cardOurEvents 
 }
 
 section div.cardOurEvents p.paragraphTop{
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-decoration: none;
     padding: 0.6rem;
-    background:#D9D9D9;
+    background:#ccc;
+    font-weight: 600;
     width: 35%;
     text-align: center;
     border-radius: 0.8rem;
-    color: #347ec3;
+    color: #1a4c7b;
 }
 
 section div.cardOurEvents img {
