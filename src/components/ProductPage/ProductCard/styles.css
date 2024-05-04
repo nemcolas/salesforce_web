@@ -49,6 +49,11 @@
     color: #286cad;
 }
 
+.cardProducts .btnSaibaMais:hover {
+    border: 0.19rem solid #1e5282;
+    color: #0a345c;
+}
+
 @media screen and (max-width: 760px) {
     .cardProducts {
         width: 90%;
