@@ -1,12 +1,13 @@
 a.btn-login {
     text-decoration: none;
     background: #1B7ED9;
-    padding: 0.5rem;
+    padding: 0.8rem 0.6rem;
     border-radius: 0.2rem;
     display: flex;
     align-items: center;
-    width: 50%;
-    max-width: 340px;
+    width: 90%;
+    gap: 0.5rem;
+    max-width: 450px;
     min-width: 200px;
     margin: 1rem auto;
 }
@@ -16,12 +17,19 @@ a.btn-login:focus {
 }
 
 a.btn-login p{
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
     color: #ffe;
     margin: auto;
 }
 
 a.btn-login img {
-    width: 30px;
+    width: 25px;
+}
+
+@media screen and (max-width: 600px){
+    a.btn-login p {
+        font-size: 1rem;
+    }
+    
 }

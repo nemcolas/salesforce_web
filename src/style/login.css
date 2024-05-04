@@ -1,35 +1,30 @@
 main.pagina-login {
-    height: 100vh;
     display: flex;
-    background: #ddd;
     width: 100%;
-    justify-content: space-around;
+    justify-content: center;
+    height: calc(100vh - 10rem);
+    align-items: center;
 }
 
-main.pagina-login section{
-    width: 50%;
-}
-
-section div.secao-login {
+section.secao-login {
     background: #fff;
-    padding: 1rem 0;
     width: 70%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
     align-items: center;
+    max-width: 600px;
+    padding: 1rem 0;
+    box-shadow: 0 0 0.1rem rgba(0, 0, 0, 0.7);
 }
 
 section.secao-login .logo {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
-section.img-login {
-    background: blue;
-}
-
-section.img-login img {
-    width: 100%;
-    max-width: 700px;
+@media screen and (max-width: 900px){
+    section.secao-login {
+        width: 90%;
+    }
 }

@@ -13,10 +13,10 @@ export default function Customer360() {
             <p>O Customer 360 é a nossa suíte de produtos e serviços que ajuda 98% dos clientes a alcançar ou superar suas metas de ROI.</p>
             <div className='flex flex-wrap gap-5 buttons'>
               <Button class='small' link='/free-trial' text='Teste Grátis'/>
-              <a className='btnSaibaMaisHome'>Saiba Mais</a>
+              <a className='btnSaibaMaisHome' href='https://www.salesforce.com/br/blog/experiencia-salesforce-customer-360/'>Saiba Mais</a>
           </div>
         </div>
-        <Image className='imageCustomer360' src='/customer360.webp' alt='mulher sorrindo com o mascote Einstem em sua frente dentro da roda do customer 360' width={700} height={600}/>
+        <Image className='imageCustomer360' src='/customer360.webp' alt='mulher sorrindo com o mascote Einstem em sua frente dentro da roda' width={700} height={600}/>
     </section>
   );
 }

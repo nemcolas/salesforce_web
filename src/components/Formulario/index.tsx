@@ -60,19 +60,23 @@ export default function Formulario() {
     <div className='flex justify-between gap-5'>
         <div className='flex flex-col'>
             <label htmlFor="name">Nome:</label>
-            <input onChange={(e) => {changeState('name', e.target.value)}} className='text' type="text" name="name" id="name" placeholder="Nome" value={form.name} />
+            <input onChange={(e) => {changeState('name', e.target.value)}} className='text' type="text" name="name" id="name" placeholder="Nome" value={form.name} required/>
         </div>
         <div className='flex flex-col'>
             <label htmlFor="sobrenome">Sobrenome:</label>
-            <input onChange={(e) => {changeState('lastName', e.target.value)}} className='flex-1 text' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value={form.lastName} />
+            <input onChange={(e) => {changeState('lastName', e.target.value)}} className='flex-1 text' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value={form.lastName} required/>
         </div>
     </div>
+    
     <label htmlFor="cargo">Cargo:</label>
-    <input onChange={(e) => {changeState('position', e.target.value)}} className='text' type="text" name="cargo" id="cargo" placeholder="Cargo" value={form.position} />
+    <input onChange={(e) => {changeState('position', e.target.value)}} className='text' type="text" name="cargo" id="cargo" placeholder="Cargo" value={form.position} required/>
     <label htmlFor="email corporativo">Email corporativo:</label>
-    <input onChange={(e) => {changeState('emailCorporate', e.target.value)}} className='text' type="email" name="email corporativo" id="email corporativo" placeholder="Email corporativo" value={form.emailCorporate} />
+
+    <input onChange={(e) => {changeState('emailCorporate', e.target.value)}} className='text' type="email" name="email corporativo" id="email corporativo" placeholder="Email corporativo" value={form.emailCorporate} required/>
+
     <label htmlFor="telefone">Telefone:</label>
-    <input onChange={(e) => {changeState('phone', e.target.value)}} className='text' type="tel" name="telefone" id="telefone" placeholder="Telefone" value={form.phone} />
+    <input onChange={(e) => {changeState('phone', e.target.value)}} className='text' type="tel" name="telefone" id="telefone" placeholder="Telefone" value={form.phone} required/>
+
     <label htmlFor="tamanho da empresa">Tamanho da empresa:</label>
     <select value={selects.sizeCompany} onChange={(e) => changeSelect('sizeCompany', e.target.value)} name="tamanho da empresa" id="tamanho da empresa" required>
         <option className='text-slate-300' value="" disabled selected>Tamanho da empresa</option>
@@ -82,8 +86,9 @@ export default function Formulario() {
         <option value="4">1001-2000 funcionários</option>
         <option value="5">2000+ funcionários</option>
     </select>
+
     <label htmlFor="pais/regiao">País/Região:</label>
-    <select value={selects.country} onChange={(e) => changeSelect('country', e.target.value)} name="pais/regiao" id="pais/regiao">
+    <select value={selects.country} onChange={(e) => changeSelect('country', e.target.value)} name="pais/regiao" id="pais/regiao" required>
         <option className='text-slate-300' value="" disabled selected>Selecione o País/Região</option>
         <option value="2">Estados Unidos</option>
         <option value="3">Canadá</option>
@@ -96,6 +101,7 @@ export default function Formulario() {
         <option value="10">Índia</option>
         <option value="11">Brasil</option>
     </select>
+
     <label htmlFor="idioma">Idioma:</label>
     <select value={selects.languague} onChange={(e) => changeSelect('languague', e.target.value)}  name="idioma" id="idioma" required>
         <option className='text-slate-300' value="" disabled selected>Selecione o Idioma</option>
@@ -116,7 +122,7 @@ export default function Formulario() {
         <option value="15">Russo</option>
     </select>
     <div className='termos flex'>
-        <input checked={aceitaTermos} onClick={changeTermos} type="checkbox" name="aceita termos" id="aceita termos" /><label htmlFor='aceita termos'>Estou de acordo com o <a
+        <input checked={aceitaTermos} onClick={changeTermos} type="checkbox" name="aceita termos" id="aceita termos" required/><label htmlFor='aceita termos'>Estou de acordo com o <a
             href="https://www.salesforce.com/content/dam/web/en_us/www/documents/legal/salesforce_MSA.pdf"
             target="_blank">Main Services Agreement</a></label>
     </div>
