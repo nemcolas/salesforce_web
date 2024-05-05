@@ -1,11 +1,17 @@
 'use client'
 import { useEffect, useState } from 'react'
-import {enviarTesteGratis} from './funcoes'
+import {enviarTesteGratis, pegarInformacoesObjeto} from './funcoes'
 import {emailRegex, telefoneRegex} from '@/utils'
-
+import {backEndInfoProps, idiomaProps} from './interface'
 //Componente responsável pelo formulário da página de teste grátis.
 export default function Formulario() {
     const [disabled, setDisabled] = useState(true)
+
+    const [infoFormulario, setInfoFormulario] = useState<backEndInfoProps>({
+        idioma:[],
+        pais: [],
+        porteEmpresa: []
+    })
 
     const [form, setForm] = useState({
         name: '',
@@ -55,6 +61,13 @@ export default function Formulario() {
                 setDisabled(false)
             }    
     }, [form, selects, aceitaTermos])
+
+    useEffect(() => {
+        pegarInformacoesObjeto().then((dados:any) => {
+            setInfoFormulario(dados)
+        })   
+
+    }, [])
 
     return ( <form className='flex flex-col'>
     <div className='flex justify-between gap-5'>
@@ -131,7 +144,7 @@ export default function Formulario() {
     <p className='paragraphBottom'>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
         conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de
             privacidade</a></p>
-    <input disabled={disabled} onClick={(e) => {enviarTesteGratis(form, selects, e.currentTarget)}} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
+    <input disabled={disabled} onClick={(e) => {enviarTesteGratis(form, selects, e.currentTarget, infoFormulario)}} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
 </form>
     )
 }

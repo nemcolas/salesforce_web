@@ -17,17 +17,17 @@ interface selectsProps{
 }
 
 interface porteEmpresaProps{
-    idPorteEmpresa: string,
+    id: string,
     descricao: string
 }
 
 interface paisProps{
-    idPais:string,
-    descricao:string
+    id:string,
+    descricao?:string
 }
 
 interface idiomaProps{
-    idIdioma: string,
+    id: string,
     idioma:string
 }
 
@@ -40,7 +40,12 @@ interface testeGratisProps{
     porteEmpresa: porteEmpresaProps,
     pais: paisProps,
     idioma: idiomaProps
-} 
+}
 
+interface backEndInfoProps{
+    idioma:Array<idiomaProps>,
+    pais:Array<idiomaProps>,
+    porteEmpresa:Array<porteEmpresaProps>
+}
 
-export type {modalTesteGratisProps, inputProps, selectsProps, testeGratisProps, porteEmpresaProps, paisProps, idiomaProps};
+export type {modalTesteGratisProps, inputProps, selectsProps, testeGratisProps, porteEmpresaProps, paisProps, idiomaProps, backEndInfoProps};
