@@ -14,9 +14,14 @@ section.customer360 div.content a {
 }
 
 section.customer360 div.content a.btnSaibaMaisHome {
-    border: 1px solid #878686;
+    border: 0.1rem solid #989898;
     background: #fff;
     font-weight: 200;
+}
+
+section.customer360 div.content a.btnSaibaMaisHome:hover {
+    border-color: #1764ab;
+    color: #2882d5;
 }
 
 section.customer360 .imageCustomer360 {

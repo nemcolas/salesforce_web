@@ -51,6 +51,10 @@ div.card-client a.linkclient {
     font-size: 1.1rem;
 }
 
+div.card-client a.linkclient:hover {
+    color: #0084ff;
+}
+
 @media screen and (max-width:940px){
     div.card-client {
         width: 45%;

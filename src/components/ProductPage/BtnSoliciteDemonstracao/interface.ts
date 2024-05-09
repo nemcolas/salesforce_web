@@ -1,4 +1,6 @@
 interface BtnSoliciteDemonstracaoProps {
-    linkSolicitarDemonstracao: string;}
+    linkSolicitarDemonstracao: string;
+    arialabel?: string;
+}
     
 export default BtnSoliciteDemonstracaoProps;

@@ -24,17 +24,11 @@ export default function Header() {
           <li><a href="/alunos">Alunos</a></li>
         </ul>
 
-        <div className="header-contact">
-          <a href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Suporte</a>
-        </div>
-
-        <img className="language-selector-globe" tabIndex={0} src="/earth-icon.svg"
-          alt="icone do globo terreste em linhas pretas" />
-
-        <div className="login">
+        <section className="login">
+          <a className='link-suporte' href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Suporte</a>
           <Link className='image' href="/login"><img src="/login-02.webp" alt="Ícone login"/></Link>
           <Link className='text-login' href="/login" lang='en'>Login</Link>
-        </div>
+        </section>
         <Button class='small' link="./free-trial" text="Teste Grátis" />
       </nav>
     </header>

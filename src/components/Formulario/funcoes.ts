@@ -47,6 +47,7 @@ async function construirObjetoTesteGratis(inputText: inputProps, selects: select
 }
 
 async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, input: HTMLInputElement, arrayInfoBackEnd: backEndInfoProps) {
+    console.log(arrayInfoBackEnd)
     input.disabled = true
     input.value = "Verificando requisição..."
     const testeGratis = await construirObjetoTesteGratis(inputText, selects, arrayInfoBackEnd)

@@ -16,9 +16,13 @@ div.menu-mobile {
 
 header a {
     font-size: 1rem;
-    font-weight: bold;
+    font-weight: bold; 
     color: #032D93;
 } 
+
+header nav ul a:hover, header nav section a:hover {
+    color: #2A71B5;
+}
 
 header> a:first-child {
     flex: 7%;
@@ -40,7 +44,7 @@ header> nav img {
 header,
 header>nav,
 header>nav ul,
-header>nav>div {
+header>nav>section {
     display: flex;
     align-items: center;
 }
@@ -64,29 +68,20 @@ header nav ul li a {
     margin: 0 0.5rem;
 }
 
-header nav div.login a {
-    color: #2A71B5;
-    font-size: 1rem;
-    font-weight: bold;
-}
-
-header>nav div.header-contact {
-    flex-direction: column;
-}
-
-header>nav img.language-selector-globe {
-    margin: 0 50px 0 25px;
-}
-
 header>nav a.btn {
     font-size: 1.1rem;
 }
 
-header>nav div.login {
+header > nav section.login {
     margin-right: 2rem;
+    justify-content: end;
 }
 
-header>nav div.login > .image{
+header nav section.login a.link-suporte {
+    margin-right: 1rem;
+}
+
+header>nav section.login .image{
     margin-right: 0.3rem;
 }
 
@@ -110,7 +105,7 @@ header>nav div.login > .image{
         margin-left: 2rem;
     }
 
-    header>nav div.login {
+    header>nav section.login {
         margin-right: 0.5rem;
     }
 

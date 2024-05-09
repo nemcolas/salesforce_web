@@ -2,10 +2,10 @@
 
 import Link from "next/link";
 import './style.css';
-import { BtnSoliciteDemonstracaoProps } from "./interface";
+import BtnSoliciteDemonstracaoProps from "./interface";
 function BtnLearnMore(props: BtnSoliciteDemonstracaoProps) {
   return (
-    <Link className="btnSolicitarDemonstracao flex button" href={props.linkSolicitarDemonstracao}>Solicitar Demonstração</Link>
+    <Link aria-label={props.arialabel} className="btnSolicitarDemonstracao flex button" href={props.linkSolicitarDemonstracao}>Solicitar Demonstração</Link>
   );
 };
 

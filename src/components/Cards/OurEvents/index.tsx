@@ -9,7 +9,7 @@ export default function CardsOurEvents(props: OurEventsProps) {
             <Image src={props.img} alt={props.alt} width={500} height={200} />
             <p className='paragraphTop'>{props.paragraphTop}</p>
             <p>{props.paragraph}</p>
-            <a className="learning-events-redirect" href={props.bottomLink}>{props.bottomLinkText}</a>
+            <a className="learning-events-redirect linkcard" href={props.bottomLink}>{props.bottomLinkText}</a>
         </div>
     )
 }

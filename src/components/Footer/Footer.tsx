@@ -95,10 +95,6 @@ export default function Footer() {
                 <a className='declaracao-privacidade' href="https://www.salesforce.com/br/company/privacy/">Destaque de Declaração de privacidade</a>
             </div>
             <div className="footer-bottom flex">
-                <div tabIndex={0} className="region-switcher flex flex-wrap">
-                    <Image src="/earth-icon.svg" alt="icone do globo terreste em linhas pretas" width={50} height={50}/>
-                    <p>Mudar região</p>
-                </div>
                 <div className="bottom">
                     <nav className="footer-bottom-info">
                         <ul className="flex gap-2 flex-wrap">

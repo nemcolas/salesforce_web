@@ -10,7 +10,7 @@ function Cards(props: CardsInterface) {
             <Image className='imgPrincipalCard' src={props.imgCard} alt={props.altImgCard} width={500} height={350} />
             <div className='contentCard'>
                 <p className='mb-4'>{props.paragraph}</p>
-                <a href={props.link}>{props.textLink}</a>
+                <a className='linkcard' href={props.link}>{props.textLink}</a>
             </div>
         </div>
     );

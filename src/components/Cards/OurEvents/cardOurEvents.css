@@ -37,6 +37,10 @@ section div.cardOurEvents img {
     width: 100%;
 }
 
+div.cardOurEvents a.linkcard:hover {
+    color: #0084ff;
+}
+
 @media screen and (max-width:700px) {
     div.cardOurEvents {
         width: 95%;

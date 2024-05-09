@@ -2,7 +2,7 @@
 import { useEffect, useState } from 'react'
 import {enviarTesteGratis, pegarInformacoesObjeto} from './funcoes'
 import {emailRegex, telefoneRegex} from '@/utils'
-import {backEndInfoProps, idiomaProps} from './interface'
+import {backEndInfoProps} from './interface'
 //Componente responsável pelo formulário da página de teste grátis.
 export default function Formulario() {
     const [disabled, setDisabled] = useState(true)
@@ -65,8 +65,14 @@ export default function Formulario() {
     useEffect(() => {
         pegarInformacoesObjeto().then((dados:any) => {
             setInfoFormulario(dados)
-        })   
+        })
+    }, [])
 
+    useEffect(() => {
+        const primeiroInput = document.querySelector('input')
+        if (primeiroInput != null) {
+            primeiroInput.focus()
+        }
     }, [])
 
     return ( <form className='flex flex-col'>
@@ -103,16 +109,15 @@ export default function Formulario() {
     <label htmlFor="pais/regiao">País/Região:</label>
     <select value={selects.country} onChange={(e) => changeSelect('country', e.target.value)} name="pais/regiao" id="pais/regiao" required>
         <option className='text-slate-300' value="" disabled selected>Selecione o País/Região</option>
-        <option value="2">Estados Unidos</option>
-        <option value="3">Canadá</option>
-        <option value="4">Brasil</option>
-        <option value="5">Reino Unido</option>
-        <option value="6">França</option>
-        <option value="7">Alemanha</option>
-        <option value="8">Japão</option>
-        <option value="9">Austrália</option>
-        <option value="10">Índia</option>
-        <option value="11">Brasil</option>
+        <option value="1">Estados Unidos</option>
+        <option value="2">Canadá</option>
+        <option value="3">Brasil</option>
+        <option value="4">Reino Unido</option>
+        <option value="5">França</option>
+        <option value="6">Alemanha</option>
+        <option value="7">Japão</option>
+        <option value="8">Austrália</option>
+        <option value="9">Índia</option>
     </select>
 
     <label htmlFor="idioma">Idioma:</label>
@@ -142,8 +147,7 @@ export default function Formulario() {
     <p className='paragraphBottom' >Sua avaliação gratuita pode ser provisionada ou migrada para o Hyperforce, a infraestrutura de nuvem pública
         do Salesforce.</p>
     <p className='paragraphBottom'>Ao inscrever-se, você confirma que concorda com o processamento de seus dados pessoais pela Salesforce,
-        conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de
-            privacidade</a></p>
+        conforme descrito na <a href="https://www.salesforce.com/br/company/privacy/full_privacy/">Declaração de privacidade</a></p>
     <input disabled={disabled} onClick={(e) => {enviarTesteGratis(form, selects, e.currentTarget, infoFormulario)}} className='enviarFormulario' type="button" value="Iniciar Teste gratuito"/>
 </form>
     )

@@ -28,6 +28,10 @@ div.card-whats-new div.contentCard p, div.card-whats-new div.contentCard a{
     white-space: pre-wrap;
 }
 
+div.card-whats-new a.linkcard:hover {
+    color: #0084ff;
+}
+
 /* formatação especifica para o link do card da primeira pagina, segunda seção */
 a.linkCardHomePage {
     font-weight: 550;
