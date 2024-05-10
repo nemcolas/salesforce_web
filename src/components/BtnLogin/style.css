@@ -1,6 +1,6 @@
 a.btn-login {
     text-decoration: none;
-    background: #1B7ED9;
+    background: #166ec0;
     padding: 0.8rem 0.6rem;
     border-radius: 0.2rem;
     display: flex;
@@ -13,13 +13,13 @@ a.btn-login {
 }
 
 a.btn-login:focus {
-    outline: 0.2rem solid #111;
+    outline: 0.25rem solid #0b0b0b;
 }
 
 a.btn-login p{
     font-size: 1.2rem;
     font-family: Arial, Helvetica, sans-serif;
-    color: #ffe;
+    color: #fff;
     margin: auto;
 }
 

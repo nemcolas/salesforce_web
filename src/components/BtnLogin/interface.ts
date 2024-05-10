@@ -3,6 +3,7 @@ interface BtnLoginProps{
     textoBtn:string,
     linkImg:string,
     arialabel?:string
+    altImg:string
 }
 
 export type {BtnLoginProps}

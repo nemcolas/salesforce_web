@@ -49,6 +49,10 @@ header>nav>section {
     align-items: center;
 }
 
+header>nav {
+    justify-content: center;
+}
+
 header nav {
     flex: 95%;
     justify-content: space-around;
@@ -102,10 +106,12 @@ header>nav section.login .image{
 
     header > nav {
         justify-content: end;
+        align-items: center;
         margin-left: 2rem;
     }
 
     header>nav section.login {
+        display: flex;
         margin-right: 0.5rem;
     }
 
