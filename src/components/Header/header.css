@@ -81,18 +81,20 @@ header > nav section.login {
     justify-content: end;
 }
 
-header nav section.login a.link-suporte {
+header nav section.login .link-suporte {
     margin-right: 1rem;
 }
 
 header>nav section.login .image{
     margin-right: 0.3rem;
+    min-width: 28px;
 }
 
 @media screen and (max-width: 1100px) {
 
     header {
         justify-content: space-between;
+        padding: 0.5rem 1rem;
     }
 
     .icon-menu {
@@ -113,6 +115,10 @@ header>nav section.login .image{
     header>nav section.login {
         display: flex;
         margin-right: 0.5rem;
+    }
+
+    header nav section.login .link-suporte {
+        display: none;
     }
 
     /* formatação para icone de menu aberto */

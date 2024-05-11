@@ -75,33 +75,6 @@ footer > div.footer-bottom div.bottom nav{
     margin-bottom: 15px;
 }
 
-footer div.footer-bottom div.region-switcher {
-    background: #FFFFFF;
-    color: #0c0c0c;
-    align-items: center;
-    padding: 5px 0px 5px 5px;
-    max-height: 70px;
-    border-radius: 20px;
-    margin-right: 4%;
-    cursor: pointer;
-    flex: 1;
-    width: 100%;
-    max-width: 200px;
-    min-width: 200px;
-}
-
-footer div.footer-bottom div.region-switcher p {
-    margin-left: 12px;
-}
-
-footer div.footer-bottom div.region-switcher p::after {
-    content: ' ▲';
-}
-
-footer div.footer-bottom div.region-switcher p.active::after {
-    content: ' ▼';
-}
-
 footer div.footer-bottom .footer-bottom-info a{
     color: #ffff;
     font-size: 1.2rem;
@@ -122,9 +95,5 @@ a.declaracao-privacidade {
     footer div.footer-bottom {
         flex-direction: column;
         justify-content: center;
-    }
-
-    footer div.footer-bottom div.region-switcher {
-        margin: 0 auto 2rem auto;
     }
 }

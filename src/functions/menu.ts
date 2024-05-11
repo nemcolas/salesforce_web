@@ -27,7 +27,6 @@ function mostrarMenu() {
             'Suporte': 'https://help.salesforce.com/s/',
             'Empresa': 'https://www.salesforce.com/br/company/our-story/',
             'Contato': 'https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9',
-            'Alunos': '/alunos'
         }
         const iconFecharMenu: HTMLImageElement = document.createElement('img');
         iconFecharMenu.classList.add('icon-fechar-menu');
