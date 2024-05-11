@@ -1,14 +1,18 @@
 'use client'
 import { usePathname } from 'next/navigation';
 import './footer.css'
-import Image from 'next/image';
+import { getClassFooter } from './utils';
 
 // Componente responsável por criar o footer de todas as páginas
 export default function Footer() {
-    if (usePathname() != '/login') {
+    const path = usePathname()
+    if (path === '/login') {
+        return null;
+    }
+
     return (
         <footer>
-            <div className={usePathname() == '/' || usePathname() == '/products'? 'footer-top flex' : 'hidden' + ' footer-top'}>
+            <div className={getClassFooter(path)}>
                 <div className="flex footer-contact-info">
                     <a className="logo-salesforce" href="/"><img src="/salesforce-logo.svg" alt="logo da salesforce" /></a>
                     <div className="flex container-social-links">
@@ -90,7 +94,7 @@ export default function Footer() {
                     </div>
                 </nav>
             </div>
-            <div className={usePathname() == '/free-trial' ? 'py-7 px-3 text-center justify-center text-sm flex flex-wrap' : 'hidden'}>
+            <div className={path == '/free-trial' ? 'py-7 px-3 text-center justify-center text-sm flex flex-wrap' : 'hidden'}>
                 <p className="mr-3">Saiba mais sobre o nosso compromisso com a proteção de privacidade</p>
                 <a className='declaracao-privacidade' href="https://www.salesforce.com/br/company/privacy/">Destaque de Declaração de privacidade</a>
             </div>
@@ -117,8 +121,5 @@ export default function Footer() {
                 </div>
             </div>
         </footer>
-    )}
-    else {
-        return null
-    }
+    )
 }

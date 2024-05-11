@@ -2,13 +2,12 @@
 import BtnLogin from "@/components/BtnLogin";
 import '@/style/login.css'
 import Image from "next/image";
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 
-export default function login() {
+export default function Login() {
     useEffect(() => {
         if (window.innerWidth > 768) {
             const primeiroBtn: any = document.querySelector('a.btn-login')
-
             if (primeiroBtn) primeiroBtn.focus()
         }
     }, [])
