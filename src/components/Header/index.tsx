@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Button from '../Button';
 import './header.css';
-import {mostrarMenu} from '../../functions/menu';
+import {mostrarMenu} from './utils';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 
@@ -12,7 +12,7 @@ export default function Header() {
   return (
     <header className={"flex " + margimBottom}>
       
-      <Image onClick={mostrarMenu} className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32}/>
+      <Image tabIndex={0} onKeyDown={mostrarMenu} onClick={mostrarMenu} className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32}/>
       
       <Link href="/"><img className='image' src="/salesforce-logo.svg" alt="Logo Salesforce" width={80} height={100}/></Link>
       <nav className='flex'>

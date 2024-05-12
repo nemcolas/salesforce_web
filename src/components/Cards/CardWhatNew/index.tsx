@@ -1,7 +1,6 @@
 import { CardsInterface } from './interface';
 import './style.css';
 import Image from 'next/image';
-import '../style.css'
 
 // Componente responsável por criar o card da página inicial (WhatNew)
 function Cards(props: CardsInterface) {

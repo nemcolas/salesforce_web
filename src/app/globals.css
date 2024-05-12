@@ -69,7 +69,7 @@ header>div a:hover,
 footer nav a:hover,
 header>nav>div.login a:hover,
 header>nav .header-contact a:hover {
-    color: #4f81f6;
+    color: #4f81f6 ;
 }
 
 @media screen and (max-width: 768px) {

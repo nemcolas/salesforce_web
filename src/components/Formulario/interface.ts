@@ -11,9 +11,9 @@ interface inputProps{
 }
 
 interface selectsProps{
-    country: string,
-    sizeCompany: string,
-    languague: string
+    pais: string,
+    porteEmpresa: string,
+    idioma: string
 }
 
 interface porteEmpresaProps{

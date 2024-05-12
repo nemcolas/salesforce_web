@@ -23,9 +23,9 @@ export default function Formulario() {
     const [aceitaTermos, setAceitaTermos] = useState()
 
     const [selects, setSelect] = useState({
-        country: '',
-        sizeCompany: '',
-        languague: '',
+        pais: '',
+        porteEmpresa: '',
+        idioma: '',
     })
 
     function changeTermos(e: any) {
@@ -52,9 +52,9 @@ export default function Formulario() {
             || form.position.length < 3
             || !emailRegex.test(form.emailCorporate)
             || !telefoneRegex.test(form.phone)
-            || selects.country == ''
-            || selects.languague == ''
-            || selects.sizeCompany == ''
+            || selects.pais == ''
+            || selects.idioma == ''
+            || selects.porteEmpresa == ''
             || !aceitaTermos) { 
                 setDisabled(true) 
             }else {
@@ -97,7 +97,7 @@ export default function Formulario() {
     <input onChange={(e) => {changeState('phone', e.target.value)}} className='text' type="tel" name="telefone" id="telefone" placeholder="Telefone" value={form.phone} required/>
 
     <label htmlFor="tamanho da empresa">Tamanho da empresa:</label>
-    <select value={selects.sizeCompany} onChange={(e) => changeSelect('sizeCompany', e.target.value)} name="tamanho da empresa" id="tamanho da empresa" required>
+    <select value={selects.porteEmpresa} onChange={(e) => changeSelect('porteEmpresa', e.target.value)} name="tamanho da empresa" id="tamanho da empresa" required>
         <option className='text-slate-300' value="" disabled selected>Tamanho da empresa</option>
         <option value="1">1-50 funcionários</option>
         <option value="2">51-300 funcionários</option>
@@ -107,7 +107,7 @@ export default function Formulario() {
     </select>
 
     <label htmlFor="pais/regiao">País/Região:</label>
-    <select value={selects.country} onChange={(e) => changeSelect('country', e.target.value)} name="pais/regiao" id="pais/regiao" required>
+    <select value={selects.pais} onChange={(e) => changeSelect('pais', e.target.value)} name="pais/regiao" id="pais/regiao" required>
         <option className='text-slate-300' value="" disabled selected>Selecione o País/Região</option>
         <option value="1">Estados Unidos</option>
         <option value="2">Canadá</option>
@@ -121,7 +121,7 @@ export default function Formulario() {
     </select>
 
     <label htmlFor="idioma">Idioma:</label>
-    <select value={selects.languague} onChange={(e) => changeSelect('languague', e.target.value)}  name="idioma" id="idioma" required>
+    <select value={selects.idioma} onChange={(e) => changeSelect('idioma', e.target.value)}  name="idioma" id="idioma" required>
         <option className='text-slate-300' value="" disabled selected>Selecione o Idioma</option>
         <option value="1">Inglês</option>
         <option value="2">Holândes</option>

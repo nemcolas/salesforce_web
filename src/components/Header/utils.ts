@@ -1,5 +1,7 @@
 'use client'
 
+import { Key, KeyboardEventHandler } from "react";
+
 function criarMenu(linksMenu: Object, iconFecharMenu: HTMLImageElement) {
     const menuMobile: HTMLDivElement = document.createElement('div');
     menuMobile.tabIndex = -1;
@@ -16,7 +18,8 @@ function criarMenu(linksMenu: Object, iconFecharMenu: HTMLImageElement) {
     return menuMobile;
 }
 
-function mostrarMenu() {
+function mostrarMenu(e: any) {
+    if (e.type == 'click' || e.key === 'Enter') {
     const iconAbrirMenu = document.querySelector('.icon-menu');
     const headerPage = document.querySelector('header');
     if (iconAbrirMenu && headerPage) {
@@ -40,11 +43,11 @@ function mostrarMenu() {
         iconFecharMenu.addEventListener('click', esconderMenu);
         iconFecharMenu.addEventListener('keydown', esconderMenu);
         menuMobile.focus();
-    }
+    }}
 }
 
-function esconderMenu(e:any) {
-    if (e.type == 'click' || e.key === 'Enter' || e.key === 'Escape' || e.key === 'Tab') {
+function esconderMenu(e:any)  {
+    if (e.type == 'click' || e.key === 'Enter') {
         const iconAbrirMenu = document.querySelector('.icon-menu')
         const iconFecharMenu = document.querySelector('.icon-fechar-menu');
         const menuMobile = document.querySelector('.menu-mobile');
@@ -54,7 +57,9 @@ function esconderMenu(e:any) {
             menuMobile.classList.add('retirar-menu');
             setTimeout(() => {
                 menuMobile.remove();
-            }, 700)
+            }, 700);
+            
+            (iconAbrirMenu as HTMLImageElement).focus();
         }
     }
 }

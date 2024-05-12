@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
-import Head from "next/head";
 import Chatbot from '../components/Chatbot';
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header";
@@ -10,7 +9,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Salesforce",
-  description: "Domine a jornada do seu cliente desde o primeiro contato até o pós-venda com a Salesforce, a plataforma líder mundial em CRM, atendimento ao cliente e marketing digital",
+  description: "Domine a jornada do seu cliente desde o primeiro contato até o pós-venda com a Salesforce, a plataforma líder mundial em CRM",
   icons: {
     icon:['/favicon.ico?v=4']
   }
@@ -27,6 +26,7 @@ export default function RootLayout({
         <Header/>
         {children}
         <Footer />
+        
         <Chatbot />
       </body>
     </html>

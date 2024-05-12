@@ -30,9 +30,9 @@ function getEntidade(entidades: any, id: string) {
 }
 
 async function construirObjetoTesteGratis(inputText: inputProps, selects: selectsProps, arrayInfoBackEnd: backEndInfoProps) {
-    let idioma: idiomaProps = getEntidade(arrayInfoBackEnd.idioma, selects.languague)
-    let pais: paisProps = getEntidade(arrayInfoBackEnd.pais, selects.country)
-    let porteEmpresa: porteEmpresaProps = getEntidade(arrayInfoBackEnd.porteEmpresa, selects.sizeCompany)
+    let idioma: idiomaProps = getEntidade(arrayInfoBackEnd.idioma, selects.idioma)
+    let pais: paisProps = getEntidade(arrayInfoBackEnd.pais, selects.pais)
+    let porteEmpresa: porteEmpresaProps = getEntidade(arrayInfoBackEnd.porteEmpresa, selects.porteEmpresa)
 
     return {
         nome: inputText.name,
@@ -47,7 +47,6 @@ async function construirObjetoTesteGratis(inputText: inputProps, selects: select
 }
 
 async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, input: HTMLInputElement, arrayInfoBackEnd: backEndInfoProps) {
-    console.log(arrayInfoBackEnd)
     input.disabled = true
     input.value = "Verificando requisição..."
     const testeGratis = await construirObjetoTesteGratis(inputText, selects, arrayInfoBackEnd)

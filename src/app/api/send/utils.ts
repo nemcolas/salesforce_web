@@ -189,8 +189,8 @@ export const getConfig = (email: string, nome: string) => {
                       <! -- Parte de cima -->
                       <table role="presentation" align="center" width="496" border="0" cellspacing="0" cellpadding="0" style="width:496px" class="w90pc">
                         <tr>
-                          <td align="center" valign="middle" height="112" style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif;color:#181818;font-size:16px;line-height:24px;font-weight: normal;height:112px; vertical-align:middle;" class="hauto pt10 pb24">
-                            <h1 style="font-family:'ITC Avant Garde Demi', Helvetica, Arial, sans-serif; color:#032d60 !importgit;font-size:24px; mso-line-height-rule:exactly; line-height:32px; font-weight:600; margin:0;">Olá ${nome}, tudo bem ?</h1>
+                          <td align="center" valign="middle" height="112" style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif;font-weight: normal;height:112px; vertical-align:middle;" class="hauto pt10 pb24">
+                            <h1 style="font-family:'ITC Avant Garde Demi', Helvetica, Arial, sans-serif; color:#032d60 !important;font-size:1.4rem; mso-line-height-rule:exactly; line-height:32px; font-weight:600; margin:0;">Olá ${nome}, tudo bem ?</h1>
                           </td>
                         </tr>
                         <tr>
