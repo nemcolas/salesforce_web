@@ -13,9 +13,13 @@ export default function Header() {
   const margimBottom = rotaAtual === '/login' ? 'm-0' : ''
   const refImgLogo: any = useRef()
   const linkProdutos: any = useRef()
+  const iconeLogin: any = useRef()
   useEffect(() => {
     refImgLogo.current.blur()
     linkProdutos.current.blur()
+    if (window.innerWidth <= 650) {
+      iconeLogin.current.blur()
+    }
   }, [rotaAtual])
   return (
     <header className={"flex " + margimBottom}>
@@ -34,7 +38,7 @@ export default function Header() {
 
         <section className="login">
           <Link className='link-suporte' href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Suporte</Link>
-          <Link className='image' href="/login"><img src="/login-02.webp" alt="Ícone login"/></Link>
+          <Link ref={iconeLogin} className='image' href="/login"><img src="/login-02.webp" alt="Ícone login"/></Link>
           <Link className='text-login' href="/login" lang='en'>Login</Link>
         </section>
         <Button class='small' link="./freetrial" text="Teste Grátis" />

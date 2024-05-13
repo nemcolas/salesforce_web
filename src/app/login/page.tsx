@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 export default function Login() {
     useEffect(() => {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 650) {
             const primeiroBtn: any = document.querySelector('a.btn-login')
             if (primeiroBtn) primeiroBtn.focus()
         }

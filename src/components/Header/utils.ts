@@ -59,7 +59,9 @@ function esconderMenu(e:any)  {
                 menuMobile.remove();
             }, 700);
             
-            (iconAbrirMenu as HTMLImageElement).focus();
+            if (window.innerWidth > 768) {
+                (iconAbrirMenu as HTMLImageElement).focus();
+            }
         }
     }
 }
