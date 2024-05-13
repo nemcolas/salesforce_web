@@ -1,6 +1,6 @@
 'use client'
 import { usePathname } from 'next/navigation';
-import './footer.css'
+import './footer.css';
 import { getClassFooter } from './utils';
 
 // Componente responsável por criar o footer de todas as páginas
@@ -31,11 +31,11 @@ export default function Footer() {
 
                 <nav className="footer-navigation flex">
                     <div className="intro-links">
-                        <h3>Ainda não conhece a Salesforce ?</h3>
+                        <h3>Ainda não conhece a Salesforce?</h3>
                         <ul>
                             <li>
                                 <a href="https://www.salesforce.com/br/products/what-is-salesforce/?d=70130000000i7zF">O que
-                                    é a Salesforce ?</a>
+                                    é a Salesforce?</a>
                             </li>
                             <li>
                                 <a href="https://www.salesforce.com/br/products/?d=70130000000i7zU">Explorar todos os
@@ -62,32 +62,32 @@ export default function Footer() {
                         <ul>
                             <li><a href="https://www.salesforce.com/br/company/our-story/">Nossa história</a></li>
                             <li><a href="https://www.salesforce.com/br/blog/?d=70130000000i80c">Blog</a></li>
-                            <li><a href="https://careers.salesforce.com/en/?d=70130000000i80S">Carreiras(Inglês)</a></li>
+                            <li><a href="https://careers.salesforce.com/en/?d=70130000000i80S">Carreiras (Inglês)</a></li>
                             <li><a href="https://trust.salesforce.com/?d=cta-glob-footer-5"
-                                target="_blank">Segurança(Inglês)</a></li>
+                                target="_blank">Segurança (Inglês)</a></li>
                             <li><a href="https://www.salesforce.org/?_ga=2.184795497.1783706095.1641930650-1075927308.1636734687"
-                                target="_blank">Salesforce.org(Inglês)</a></li>
+                                target="_blank">Salesforce.org (Inglês)</a></li>
                             <li><a href="https://www.salesforce.com/company/sustainability/?d=70130000000i80J"
-                                target="_blank">Sustentabilidade(Inglês)</a></li>
+                                target="_blank">Sustentabilidade (Inglês)</a></li>
                             <li><a href="https://investor.salesforce.com/overview/default.aspx?d=cta-glob-footer-7"
-                                target="_blank">Investidores(Inglês)</a></li>
+                                target="_blank">Investidores (Inglês)</a></li>
                             <li><a href="https://www.salesforce.com/company/feedback/?d=cta-glob-footer-9"
-                                target="_blank">Dê-nos o seu feedback(Inglês)</a></li>
+                                target="_blank">Dê-nos o seu feedback (Inglês)</a></li>
                         </ul>
                     </div>
                     <div className="popular-links">
                         <h3>Links populares</h3>
                         <ul>
                             <li><a href="https://www.salesforce.com/products/innovation/">Lançamentos e novos
-                                recursos(inglês)</a></li>
+                                recursos (inglês)</a></li>
                             <li><a href="https://www.salesforce.com/br/solutions/small-business-solutions/overview/">CRM
                                 para pequenas empresas</a></li>
-                            <li><a href="https://www.salesforce.com/partners/">Parceiros(Inglês)</a></li>
+                            <li><a href="https://www.salesforce.com/partners/">Parceiros (Inglês)</a></li>
                             <li><a href="https://www.salesforce.com/br/crm/?d=70130000000i80D">O que é CRM ?</a></li>
-                            <li><a href="https://www.salesforce.com/video/?d=70130000000i80I">Salesforce live(Inglês)</a>
+                            <li><a href="https://www.salesforce.com/video/?d=70130000000i80I">Salesforce live (Inglês)</a>
                             </li>
                             <li><a href="https://www.salesforce.com/dreamforce/?d=70130000000i808"
-                                target="_blank">Dreamforce(Inglês)</a></li>
+                                target="_blank">Dreamforce (Inglês)</a></li>
                             <li><a href="https://www.salesforce.com/br/solutions/mobile/overview/?d=70130000000i7zy">Salesforce
                                 Mobile</a></li>
                         </ul>
