@@ -5,19 +5,27 @@ import './header.css';
 import {mostrarMenu} from './utils';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import { useEffect, useRef } from 'react';
 
 // Componente responsável por criar o header de todas as páginas 
 export default function Header() {
-  const margimBottom = usePathname() === '/login' ? 'm-0' : ''
+  const rotaAtual = usePathname()
+  const margimBottom = rotaAtual === '/login' ? 'm-0' : ''
+  const refImgLogo: any = useRef()
+  const linkProdutos: any = useRef()
+  useEffect(() => {
+    refImgLogo.current.blur()
+    linkProdutos.current.blur()
+  }, [rotaAtual])
   return (
     <header className={"flex " + margimBottom}>
       
       <Image tabIndex={0} onKeyDown={mostrarMenu} onClick={mostrarMenu} className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32}/>
       
-      <Link href="/"><img className='image' src="/salesforce-logo.svg" alt="Logo Salesforce" width={80} height={100}/></Link>
+      <Link ref={refImgLogo} href="/"><Image className='image' src="/salesforce-logo.svg" alt="Logo Salesforce" width={80} height={100}/></Link>
       <nav className='flex'>
         <ul className="flex nav-header">
-          <li><Link href="./products">Produtos</Link></li>
+          <li><Link ref={linkProdutos} href="./products">Produtos</Link></li>
           <li><Link href="https://www.salesforce.com/br/solutions/industries/">Indústrias</Link></li>
           <li><Link href="https://trailhead.salesforce.com/pt-BR">Aprendizado</Link></li>
           <li><Link href="https://help.salesforce.com/s/">Suporte</Link></li>

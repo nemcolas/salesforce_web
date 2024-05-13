@@ -3,7 +3,7 @@ import './style.css';
 import Image from 'next/image';
 
 // Componente responsável por criar o card da página inicial (WhatNew)
-function Cards(props: CardsInterface) {
+function CardWhatNew(props: CardsInterface) {
     return (
         <div className='card card-whats-new'>
             <Image className='imgPrincipalCard' src={props.imgCard} alt={props.altImgCard} width={500} height={350} />
@@ -15,4 +15,4 @@ function Cards(props: CardsInterface) {
     );
 }
 
-export default Cards;
+export default CardWhatNew;

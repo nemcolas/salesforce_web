@@ -1,4 +1,4 @@
-import CardOurClients from '../../Cards/OurClients'
+import CardOurClients from '../CardOurClients'
 import './style.css'
 
 // Componente responsável por criar um bloco (container) do Nossos Clientes (OurClients)

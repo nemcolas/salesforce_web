@@ -1,4 +1,4 @@
-import CardOurProducts from "@/components/Cards/OurProducts"
+import CardOurProducts from "../CardOurProducts"
 import './style.css'
 
 // Componente responsável por criar um bloco (container) do Nossos Produtos (OurProducts)

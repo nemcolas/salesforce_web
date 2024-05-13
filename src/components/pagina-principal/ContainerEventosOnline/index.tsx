@@ -1,4 +1,4 @@
-import CardsOurEvents from '../../Cards/OurEvents'
+import CardsOurEvents from '../CardOurEvents'
 import './style.css'
 
 
