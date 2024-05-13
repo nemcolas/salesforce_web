@@ -46,7 +46,7 @@ export default function Produtos() {
         <ProductCard
         img="/image-products/commerce.svg"
         altImg="Astro, mascote da Salesforce caminhando sobre a pagina de vendas da Salesforce"
-        title="Commerce cloud"
+        title="Commerce Cloud"
         paragraph="Obtenha valor rapidamente, da descoberta à entrega na plataforma que já conquistou a confianças das maiores marcas do mercado."
         link="https://www.salesforce.com/br/products/commerce/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/conf/demo/commerce-cloud/overview/"
@@ -55,7 +55,7 @@ export default function Produtos() {
         <ProductCard
         img="/image-products/data_cloud.svg"
         altImg="Mulher utiizando o celular para ver graficos com mascote Astro a frente"
-        title="Data cloud"
+        title="Data Cloud"
         paragraph="Capacite as equipes para envolver os clientes em cada ponto de contato, fornecendo insights relevantes e dados contextuais integrados ao fluxo de trabalho"
         link="https://www.salesforce.com/br/products/data/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/customer-data-platform/?d=cta-header-10"
