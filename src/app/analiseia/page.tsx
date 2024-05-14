@@ -4,7 +4,7 @@ import '@/style/analise-ia.css'
 export default function AnaliseIa() {
 
     function buildInfo() {
-        const inputsChecked= document.querySelectorAll('input[type="radio"]:checked')
+        const inputsChecked: any= document.querySelectorAll('input[type="radio"]:checked')
         return {
             "De 0 a 5, o quanto voce sabe sobre o que e CRM?":inputsChecked[0].value,
             "De 0 a 5, o quanto voce conhece sobre Salesforce (Considere 0 como nao conheco e 5 como conheco muito)":inputsChecked[1].value,
@@ -14,7 +14,6 @@ export default function AnaliseIa() {
     }
 
     async function sendInfoToIa() {
-        
         const res = await fetch('/backend-ia/call_predict', {
             method: 'POST',
             body:JSON.stringify(buildInfo)
