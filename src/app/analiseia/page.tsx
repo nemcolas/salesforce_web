@@ -14,7 +14,7 @@ export default function AnaliseIa() {
     }
 
     async function sendInfoToIa() {
-        const res = await fetch('/backend-ia/call_predict', {
+        const res = await fetch('app/backend-ia/call_predict', {
             method: 'POST',
             body:JSON.stringify(buildInfo)
         })
@@ -62,7 +62,7 @@ export default function AnaliseIa() {
                     <input type="radio" name="crm e importante" id="q4-5" value={5}/><label htmlFor="q4-5">5</label>
                 </section>
 
-                <input type="button" value="Realizar análise" onClick={buildInfo}/>
+                <input type="button" value="Realizar análise" onClick={sendInfoToIa}/>
             </form>
         </main>
     )

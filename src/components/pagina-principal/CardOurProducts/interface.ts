@@ -3,7 +3,8 @@ interface CardOurProductsInterface{
     alt: string;
     title: string;
     paragraph: string;
-    buttonLink: string;
+    buttonLink: string
+    arialabelButton: string
 }   
 
 export type {CardOurProductsInterface}

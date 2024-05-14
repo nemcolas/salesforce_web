@@ -40,9 +40,9 @@ export default function Home() {
         altImgContainer='exemplo do Sales Cloud apresentado por três pop ups representando gerenciamento de contatos, automação de fluxo de trabalho e gerenciamento de oportunidades'
       />
 
-    <ContainerSupport title={'Ainda tem duvidas? Podemos ajudar e te direcionar para o caminho certo!'} 
+    <ContainerSupport title={'Ainda tem dúvidas? Podemos ajudar e te direcionar para o caminho certo!'} 
     altImgContainer='Astro, o mascote principal da Salesforce acenando com a mão'
-    textButton='Entrar em contato'
+    textButton='Entre em contato conosco'
     />
     </main>
   );

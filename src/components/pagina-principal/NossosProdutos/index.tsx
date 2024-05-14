@@ -13,6 +13,7 @@ function ContainerNossosProdutos() {
           img='/image-index/php-products-small-business.webp'
           alt='homem com camisa listrada sorrindo com um fundo azul'
           buttonLink='https://www.salesforce.com/br/solutions/small-business-solutions/overview/'
+          arialabelButton="Saiba mais sobre as soluções para pequenas empresas"
         />
         <CardOurProducts
           title='Atendimento'
@@ -20,6 +21,7 @@ function ContainerNossosProdutos() {
           img='/image-index/php-products-service-generic.webp'
           alt='homem com camisa rosa e um fone com a mão na orelha sorrindo em um fundo rosa'
           buttonLink='https://www.salesforce.com/br/solutions/small-business-solutions/overview/'
+          arialabelButton="Saiba mais sobre as soluções para atendimento ao cliente"
         />
 
         <CardOurProducts
@@ -27,6 +29,7 @@ function ContainerNossosProdutos() {
           img='/image-index/php-products-sales-generic.webp'
           alt='mulher com cabelo grisalho, com camisa de botão com um tom de verde e uma pasta na mão sorrindo'
           buttonLink='https://www.salesforce.com/br/solutions/small-business-solutions/overview/'
+          arialabelButton="Saiba mais sobre as soluções para vendas"
         />
         </div>
       </section>

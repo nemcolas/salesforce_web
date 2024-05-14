@@ -8,7 +8,7 @@ from flask_cors import CORS
 app = Flask(__name__) # Inicializa o Flask
 CORS(app) 
 
-loaded_model = pickle.load(open("src/app/backend-ia/backend/ML_modelo.pkl", "rb")) # Carrega o modelo treinado
+loaded_model = pickle.load(open("src/app/backend-ia/ML_modelo.pkl", "rb")) # Carrega o modelo treinado
 
 @app.route('/') # Rota principal
 def index():

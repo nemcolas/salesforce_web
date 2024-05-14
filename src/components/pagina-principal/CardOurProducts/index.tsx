@@ -10,7 +10,7 @@ function CardOurProducts(props: CardOurProductsInterface) {
             <div className="info-product flex flex-wrap">
                 <h3 className='text-lg'>{props.title}</h3>
                 <p className='text-base'>{props.paragraph}</p>
-                <Button class='small' link={props.buttonLink}text="Saiba Mais"/>
+                <Button ariaLabel={props.arialabelButton} class='small' link={props.buttonLink}text="Saiba Mais"/>
             </div>
             <Image className='image-peaple' src={props.img}
                 alt={props.alt} width={200} height={200}/>

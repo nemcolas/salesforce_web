@@ -11,7 +11,7 @@ function CardOurClients(props:CardOurClientsInterface) {
                 <h4>Indústria</h4>
                 <p>{props.paragraph}</p>
             </div>
-            <a className="text-center linkclient" href={props.link}>Veja a História</a>
+            <a aria-label={props.arialabelLink} className="text-center linkclient" href={props.link}>Veja a História</a>
         </div>
     )
 }
