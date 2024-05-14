@@ -6,6 +6,7 @@ interface ProductCardProps {
     link: string;
     linkSolicitarDemonstracao: string;
     arialabelSolictarDemonstracao?: string;
+    arialabelSaibaMais?: string;
 };
 
 export default ProductCardProps;

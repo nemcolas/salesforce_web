@@ -24,6 +24,7 @@ export default function Produtos() {
         link='https://www.salesforce.com/br/products/sales/'
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/smb/overview-demo/"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma de Vendas"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma de Vendas"
       />
       <ProductCard
         img="/image-products/atendimento-ao-cliente-salesforce 1.svg"
@@ -33,6 +34,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/service/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/signup/freetrial-service/?d=pb"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma de Atendimento ao Cliente"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma de Atendimento ao Cliente"
         />
         <ProductCard
         img="/image-products/marketing.svg"
@@ -42,6 +44,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/marketing-cloud/overview/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/overview-demo/"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma de Marketing"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma de Marketing"
         />
         <ProductCard
         img="/image-products/commerce.svg"
@@ -51,6 +54,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/commerce/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/conf/demo/commerce-cloud/overview/"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma de Comércio"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma de Comércio"
         />
         <ProductCard
         img="/image-products/data_cloud.svg"
@@ -60,6 +64,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/data/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/marketing-cloud/customer-data-platform/?d=cta-header-10"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma de Dados"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma de Dados"
         />
         <ProductCard
         img="/image-products/Tableau.svg"
@@ -69,6 +74,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/analytics/"
         linkSolicitarDemonstracao="https://www.tableau.com/pt-br/solutions/salesforce"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma Tableau"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma Tableau"
         />
         <ProductCard
         img="/image-products/mulesoft 1.svg"
@@ -78,6 +84,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/integration/overview/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/integration/overview-demo/?d=cta-header-1"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma MuleSoft"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma MuleSoft"
         />
         <ProductCard
         img="/image-products/slack.svg"
@@ -87,6 +94,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/slack/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/slack/overview-demo/?d=pb"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma Slack"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma Slack"
         />
         <ProductCard
         img="/image-products/plataforma.svg"
@@ -104,6 +112,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/products/net-zero-cloud/overview/"
         linkSolicitarDemonstracao="https://www.salesforce.com/form/sustainability/net-zero-cloud-demo/?d=cta-header-217"
         arialabelSolictarDemonstracao="Solictar Demonstração de serviço de Sustentabilidade"
+        arialabelSaibaMais="Saiba mais sobre o serviço de Sustentabilidade"
         />
         <ProductCard
         img="/image-products/pequenas_empresas.svg"
@@ -113,6 +122,7 @@ export default function Produtos() {
         link="https://www.salesforce.com/br/products/small-business/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/form/demo/smb-demos/?d=pb"
         arialabelSolictarDemonstracao="Solictar Demonstração da Plataforma para Pequenas Empresas"
+        arialabelSaibaMais="Saiba mais sobre a Plataforma para Pequenas Empresas"
         />
         <ProductCard
         img="/image-products/servicoeseplanos.svg"
@@ -121,7 +131,8 @@ export default function Produtos() {
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"
         linkSolicitarDemonstracao="https://www.salesforce.com/br/services/success-plans/overview/"
-        arialabelSolictarDemonstracao="Solictar Demonstração de ajuda e orientação"
+        arialabelSolictarDemonstracao="Solictar Demonstração de Serviços e Planos"
+        arialabelSaibaMais="Saiba mais sobre os Serviços e Planos"
         />
         </div>
       </section>

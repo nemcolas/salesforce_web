@@ -13,7 +13,7 @@ function ProductCard(props: ProductCardProps) {
     <p>{props.paragraph}</p>
     <div className='flex gap-2 mt-10 buttons justify-between'>
       <BtnSoliciteDemonstracao arialabel={props.arialabelSolictarDemonstracao} linkSolicitarDemonstracao={props.linkSolicitarDemonstracao}/>
-      <Button class='btnSaibaMais button' text='Saiba mais' link={props.link} />
+      <Button ariaLabel={props.arialabelSaibaMais} class='btnSaibaMais button' text='Saiba mais' link={props.link} />
     </div>
   </div>
   )
