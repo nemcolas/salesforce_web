@@ -4,7 +4,6 @@ import Chatbot from '../components/Chatbot';
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header";
 import "./globals.css";
-import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,23 +23,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <Head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-71NYPWF5M9"></script>
-      <script
-        dangerouslySetInnerHTML={{
-          __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-71NYPWF5M9');
-          `,
-        }}
-      />
-        </Head>
         <Header />
         {children}
         <Footer />
-
         <Chatbot />
       </body>
     </html>

@@ -262,9 +262,7 @@ A Salesforce oferece uma ampla gama de ferramentas poderosas que podem transform
 <p style="font-family: 'SalesforceSansRegular', Salesforce Sans, Helvetica, Arial, sans-serif; color:#181818; font-size:16px;mso-line-height-rule: exactly;line-height:24px;margin: 0 0 25px 0;text-align: center">
 Fique à vontade para acessar nossos materiais de aprendizado e documentação para começar a se familiarizar com nossa plataforma.</p>
 
-<a style="text-decoration: none; color: #fff; background: #032d60; padding: 0.7rem; border-radius: 0.3rem;" href='https://salesforce-web.vercel.app/campaign?utm_source=teste-gratis&utm_medium=email&utm_campaign=solicitacao-teste-gratis'>Explorar o Trailhead</a>
-
-                       
+<a style="text-decoration: none; color: #fff; background: #032d60; padding: 0.7rem; border-radius: 0.3rem;" href='https://yagoluucas.github.io/campaing/?utm_source=teste-gratis&utm_medium=email&utm_campaign=solicitacao-teste-gratis'>Explorar o Trailhead</a>            
                         <!--CTA-->
                         <table role="presentation" border="0" cellspacing="0" cellpadding="0" class="w100pc">
                           <tr>
