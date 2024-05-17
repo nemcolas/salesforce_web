@@ -5,18 +5,18 @@ export default function AnaliseIa() {
 
     function buildInfo() {
         const inputsChecked: any= document.querySelectorAll('input[type="radio"]:checked')
-        return {
-            "De 0 a 5, o quanto voce sabe sobre o que e CRM?":inputsChecked[0].value,
-            "De 0 a 5, o quanto voce conhece sobre Salesforce (Considere 0 como nao conheco e 5 como conheco muito)":inputsChecked[1].value,
-            "Qual o tamanho da sua empresa? (Considere 1 como pequena empresa de 0 a 9 funcionarios, 2 como media empresa de 10 a 50 funcionarios e 3 como grande empresa, acima de 50 funcionarios)":inputsChecked[2].value,
-            "O Quão importante voce considera o uso de CRM para a sua empresa?":inputsChecked[3].value
-        }
+        return [
+            inputsChecked[0]. value,inputsChecked[1].
+            value,inputsChecked[2].
+            value,inputsChecked[3].value,
+            1
+        ]
     }
 
     async function sendInfoToIa() {
-        const res = await fetch('app/backend-ia/call_predict', {
+        const res = await fetch('http://127.0.0.1:3000/call_predict', {
             method: 'POST',
-            body:JSON.stringify(buildInfo)
+            body: JSON.stringify({data:buildInfo()}),
         })
         console.log(await res.json())
     }
