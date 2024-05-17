@@ -27,7 +27,7 @@ function mostrarMenu(e: any) {
             'Produtos': '/products',
             'Indústrias': 'https://www.salesforce.com/br/solutions/industries/',
             'Aprendizado': 'https://trailhead.salesforce.com/pt-BR',
-            'Suporte': 'https://help.salesforce.com/s/',
+            'Suporte': 'https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9',
             'Empresa': 'https://www.salesforce.com/br/company/our-story/',
             'Contato': 'https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9',
         }

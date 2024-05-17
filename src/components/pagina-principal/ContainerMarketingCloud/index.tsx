@@ -11,7 +11,7 @@ export default function ContainerMarketingCloud() {
                 <p>Atraia clientes, gere mais engajamento, construa relações duradouras. Tudo isso graças ao marketing digital baseado em dados</p>
                 <Button class='large' link='https://www.salesforce.com/br/products/marketing-cloud/overview/' text='Entenda o marketing cloud' />
             </div>
-            <Image className='imgContainer' src='/image-index/sfdc-marketing-cloud-overview-products.png' alt='software de gerenciamento de campanhas de marketing sendo representado em uma tela de dispositivo móvel e desktop' width={400}height={350} />
+            <Image className='imgContainer' src='/image-index/sfdc-marketing-cloud-overview-products.png' alt='Software de gerenciamento de campanhas de marketing em tela de dispositivo móvel e desktop' width={400}height={350} />
         </section>
     )
 }

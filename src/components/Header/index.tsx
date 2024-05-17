@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import Button from '../Button';
 import './header.css';
-import {mostrarMenu} from './utils';
+import { mostrarMenu } from './utils';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import { useEffect, useRef } from 'react';
@@ -23,26 +23,24 @@ export default function Header() {
   }, [rotaAtual])
   return (
     <header className={"flex " + margimBottom}>
-      
-      <Image tabIndex={0} onKeyDown={mostrarMenu} onClick={mostrarMenu} className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32}/>
-      
-      <Link ref={refImgLogo} href="/"><Image className='image' src="/salesforce-logo.svg" alt="Logo Salesforce" width={80} height={100}/></Link>
+
+      <Image tabIndex={0} onKeyDown={mostrarMenu} onClick={mostrarMenu} className='icon-menu image' src='/menu-fechado.png' alt='Icone de menu fechado' width={32} height={32} />
+
+      <Link ref={refImgLogo} href="/"><Image className='image' src="/salesforce-logo.svg" alt="Logo Salesforce" width={80} height={100} /></Link>
       <nav className='flex'>
         <ul className="flex nav-header">
           <li><Link ref={linkProdutos} href="./products">Produtos</Link></li>
           <li><Link href="https://www.salesforce.com/br/solutions/industries/">Indústrias</Link></li>
           <li><Link href="https://trailhead.salesforce.com/pt-BR">Aprendizado</Link></li>
-          <li><Link href="https://help.salesforce.com/s/">Suporte</Link></li>
+          <li><Link href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Suporte</Link></li>
           <li><Link href="https://www.salesforce.com/br/company/our-story/">Empresa</Link></li>
         </ul>
 
-        <section className="login">
-          <Link className='link-suporte' href="https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9">Suporte</Link>
-          <Link ref={iconeLogin} className='image' href="/login"><img src="/login-02.webp" alt="Ícone login"/></Link>
-          <Link className='text-login' href="/login" lang='en'>Login</Link>
+        <section>
+          <Link className='link-login' ref={iconeLogin} href="/login"><Image className='img-login' width={25} height={25} src='/login-icon.svg' alt='icone de login'/><span className='text-login'>Login</span></Link>
+          <Button class='small' link="./freetrial" text="Teste Grátis" />
         </section>
-        <Button class='small' link="./freetrial" text="Teste Grátis" />
       </nav>
     </header>
-)
+  )
 }

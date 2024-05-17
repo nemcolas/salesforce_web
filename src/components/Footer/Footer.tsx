@@ -94,7 +94,7 @@ export default function Footer() {
                     </div>
                 </nav>
             </div>
-            <div className={path == '/freetrial' ? 'py-7 px-3 text-center justify-center text-sm flex flex-wrap' : 'hidden'}>
+            <div className={path == '/freetrial' ? 'py-7 px-3 text-center justify-center text-sm flex flex-wrap termos--privacidade' : 'hidden'}>
                 <p className="mr-3">Saiba mais sobre o nosso compromisso com a proteção de privacidade</p>
                 <a className='declaracao-privacidade' href="https://www.salesforce.com/br/company/privacy/">Destaque de Declaração de privacidade</a>
             </div>

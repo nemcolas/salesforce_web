@@ -1,6 +1,5 @@
 header {
     padding: 1rem 2rem;
-    justify-content: space-between;
     margin-bottom: 3rem;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -20,19 +19,13 @@ header a {
     color: #032D93;
 } 
 
-header nav ul a:hover, header nav section a:hover {
+header nav ul a:hover {
     color: #2A71B5;
 }
 
 header> a:first-child {
     flex: 7%;
-    margin-right: 1%;
-}
-
-header> nav img {
-    max-width: 35px;
-    min-width: 20px;
-    cursor: pointer;
+    margin-right: 2%;
 }
 
 .icon-menu {
@@ -55,16 +48,10 @@ header>nav {
 
 header nav {
     flex: 95%;
-    justify-content: space-around;
 }
 
 header nav ul {
     flex: 60%;
-}
-
-header nav>a,
-header nav img {
-   flex: 15%;
 }
 
 header nav ul li a {
@@ -76,18 +63,25 @@ header>nav a.btn {
     font-size: 1.1rem;
 }
 
-header > nav section.login {
-    margin-right: 2rem;
+header nav section {
+    gap: 1.3rem;
     justify-content: end;
 }
 
-header nav section.login .link-suporte {
-    margin-right: 1rem;
+header nav section .link-login {
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
 }
 
-header>nav section.login .image{
-    margin-right: 0.3rem;
-    min-width: 28px;
+header nav section .link-login:hover {
+    text-decoration: underline;
+}
+
+header nav section .img-login {
+    min-width: 30px;
+    max-width: 40px;
+    width: 100%;
 }
 
 @media screen and (max-width: 1100px) {
@@ -102,7 +96,7 @@ header>nav section.login .image{
         margin-right: 2%;
     }
 
-    .nav-header, .header-contact, .text-login, .language-selector-globe {
+    .nav-header, .header-contact {
         display: none;
     }
 
@@ -112,12 +106,7 @@ header>nav section.login .image{
         margin-left: 2rem;
     }
 
-    header>nav section.login {
-        display: flex;
-        margin-right: 0.5rem;
-    }
-
-    header nav section.login .link-suporte {
+    header nav section .link-login span{
         display: none;
     }
 
@@ -195,5 +184,16 @@ header>nav section.login .image{
 @media screen and (min-width:1600px) {
     header a {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:400px) {
+    header nav section a.small {
+        font-size: 0.9rem;
+        padding: 0.6rem 0.2rem;
+    } 
+
+    header nav section {
+        gap: 0.8rem;
     }
 }

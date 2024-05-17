@@ -78,7 +78,7 @@ export default function Produtos() {
         />
         <ProductCard
         img="/image-products/mulesoft 1.svg"
-        altImg="Astro, a mascote da Salesforce, segurando o logo da Mulesoft, à frente de uma página web. Ao lado, um chat exibe a mensagem: 'Equipe, aqui está o novo mapa da implantação."
+        altImg="Mascote Astro da Salesforce segurando o logo da Mulesoft diante de uma página web."
         title="MuleSoft"
         paragraph="Automatize tudo, capacite todos. Integre dados de qualquer sistema e automatize tarefas complexas para fornecer experiências do cliente conectadas mais rapidamente."
         link="https://www.salesforce.com/br/products/integration/overview/"
@@ -88,7 +88,7 @@ export default function Produtos() {
         />
         <ProductCard
         img="/image-products/slack.svg"
-        altImg="Astro, a mascote da Salesforce, segurando o logo do Slack, à frente de uma página web. com diversos chats abertos ao lado representando chats da plataforma Slack"
+        altImg="Astro, mascote da Salesforce, segura o logo do Slack diante de uma página web"
         title="Slack"
         paragraph="Descubra um jeito flexível de conectar pessoas, parceiros e aplicativos. Integrado ao Customer 360, o Slack impulsiona a produtividade e faz funcionar o trabalho colaborativo"
         link="https://www.salesforce.com/br/products/slack/"
@@ -106,7 +106,7 @@ export default function Produtos() {
         />
         <ProductCard
         img="/image-products/sustentabilidade.svg"
-        altImg="pagina web exibindo o painel do Net Zero Cloud, com três gráficos diferentes, cada um deles representando uma métrica de sustentabilidade."
+        altImg="Gráficos de métricas de sustentabilidade no painel do Net Zero Cloud."
         title="Sustentabilidade"
         paragraph="Combine análises robustas, IA avançada e o ecossistema Salesforce para agilizar o gerenciamento ESG"
         link="https://www.salesforce.com/products/net-zero-cloud/overview/"
@@ -126,7 +126,7 @@ export default function Produtos() {
         />
         <ProductCard
         img="/image-products/servicoeseplanos.svg"
-        altImg="homem sorrindo enquanto utiliza um laptop em frente a um circulo azul com uma borboleta voando ao fundo e uma atendente dentro de um circulo acima dele"
+        altImg="Homem sorridente usando laptop, com borboleta ao fundo e atendente sorrindo em fundo circular"
         title="Serviços e planos"
         paragraph="Receba ajuda e orientação para potencializar sua empresa. modernize e transforme suas operações com a ajuda dos especialistas do Salesforce"
         link="https://www.salesforce.com/br/services/overview/"

@@ -29,7 +29,7 @@ export default function Home() {
         textParagraph='Domine o CRM para integrar equipes, impulsionando o crescimento e a produtividade em sua empresa'
         textButton='Conecte-se com os Traiblazers'
         linkButton='https://trailhead.salesforce.com/'
-        altImgContainer='Mulher com a camisa do Trailhead com um circulo roxo ao fundo e o Einstein ao lado dela com as mãos para cima'
+        altImgContainer='Mulher com camisa do Trailhead, círculo roxo ao fundo, Einstein ao lado com as mãos erguidas.'
       />
 
       <ContainerMarketingCloud />
@@ -37,7 +37,7 @@ export default function Home() {
       <ContainerFreeTrial title='Experimente a Salesforce gratuitamente' 
         subTitle='Não é necessario cartão de crédito ou instalar softwares externos'
         textButton='Iniciar Teste Gratuito'
-        altImgContainer='exemplo do Sales Cloud apresentado por três pop ups representando gerenciamento de contatos, automação de fluxo de trabalho e gerenciamento de oportunidades'
+        altImgContainer='Exemplo do Sales Cloud: pop-ups mostram gerenciamento de contatos, automação e oportunidades'
       />
 
     <ContainerSupport title={'Ainda tem dúvidas? Podemos ajudar e te direcionar para o caminho certo!'} 

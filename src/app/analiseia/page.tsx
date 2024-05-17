@@ -14,7 +14,7 @@ export default function AnaliseIa() {
     }
 
     async function sendInfoToIa() {
-        const res = await fetch('http://127.0.0.1:3000/call_predict', {
+        const res = await fetch('http://127.0.0.1:5000/call_predict', {
             method: 'POST',
             body: JSON.stringify({data:buildInfo()}),
         })

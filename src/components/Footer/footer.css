@@ -83,6 +83,10 @@ footer div.footer-bottom .footer-bottom-info a{
     margin: 0 5px;
 }
 
+footer div.termos--privacidade {
+    font-size: 1.1rem;
+}
+
 a.declaracao-privacidade {
     color: #032d93;
 }

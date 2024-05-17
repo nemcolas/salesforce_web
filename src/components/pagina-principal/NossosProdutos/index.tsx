@@ -20,7 +20,7 @@ function ContainerNossosProdutos() {
           paragraph='Gaste menos com serviços escaláveis que os clientes adoram'
           img='/image-index/php-products-service-generic.webp'
           alt='homem com camisa rosa e um fone com a mão na orelha sorrindo em um fundo rosa'
-          buttonLink='https://www.salesforce.com/br/solutions/small-business-solutions/overview/'
+          buttonLink='https://www.salesforce.com/br/service/'
           arialabelButton="Saiba mais sobre as soluções para atendimento ao cliente"
         />
 
@@ -28,7 +28,7 @@ function ContainerNossosProdutos() {
           title='Vendas' paragraph='Feche mais negócios e acelere o crescimento com o CRM nº1'
           img='/image-index/php-products-sales-generic.webp'
           alt='mulher com cabelo grisalho, com camisa de botão com um tom de verde e uma pasta na mão sorrindo'
-          buttonLink='https://www.salesforce.com/br/solutions/small-business-solutions/overview/'
+          buttonLink='https://www.salesforce.com/br/products/sem/sales-cloud/'
           arialabelButton="Saiba mais sobre as soluções para vendas"
         />
         </div>
