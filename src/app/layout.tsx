@@ -4,6 +4,7 @@ import Chatbot from '../components/Chatbot';
 import Footer from "../components/Footer/Footer";
 import Header from "../components/Header";
 import "./globals.css";
+import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -11,7 +12,7 @@ export const metadata: Metadata = {
   title: "Salesforce",
   description: "Domine a jornada do seu cliente desde o primeiro contato até o pós-venda com a Salesforce, a plataforma líder mundial em CRM",
   icons: {
-    icon:['/favicon.ico?v=4']
+    icon: ['/favicon.ico?v=4']
   }
 };
 
@@ -23,10 +24,23 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body>
-        <Header/>
+        <Head>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-71NYPWF5M9"></script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-71NYPWF5M9');
+          `,
+        }}
+      />
+        </Head>
+        <Header />
         {children}
         <Footer />
-        
+
         <Chatbot />
       </body>
     </html>
