@@ -1,6 +1,10 @@
 'use client'
-window.location.href = 'https://trailhead.salesforce.com/pt-BR'
-export default function Campaing() {
 
+import { useEffect } from "react"
+
+export default function Campaing() {
+    useEffect(() => {
+        window.location.href = 'https://trailhead.salesforce.com/pt-BR'
+    })
     return null
 }
