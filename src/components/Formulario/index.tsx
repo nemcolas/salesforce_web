@@ -77,11 +77,11 @@ export default function Formulario() {
 
     return ( <form className='flex flex-col'>
     <div className='flex justify-between gap-5'>
-        <div className='flex flex-col'>
+        <div className='flex flex-auto flex-col'>
             <label htmlFor="name">Nome:</label>
             <input onKeyUp={validaCampoTexto} onChange={(e) => {changeState('name', e.target.value)}} className='text' type="text" name="name" id="name" placeholder="Nome" value={form.name} required/>
         </div>
-        <div className='flex flex-col'>
+        <div className='flex flex-auto flex-col'>
             <label htmlFor="sobrenome">Sobrenome:</label>
             <input onKeyUp={validaCampoTexto} onChange={(e) => {changeState('lastName', e.target.value)}} className='flex-1 text' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value={form.lastName} required/>
         </div>

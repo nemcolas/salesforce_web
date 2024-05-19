@@ -1,7 +1,5 @@
 'use client'
 
-import { Key, KeyboardEventHandler } from "react";
-
 function criarMenu(linksMenu: Object, iconFecharMenu: HTMLImageElement) {
     const menuMobile: HTMLDivElement = document.createElement('div');
     menuMobile.tabIndex = -1;
@@ -28,8 +26,7 @@ function mostrarMenu(e: any) {
             'Indústrias': 'https://www.salesforce.com/br/solutions/industries/',
             'Aprendizado': 'https://trailhead.salesforce.com/pt-BR',
             'Suporte': 'https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9',
-            'Empresa': 'https://www.salesforce.com/br/company/our-story/',
-            'Contato': 'https://www.salesforce.com/br/form/contact/contactme/?d=cta-header-9',
+            'Empresa': 'https://www.salesforce.com/br/company/our-story/'
         }
         const iconFecharMenu: HTMLImageElement = document.createElement('img');
         iconFecharMenu.classList.add('icon-fechar-menu');
