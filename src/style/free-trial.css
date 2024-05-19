@@ -1,7 +1,6 @@
 main.free-trial {
     margin-top: 5rem auto auto auto;
     width: 90%;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 main.free-trial .info-free-trial {
@@ -105,13 +104,22 @@ main section.formContainer form input.enviarFormulario {
     margin-top: 1rem;
 }
 
-/* formatação para quando o email não está correto */
+/* formatação para quando o input está correto/incorreto */
 
 input.input-incorreto {
-    border: 2px solid #FF0000;
+    border: 0.15rem solid #FF0000;
 }
+
 input.input-incorreto:focus {
-    border: 2px solid #FF0000 !important;
+    outline: 0.0001rem solid #FF0000 !important;
+}
+
+input.input-correto {
+    border: 0.15rem solid #0E9024 ;
+}
+
+input.input-correto:focus {
+    outline: 0.0001rem solid #0E9024 !important;
 }
 
 input:disabled {

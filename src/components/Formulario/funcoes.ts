@@ -20,7 +20,6 @@ async function pegarInformacoesObjeto() {
 
 }
 
-
 function getEntidade(entidades: any, id: string) {
     let entidade: any = {}
     entidades.forEach((e: any) => {

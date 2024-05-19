@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useState } from 'react'
 import {enviarTesteGratis, pegarInformacoesObjeto} from './funcoes'
-import {emailRegex, telefoneRegex} from '@/utils'
+import {emailRegex, telefoneRegex, validaCampoTexto, validaCampoEmailTelefone} from '@/utils'
 import {backEndInfoProps} from './interface'
 //Componente responsável pelo formulário da página de teste grátis.
 export default function Formulario() {
@@ -79,22 +79,22 @@ export default function Formulario() {
     <div className='flex justify-between gap-5'>
         <div className='flex flex-col'>
             <label htmlFor="name">Nome:</label>
-            <input onChange={(e) => {changeState('name', e.target.value)}} className='text' type="text" name="name" id="name" placeholder="Nome" value={form.name} required/>
+            <input onKeyUp={validaCampoTexto} onChange={(e) => {changeState('name', e.target.value)}} className='text' type="text" name="name" id="name" placeholder="Nome" value={form.name} required/>
         </div>
         <div className='flex flex-col'>
             <label htmlFor="sobrenome">Sobrenome:</label>
-            <input onChange={(e) => {changeState('lastName', e.target.value)}} className='flex-1 text' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value={form.lastName} required/>
+            <input onKeyUp={validaCampoTexto} onChange={(e) => {changeState('lastName', e.target.value)}} className='flex-1 text' type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" value={form.lastName} required/>
         </div>
     </div>
     
     <label htmlFor="cargo">Cargo:</label>
-    <input onChange={(e) => {changeState('position', e.target.value)}} className='text' type="text" name="cargo" id="cargo" placeholder="Cargo" value={form.position} required/>
-    <label htmlFor="email corporativo">Email corporativo:</label>
+    <input onKeyUp={validaCampoTexto} onChange={(e) => {changeState('position', e.target.value)}} className='text' type="text" name="cargo" id="cargo" placeholder="Cargo" value={form.position} required/>
 
-    <input onChange={(e) => {changeState('emailCorporate', e.target.value)}} className='text' type="email" name="email corporativo" id="email corporativo" placeholder="Email corporativo" value={form.emailCorporate} required/>
+    <label htmlFor="email corporativo">Email corporativo:</label>
+    <input onKeyUp={(e) => {validaCampoEmailTelefone(e, emailRegex)}} onChange={(e) => {changeState('emailCorporate', e.target.value)}} className='text' type="email" name="email corporativo" id="email corporativo" placeholder="Email corporativo" value={form.emailCorporate} required/>
 
     <label htmlFor="telefone">Telefone:</label>
-    <input onChange={(e) => {changeState('phone', e.target.value)}} className='text' type="tel" name="telefone" id="telefone" placeholder="Telefone" value={form.phone} required/>
+    <input onKeyUp={(e) => {validaCampoEmailTelefone(e, telefoneRegex)}} onChange={(e) => {changeState('phone', e.target.value)}} className='text' type="tel" name="telefone" id="telefone" placeholder="Telefone" value={form.phone} required/>
 
     <label htmlFor="tamanho da empresa">Tamanho da empresa:</label>
     <select value={selects.porteEmpresa} onChange={(e) => changeSelect('porteEmpresa', e.target.value)} name="tamanho da empresa" id="tamanho da empresa" required>
