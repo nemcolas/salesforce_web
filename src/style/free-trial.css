@@ -193,6 +193,10 @@ div.falha {
     main.free-trial section.formContainer form {
         padding: 0 1rem;
     }
+
+    main.free-trial .info-free-trial {
+        margin: auto;
+    }
 }
 
 
