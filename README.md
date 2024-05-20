@@ -52,6 +52,11 @@ Para acessar a aplicação no Visual Studio Code (VSCode) e iniciar o servidor l
 2. Execute o comando `npm install` para instalar as dependências necessárias.
 3. Após a conclusão da instalação, execute o comando `npm run dev` para iniciar o servidor local e ter acesso às páginas web rodando localmente.
 
+## Informações consumidas da API
+O nosso projeto consome duas API, uma construida em Java para o salvamento das informações no banco de dados e tambem recuperação das informações como país, porte empresa e idioma para utilizarmos na nossa página de teste grátis
+A outra api construida em express foi usada para o envio do email que fazemos quando a pessoa solicita um teste grátis.
+Ambas estão funcionais, porém como estão rodando na nossa máquina, não será possível consumir elas pois não estão hospedadas de forma online
+
 ## Conclusão
 Espera-se que esta reestruturação das páginas do site da Salesforce proporcione uma experiência de navegação mais intuitiva e responsiva para os usuários, reduzindo o tempo necessário para obter informações sobre a empresa e seus produtos.
 
