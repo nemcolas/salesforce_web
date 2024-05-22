@@ -25,7 +25,7 @@ export default function RootLayout({
     <html lang="pt-br">
       <body>
         <Head>
-        <script src="https://unpkg.com/watson-speech@0.40.0/dist/watson-speech.min.js"></script>
+        {/* <script src="https://unpkg.com/watson-speech@0.40.0/dist/watson-speech.min.js"></script> */}
         </Head>
         <Header />
         {children}
