@@ -28,6 +28,10 @@ export default function FreeTrial() {
                 <h3>Preencha o formulário abaixo e em breve entraremos em contato sobre seu teste gratuito</h3>
                 < Formulario />
             </section>
+
+            <noscript>
+                <h1>Por favor, habilite o javascript para poder solicitar o teste grátis</h1>
+            </noscript>
         </main>
     );
 }

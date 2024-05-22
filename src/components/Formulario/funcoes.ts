@@ -98,14 +98,18 @@ function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input: HTML
 }
 
 async function enviarEmail(testeGratis: testeGratisProps) {
-    const result = await fetch("/api/send", {
-        method: "POST",
-        body: JSON.stringify({ send: testeGratis.email, nome: testeGratis.nome }),
-    });
-
-    const response = await result.json();
-
-    console.log(response);
+    try {
+        const result = await fetch("/api/send", {
+            method: "POST",
+            body: JSON.stringify({ send: testeGratis.email, nome: testeGratis.nome }),
+        });
+    
+        const response = await result.json();
+    
+        console.log(response);
+    }catch(error){
+        console.log(error)
+    }
 }
 
 export { enviarTesteGratis, pegarInformacoesObjeto }
