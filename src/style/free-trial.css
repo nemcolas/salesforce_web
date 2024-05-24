@@ -135,34 +135,52 @@ div.div-retorno-teste {
     width: 25%;
     text-align: center;
     position: fixed;
-    top: 50vh;
+    top: 1vh;
     animation: retorno-teste 1s forwards;
-    background: rgba(0, 123, 255,0.8);
-    color: #fff;
-    text-transform: capitalize;
+    color: #111;
     font-size: 1.4rem;
-    border-radius: 0.5rem;
     left: calc(50% - 12.5%);
     font-weight: 500;
     max-width: 450px;
+    background: #FFFFFF;
+    box-shadow: 0 0 0.3rem #ccc;
 }
 
 div.div-retorno-teste img.icone-fechar {
     position: absolute;
     right: 0;
     top: 0;
-    width: 45px;
+    width: 40px;
     cursor: pointer;
 }
 
 div.sucesso {
-    border: 3px solid rgb(4, 135, 4);
     width: 30%;
     left: calc(50% - 15%);
 }
+div.div-retorno-teste::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 7px;
+}
 
-div.falha {
-    border: 3px solid rgb(235, 2, 2);
+div.sucesso::after {
+    background: #0E9024;
+    animation: anim 9s linear forwards;
+}
+
+div.falha::after {
+    background: #FF0000;
+    animation: anim 4s linear forwards;
+}
+
+@keyframes anim {
+    100% {
+        width: 0;
+    }
 }
 
 @keyframes retorno-teste {

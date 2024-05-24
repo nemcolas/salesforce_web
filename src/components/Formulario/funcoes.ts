@@ -69,32 +69,53 @@ async function enviarTesteGratis(inputText: inputProps, selects: selectsProps, i
     mostrarResultadoTesteGratis(message, input)
 }
 
-function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input: HTMLInputElement) {
-    input.disabled = false
-    input.value = "Enviar Teste Grátis"
-    const image = document.createElement('img')
-    const paragrafo = document.createElement('p')
-    const main = document.querySelector('main')
-    const divResultado = document.createElement('div')
-    paragrafo.innerHTML = message.message
-    image.src = '/image-free-trial/fechar.webp'
-    image.alt = 'Icone de fechar'
-    image.tabIndex = 0
-    image.focus()
-    image.classList.add('icone-fechar')
-    divResultado.append(image, paragrafo)
-    divResultado.classList.add(`${message.message == 'Teste grátis cadastrado com sucesso! Iremos entrar em contato em breve' ? 'sucesso' : 'falha'}`, 'div-retorno-teste')
-    if (main) {
-        main.insertBefore(divResultado, main.firstChild)
-    }
-    image.addEventListener('click', () => {
-        divResultado.remove()
-    })
-    image.addEventListener('keyup', (e) => {
-        if (e.key == 'Enter' || e.key == 'Tab')
-            divResultado.remove()
-    })
+const SUCCESS_MESSAGE = 'Teste grátis cadastrado com sucesso! Iremos entrar em contato em breve';
+const SUCCESS_TIMEOUT = 9000;
+const FAILURE_TIMEOUT = 4000;
 
+function criarImagem() {
+    const image = document.createElement('img');
+    image.src = '/image-free-trial/fechar.webp';
+    image.alt = 'Icone de fechar';
+    image.tabIndex = 0;
+    image.classList.add('icone-fechar');
+    return image;
+}
+
+function criarParagrafo(message: string) {
+    const paragrafo = document.createElement('p');
+    paragrafo.innerHTML = message;
+    return paragrafo;
+}
+
+function mostrarResultadoTesteGratis(message: modalTesteGratisProps, input: HTMLInputElement) {
+    input.disabled = false;
+    input.value = "Enviar Teste Grátis";
+
+    const image = criarImagem();
+    const paragrafo = criarParagrafo(message.message);
+    const divResultado = document.createElement('div');
+    divResultado.append(image, paragrafo);
+
+    const isSuccess = message.message == SUCCESS_MESSAGE;
+    divResultado.classList.add(isSuccess ? 'sucesso' : 'falha', 'div-retorno-teste');
+
+    const main = document.querySelector('main');
+    if (main) {
+        main.insertBefore(divResultado, main.firstChild);
+    }
+
+    const removeDivResultado = () => divResultado.remove();
+    image.addEventListener('click', removeDivResultado);
+    image.addEventListener('keyup', (e) => {
+        if (e.key == 'Enter' || e.key == 'Tab') {
+            removeDivResultado();
+        }
+    });
+
+    image.focus();
+
+    setTimeout(removeDivResultado, isSuccess ? SUCCESS_TIMEOUT : FAILURE_TIMEOUT);
 }
 
 async function enviarEmail(testeGratis: testeGratisProps) {
