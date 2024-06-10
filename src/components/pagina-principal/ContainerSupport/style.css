@@ -3,6 +3,17 @@
     margin-bottom: 7rem;
 }
 
+.container-suport div h2 {
+    font-size: 2rem;
+    margin-bottom: 0.8rem;
+}
+
+.container-suport div h3 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
 .container-suport div{
     justify-content: center;
     flex: 3;
