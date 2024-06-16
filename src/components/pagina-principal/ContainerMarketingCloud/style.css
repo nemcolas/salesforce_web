@@ -27,7 +27,7 @@ section.containerMarketingCloud {
 }
 
 .containerMarketingCloud div.content h2 {
-    font-size: 1.7rem;
+    font-size: 2rem;
 }
 
 .containerMarketingCloud div.content a.large {
@@ -37,6 +37,10 @@ section.containerMarketingCloud {
 @media screen and (max-width: 990px) {
     section.containerMarketingCloud {
         flex-direction: column;
+    }
+
+    section.containerMarketingCloud br {
+        display: none;
     }
 
     .containerMarketingCloud .imgContainer {

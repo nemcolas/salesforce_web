@@ -25,7 +25,7 @@ export default function Home() {
 
       <ContainerEventosOnline />
 
-      <ContainerTrailblazers title='Cresça com uma comunidade de companheiros: Trailblazers'
+      <ContainerTrailblazers title='Cresça com uma comunidade do Trailhead'
         textParagraph='Domine o CRM para integrar equipes, impulsionando o crescimento e a produtividade em sua empresa'
         textButton='Conecte-se com os Traiblazers'
         linkButton='https://trailhead.salesforce.com/'
